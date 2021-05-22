@@ -1,0 +1,1 @@
+Uma cópia do site do front-end do Google Search, Google Image e Google Advanced Search. Ele executa as mesmas funções de busca destes sites, encaminhando o usuário para o resultado da pesquisa que seria obtido realizando a busca no Google.
