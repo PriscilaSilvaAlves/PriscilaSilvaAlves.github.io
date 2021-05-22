@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width,inicial-scale=1.0">
+    <title>Cinema</title>
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 601px)" href="estilos-notebook.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="estilos-celular.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+	<body>
+		<div class="menu">
+  			<ul>
+            <a href="javascript:void(0)" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+    			  <li class= "logo" style="float: left;">
+              <a href="index.html"><i class="fa fa-home"></i> Clipes do Ano</a>
+            </li>
+            <div id="myLinks">
+      				<li>
+                  <a href="#">Melhores Clipes do Ano</a>
+        					<ul>
+        						<li><a href="filmes2021.html">Edição de 2021</a></li>
+        						<li><a href="filmes2020.html">Edição de 2020</a></li>
+        					</ul>
+      				</li>
+              <li>
+                  <a href="#">Clipes Premiados</a>
+                  <ul>
+                    <li><a href="#">Edição de 2021</a></li>
+                    <li><a href="premios2020.html">Edição de 2020</a></li>
+                  </ul>
+              </li>
+            </div>
+  			</ul>
+		</div>
+    <br><br><br><br>
+		<div class="corpo">
+    <h1> Formulário de avaliação </h1>
+    <br><br><br>
+    <div class="introducao">
+      <form method="post">
+        <h3 style="font-family:Arial;"> Dados Pessoais: </h3>
+        <br><br>
+        <table style="width:100%">
+             <tr>
+                   <td>Nome: </td>
+                   <td> <input type="text"> </td>
+            </tr>
+            <tr>
+                   <td>E-mail: </td>
+                   <td> <input type="email"> </td>
+            </tr>
+            <tr>
+                   <td>Idade: </td>
+                   <td> <input type="number" min="18" max="150"> </td>
+             </tr>
+        </table>
+          <br><br>
+          <h3 style="font-family:Arial;"> Critérios de avaliação: </h3>
+          <br><br>
+          <table style="width:100%">
+              <tr>
+                      <td>Clipe:</td>
+                      <td> <input list="clipes">
+                        <datalist id="clipes">
+                          <option value="Cheiro Bom do Seu Cabelo">
+                          <option value="Realize">
+                          <option value="Leave the Door Open">
+                          <option value="Troca de Calçada">
+                          <option value="Explodir">
+                          <option value="Afterglow">
+                          <option value="Your Power">
+                          <option value="Ama Sofre Chora">
+                          <option value="No Way Home">
+                          <option value="Lisboa">
+                        </datalist>
+                      </td>
+              </tr>
+              <tr>
+                     <td>Originalidade:</td>
+                     <td> <input type="number" min="0" max="10"> </td>
+              </tr>
+              <tr>
+                     <td>Fotografia: </td>
+                     <td> <input type="number" min="0" max="10"> </td>
+              </tr>
+              <tr>
+                     <td>Letra: </td>
+                     <td> <input type="number" min="0" max="10"> </td>
+              </tr>
+              <tr>
+                      <td>Música: </td>
+                      <td> <input type="number" min="0" max="10"> </td>
+              </tr>
+              <tr>
+                      <td>Conexão com o público: </td>
+                      <td> <input type="number" min="0" max="10"> </td>
+              </tr>
+              <tr>
+                      <td>Roteiro: </td>
+                      <td> <input type="number" min="0" max="10"> </td>
+              </tr>
+          </table>
+            <br><br>
+          <button type="submit" name="button">Enter</button>
+      </form>
+  </div>
+		</div>
+    <br><br><br>
+    <div class="footer">
+          <div id="grid">
+            <div class="grid-item">
+              <p>© 2021 Festival de Música. Todos os direitos reservados.</p>
+            </div>
+            <div class="grid-item">
+                <img src= "imagens/patriaamada.jpg" />
+            </div>
+            <div class="grid-item">
+                <img src="imagens/prefnatal.jpg" />
+            </div>
+        </div>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+	</body>
+</html>
