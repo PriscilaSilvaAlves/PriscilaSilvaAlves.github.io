@@ -4,7 +4,7 @@
 }
 body{
   background: linear-gradient(to top left, #ccccff 8%, #ffccff 100%);
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   height: 100VW;
   padding-top: 5VW;
