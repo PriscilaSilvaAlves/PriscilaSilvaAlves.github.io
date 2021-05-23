@@ -8,7 +8,7 @@ body{
 #conteudo{
   padding-top: 12VW;
   padding-bottom: auto;
-  font-size: 30px;
+  font-size: 5VW;
 }
 #conteudo p{
   text-align: center;
@@ -36,10 +36,5 @@ body{
   body{
     background-image: url('fundo1.png');
     background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-  #conteudo{
-    padding-top: 30VW;
-    font-size: 60px;
   }
 }
