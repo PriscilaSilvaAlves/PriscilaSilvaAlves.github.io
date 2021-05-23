@@ -3,7 +3,7 @@
   padding: 0px;
 }
 body{
-  background: linear-gradient(to left, #ccccff 8VW, #ffccff 100VW);
+  background: linear-gradient(90deg, #ffccff, #ccccff);
   background-repeat: no-repeat;
   background-size: 100% 300%;
   padding-top: 5VW;
