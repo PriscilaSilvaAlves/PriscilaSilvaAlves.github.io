@@ -33,7 +33,7 @@ body{
   padding: 10px;
   font-size: 15px;
 }
-@media (max-width:1000px){
+@media (max-width:600px){
   body{
     background-image: url('fundo1.png');
     background-repeat: no-repeat;
@@ -41,13 +41,5 @@ body{
   #conteudo{
     padding-top: 30VW;
     font-size: 60px;
-  }
-  #conteudo p a{
-    text-decoration: none;
-    color: orange;
-    text-shadow: 2px 2px 4px #000000
-  }
-  #conteudo p a:hover{
-    color: black;
   }
 }
