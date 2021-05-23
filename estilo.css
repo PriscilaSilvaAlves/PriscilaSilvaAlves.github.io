@@ -1,0 +1,35 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+html, body{
+  background-image: url("fundo.png");
+}
+#conteudo{
+  padding-top: 12VW;
+  padding-bottom: auto;
+  font-size: 30px;
+}
+#conteudo p{
+  text-align: center;
+}
+#conteudo p a{
+  text-decoration: none;
+  color: orange;
+  text-shadow: 2px 2px 4px #000000
+}
+#conteudo p a:hover{
+  color: black;
+}
+#fundo{
+  background: #E2E2E2;
+  height: 35px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+#fundo p{
+  padding: 10px;
+  font-size: 15px;
+}
