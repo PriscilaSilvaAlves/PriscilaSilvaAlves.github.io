@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 0px;
 }
-html, body{
+body{
   background-image: url("fundo.png");
 }
 #conteudo{
@@ -32,8 +32,8 @@ html, body{
   padding: 10px;
   font-size: 15px;
 }
-@media (max-width: 600px;){
-  html, body{
+@media (max-width: 600px){
+  body{
     background-image: url("fundo1.png") no-repeat;
   }
 }
