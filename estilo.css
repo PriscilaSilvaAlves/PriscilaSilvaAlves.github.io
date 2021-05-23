@@ -3,7 +3,7 @@
   padding: 0px;
 }
 body{
-  background: url('fundo.png');
+  background: linear-gradient(to top left, #33ccff 35%, #ff99cc 100%);
   background-repeat: no-repeat;
 }
 #conteudo{
@@ -35,9 +35,6 @@ body{
 }
 
 @media only screen and (orientation:portrait) {
-  body{
-    background: #FFCF6FF;
-  }
   #conteudo{
     padding-top: 30VW;
     padding-bottom: auto;
