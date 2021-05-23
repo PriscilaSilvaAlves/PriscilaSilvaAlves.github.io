@@ -3,7 +3,7 @@
   padding: 0px;
 }
 body{
-  background-image: url('fundo.png');
+  background: url('fundo.png');
   background-repeat: no-repeat;
 }
 #conteudo{
@@ -36,6 +36,6 @@ body{
 
 @media (max-width: 600px){
   body{
-    background-color: #FFCBDB;
+    background: #FFCBDB;
   }
 }
