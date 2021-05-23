@@ -22,15 +22,15 @@ body{
   color: black;
 }
 #fundo{
-  height: 35px;
+  height: 25VW;
   position: fixed;
   bottom: 0;
   width: 100%;
   text-align: center;
 }
 #fundo p{
-  padding: 10px;
-  font-size: 15px;
+  padding: 10VW;
+  font-size: 5VW;
 }
 @media (max-width:600px){
   body{
