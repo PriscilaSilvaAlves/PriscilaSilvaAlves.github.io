@@ -4,7 +4,6 @@
 }
 body{
   background-image: url('fundo.png');
-  background-repeat: no-repeat;
 }
 #conteudo{
   padding-top: 12VW;
