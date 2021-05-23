@@ -39,8 +39,12 @@ body{
     background: #FFCBDB;
   }
   #conteudo{
-  padding-top: 40VW;
-  padding-bottom: auto;
-  font-size: 60px;
+    padding-top: 40VW;
+    padding-bottom: auto;
+    font-size: 60px;
+  }
+  #fundo p{
+    padding: 10px;
+    font-size: 40px;
   }
 }
