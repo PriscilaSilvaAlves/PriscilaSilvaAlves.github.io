@@ -38,4 +38,16 @@ body{
     background-image: url('fundo1.png');
     background-repeat: no-repeat;
   }
+  #conteudo{
+    padding-top: 30VW;
+    font-size: 60px;
+  }
+  #conteudo p a{
+    text-decoration: none;
+    color: orange;
+    text-shadow: 2px 2px 4px #000000
+  }
+  #conteudo p a:hover{
+    color: black;
+  }
 }
