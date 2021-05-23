@@ -43,6 +43,10 @@ body{
     padding-bottom: auto;
     font-size: 35px;
   }
+  #fundo{
+    height: 45px;
+    text-align: center;
+  }
   #fundo p{
     padding: 10px;
     font-size: 25px;
