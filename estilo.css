@@ -11,22 +11,14 @@ body{
 p{
   text-align: center;
   padding-bottom: auto;
-  font-size: 25px;
+  font-size: 2VW;
 }
 a{
   text-decoration: none;
-  font-size: 50px;
+  font-size: 4VW;
   color: orange;
-  text-shadow: 2px 2px 6px #000000
+  text-shadow: 2px 2px 4px #000000
 }
 a:hover{
   color: black;
-}
-@media only screen and (orientation:portrait){
-  a{
-    font-size: 30px;
-  }
-  p{
-    font-size: 20px;
-  }
 }
