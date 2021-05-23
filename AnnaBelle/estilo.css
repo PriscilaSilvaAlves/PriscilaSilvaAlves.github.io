@@ -1,0 +1,70 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  background-image: url("imagens/fundo.png");
+}
+header{
+  background: #c5c5b2;
+  width: 900px;
+  height: 450px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+h2{
+  padding: 10px;
+  color: #828271;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p{
+  padding: 10px;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+#menu{
+  padding: 15px;
+}
+#menu ul{
+  position: relative;
+}
+#menu ul li{
+  list-style: none;
+  color: #4b566a;
+  float: left;
+}
+#menu ul li a{
+  text-decoration: none;
+  color: #4b566a;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+#conteudo{
+  width: 900px;
+  background: white;
+  font-size: 16px;
+  margin-left: 10px;
+  background: #e8e8d9;
+}
+#conteudo img{
+  margin-left: 10px;
+  border: 10px solid #c3c3ae;
+}
+footer{
+  margin-left: 10px;
+  width: 900px;
+  text-align: center;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  margin: 0px;
+  font-size: 16px;
+
+}
+footer p{
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
