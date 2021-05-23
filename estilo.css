@@ -9,7 +9,7 @@ body{
 #conteudo{
   padding-top: 16VW;
   padding-bottom: auto;
-  font-size: 50px;
+  font-size: 40px;
 }
 #conteudo p{
   text-align: center;
@@ -38,4 +38,9 @@ body{
   body{
     background: #FFCBDB;
   }
+  #conteudo{
+  padding-top: 30VW;
+  padding-bottom: auto;
+  font-size: 60px;
+}
 }
