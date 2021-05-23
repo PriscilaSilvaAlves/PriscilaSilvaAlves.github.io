@@ -32,8 +32,8 @@ html, body{
   padding: 10px;
   font-size: 15px;
 }
-@media screen and (max-width: 600px){
+@media (max-width: 600px){
   html, body{
-    background-image: url("fundo1.jpg");
+    background-image: url("fundo1.png");
   }
 }
