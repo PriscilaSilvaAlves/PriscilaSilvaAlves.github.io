@@ -3,9 +3,9 @@
   padding: 0px;
 }
 body{
-  background: linear-gradient(to left, #ccccff 8%, #ffccff 100%);
-  height: 100VW;
-  width: 100VW;
+  background: linear-gradient(to left, #ccccff 8VW, #ffccff 100VW);
+  background-repeat: no-repeat;
+  background-size: 300% 300%;
   padding-top: 5VW;
 }
 p{
