@@ -34,7 +34,6 @@ body{
 }
 @media (max-width:600px){
   body{
-    background-image: url('fundo1.png');
-    background-repeat: no-repeat;
+    background: #FFCBDB;
   }
 }
