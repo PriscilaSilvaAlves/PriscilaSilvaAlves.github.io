@@ -32,3 +32,8 @@ html, body{
   padding: 10px;
   font-size: 15px;
 }
+@media screen and (max-width: 600px){
+  html, body{
+    background-image: url("fundo2.jpg");
+  }
+}
