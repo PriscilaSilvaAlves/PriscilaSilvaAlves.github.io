@@ -1,0 +1,41 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-image: url('fundo.png');
+  background-repeat: no-repeat;
+}
+#conteudo{
+  padding-top: 16VW;
+  padding-bottom: auto;
+  font-size: 50px;
+}
+#conteudo p{
+  text-align: center;
+}
+#conteudo p a{
+  text-decoration: none;
+  color: orange;
+  text-shadow: 2px 2px 5px #000000
+}
+#conteudo p a:hover{
+  color: black;
+}
+#fundo{
+  height: 45px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+#fundo p{
+  padding: 10px;
+  font-size: 25px;
+}
+
+@media (max-width: 600px){
+  body{
+    background-color: #FFCBDB;
+  }
+}
