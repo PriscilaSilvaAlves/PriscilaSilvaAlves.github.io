@@ -1,2 +1,2 @@
 # PriscilaSilvaAlves.github.io
-Meu Portfólio com o front-end de alguns sites
+Meu Portfólio com o front-end de alguns sites em estudo.
