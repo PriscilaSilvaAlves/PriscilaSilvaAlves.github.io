@@ -34,6 +34,6 @@ html, body{
 }
 @media (max-width: 600px){
   html, body{
-    background-image: url("fundo1.png");
+    background-image: url("fundo1.png") no-repeat;
   }
 }
