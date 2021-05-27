@@ -13,6 +13,14 @@ body{
 .gridIntem{
   text-align: center;
 }
+#gridFoto{
+  display: grid;
+  grid-row-gap: 20px;
+  grid-template-columns: auto 660px auto;
+}
+.gridItemFoto{
+  text-align: center;
+}
 header{
   background: #c5c5b2;
   width: 900px;
