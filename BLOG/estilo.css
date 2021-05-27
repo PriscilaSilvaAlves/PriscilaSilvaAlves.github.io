@@ -1,0 +1,117 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background: #E6E6E6;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+#grid{
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: auto 660px 240px auto;
+}
+.gridIntem{
+  text-align: center;
+}
+#rodape{
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: auto 920px auto;
+}
+.grid-rodape{
+  text-align: center;
+}
+#cor-rodape{
+  background: #CCC;
+  text-align: center;
+  padding: 15px;
+}
+section{
+  background: #F7B600;
+  color: white;
+  text-align: center;
+  font-family: arial, sans-serif;
+  padding: 15px;
+}
+#titulo{
+  padding: 10px;
+}
+#titulo h1{
+  font-size: 45px;
+}
+#titulo span{
+  color: #4E4E4E;
+}
+#menu{
+  padding: 10px;
+}
+#menu a{
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  padding: 8px 12px;
+  font-size: 20px;
+}
+#menu a:link, #menu a:visited{
+  color: #FFF;
+}
+#menu a:hover{
+  color: #F7B600;
+  background: #FFF;
+}
+#fundo-conteudo{
+  font-family: arial, sans-serif;
+}
+.postagem{
+  background: white;
+  padding: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.postagem img{
+  width: 620px;
+}
+.postagem h2{
+  color: #F7B600;
+}
+.postagem p{
+  text-align: justify;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.postagem a{
+  color: #F7B600;
+  text-decoration: none;
+}
+.data-postagem{
+  font-size: 12px;
+  margin-top: 10px;
+}
+.anexo{
+  background: white;
+  padding: 15px;
+  float: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 240px;
+}
+.fundo-anexo{
+  font-size: 20px;
+  color: #565656;
+  background: #CCC;
+  padding: 5px;
+}
+.anexo p, a{
+  font-size: 15px;
+  text-align: justify;
+  padding: 10px;
+}
+.anexo a{
+  text-decoration: none;
+  color: #F7B600;
+}
+hr{
+  margin-top: 5px;
+  color: #CCC;
+}
