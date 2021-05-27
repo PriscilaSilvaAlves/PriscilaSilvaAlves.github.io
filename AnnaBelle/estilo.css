@@ -5,12 +5,19 @@
 body{
   background-image: url("imagens/fundo.png");
 }
+#grid{
+  display: grid;
+  grid-row-gap: 20px;
+  grid-template-columns: auto 900px auto;
+}
+.gridIntem{
+  text-align: center;
+}
 header{
   background: #c5c5b2;
   width: 900px;
   height: 450px;
   margin-top: 10px;
-  margin-left: 10px;
 }
 h2{
   padding: 10px;
@@ -45,7 +52,6 @@ p{
   width: 900px;
   background: white;
   font-size: 16px;
-  margin-left: 10px;
   background: #e8e8d9;
 }
 #conteudo img{
