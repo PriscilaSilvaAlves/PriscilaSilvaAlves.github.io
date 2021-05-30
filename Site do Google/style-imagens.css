@@ -183,10 +183,12 @@
 .topo{
   height: 50px;
 }
-.fundo{
-  height: 11VW;
-}
 /* Footer Style */
+#fundo{
+  position:fixed;
+  bottom:0;
+  width:100%;
+}
 .flex-footer{
   text-align: center;
   background-color: #F2F2F2;
