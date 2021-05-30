@@ -4,7 +4,7 @@
 #grid-alinhamento-horizontal{
 	display: grid;
 	grid-row-gap: 2px;
-	grid-template-rows: auto auto 100% auto;
+	grid-template-rows: auto auto auto auto;
 	height: 100%;
 }
 .alinhamento-horizontal{
@@ -168,7 +168,7 @@
 }
 /* Conteúdo fundo */
 #conteudo-fundo{
-	height: 12VW;
+	height: 10VW;
 }
 /* Footer Style */
 .flex-footer{
