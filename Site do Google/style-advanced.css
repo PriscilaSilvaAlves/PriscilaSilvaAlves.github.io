@@ -141,7 +141,7 @@ table tr td{
 }
 /* Footer Style */
 footer{
-  position: absolute;
+  position: fixed;
   bottom: 1;
 }
 .flex-footer{
