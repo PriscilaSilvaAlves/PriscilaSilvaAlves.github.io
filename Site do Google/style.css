@@ -5,6 +5,7 @@
 	display: grid;
 	grid-row-gap: 2px;
 	grid-template-rows: auto auto 100% auto;
+	height: 100%;
 }
 .alinhamento-horizontal{
 	width:100%;
