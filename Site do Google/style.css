@@ -1,9 +1,6 @@
 *{
 	margin: 0px;
 }
-html,body{
-	min-height: 100%;
-}
 #grid-alinhamento-horizontal{
 	display: grid;
 	grid-row-gap: 2px;
