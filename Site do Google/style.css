@@ -1,37 +1,37 @@
 *{
-  margin: 0px;
+	margin: 0px;
 }
 /* Menu Style */
 #menu{
-  height: 40px;
-  padding: 4px;
-  margin: 5px 20px 5px 0px;
-  display: grid;
-  place-items: center;
-  grid-column-gap: 10px;
-  grid-template-columns: auto 110px 40px 40px 40px 40px;
+	height: 40px;
+	padding: 4px;
+	margin: 5px 20px 5px 0px;
+	display: grid;
+	place-items: center;
+	grid-column-gap: 10px;
+	grid-template-columns: auto 110px 40px 40px 40px 40px;
 }
 .menu-grid{
-  text-align: right;
+	text-align: right;
 }
 .menu-grid a{
-  color: black;
-  font-family: arial,sans-serif;
-  font-size: 13px;
-  text-align: center;
+	color: black;
+	font-family: arial,sans-serif;
+	font-size: 13px;
+	text-align: center;
 }
 .texto{
-  text-decoration: none;
+	text-decoration: none;
 }
 .foto img{
-  border-radius: 20px;
+	border-radius: 20px;
 }
 .navbar img{
-  width: 16px;
-  height: auto;
+	width: 16px;
+	height: auto;
 }
 .texto:hover{
-  text-decoration:underline;
+	text-decoration:underline;
 }
 .foto img:hover{
 
@@ -39,176 +39,177 @@
 
 /* Flex-box do Conteúdo */
 .flex-conteudo{
-  text-align: center;
-  display: block;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+	text-align: center;
+	display: block;
+	flex-wrap: nowrap;
+	justify-content: space-between;
 }
 .flex-conteudo-1{
-  margin: 5px;
-  align-items: center;
+	margin: 5px;
+	align-items: center;
 }
 .flex-conteudo-2{
-  margin: 5px;
-  height: 95px;
-  align-items: center;
+	margin: 5px;
+ 	height: 95px;
+	align-items: center;
 }
 .flex-conteudo-3{
-  margin: 5px;
-  align-items: center;
+	margin: 5px;
+	align-items: center;
 }
 /* Conteúdo */
 section{
-  font-family: 'Source Sans Pro', sans-serif;
-  margin: 2px 0px 2px 0px;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 2px 0px 2px 0px;
 }
 .flex-section{
-  text-align: center;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+	text-align: center;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
 }
 .flex-section-1{
-  margin: 5px;
-  justify-content: space-between;
-  align-items: center;
+	margin: 5px;
+	justify-content: space-between;
+	align-items: center;
 }
 .flex-section-2{
-  margin: 0.1px;
-  justify-content: space-between;
-  align-items: center;
+	margin: 0.1px;
+	justify-content: space-between;
+	align-items: center;
 }
 #botoes{
-  margin-top: 30px;
-  height: 40px;
-  display: grid;
-  place-items: center;
-  grid-column-gap: 20px;
-  grid-template-columns: auto 130px 130px auto;
+	margin-top: 30px;
+	height: 40px;
+	display: grid;
+	place-items: center;
+	grid-column-gap: 20px;
+	grid-template-columns: auto 130px 130px auto;
 }
 .gridBotao{
-  text-align: center;
+	text-align: center;
 }
 .bt{
-  height: 40px;
-  width: 130px;
-  color: #3C4043;
-  background-color: #F8F9FA;
-  border: 1px solid #F8F9FA;
-  border-radius: 4px;
-  font-size: 14px;
-  font-family: arial,sans-serif;
+	height: 40px;
+	width: 130px;
+	color: #3C4043;
+	background-color: #F8F9FA;
+	border: 1px solid #F8F9FA;
+	border-radius: 4px;
+	font-size: 14px;
+	font-family: arial,sans-serif;
 }
 .bt:hover{
-  border: 1px solid #E2E2E2;
-  box-shadow: 0px 1px 2px 0px #E2E2E2;
+	border: 1px solid #E2E2E2;
+	box-shadow: 0px 1px 2px 0px #E2E2E2;
 }
 .bt:focus {
-  border: 1px solid #4169E1;
+	border: 1px solid #4169E1;
 }
 .simbolo{
-  text-align: center;
-  height: 110px;
-  margin: 0px;
-  padding: 0px;
+	text-align: center;
+	height: 110px;
+	margin: 0px;
+	padding: 0px;
 }
 .simbolo img{
-  margin: 0px;
-  padding: 0px;
-  height: 110px;
-  transform: scale(0.8,0.8);
+	margin: 0px;
+	padding: 0px;
+	height: 110px;
+	transform: scale(0.8,0.8);
 }
 .pesquisa{
-  text-align: center;
-  height:44px;
-  place-items: center;
+	text-align: center;
+	height:44px;
+	place-items: center;
 }
 .pesquisa form{
-  align-items: center;
-  max-height: 100%;
-  height: 34px;
+	align-items: center;
+	max-height: 100%;
+	height: 34px;
 }
 .barraFalsa{
-  border: 1px solid #E2E2E2;
-  padding: 10px;
-  border-radius: 35px;
-  position: relative;
-  width: 536px;
-  height: 25px;
+	border: 1px solid #E2E2E2;
+	padding: 10px;
+	border-radius: 35px;
+	position: relative;
+	width: 536px;
+	height: 25px;
 }
 .barraFalsa input{
-  border: none;
-  height: 15px;
-  width: 480px;
-  font-size: 20px;
+	border: none;
+	height: 15px;
+	width: 480px;
+	font-size: 20px;
 }
 .barraFalsa img{
-  width: 20px;
-  height:auto;
-  margin:0px;
-  padding:0px;
+	width: 20px;
+	height:auto;
+	margin:0px;
+	padding:0px;
 }
 .barraFalsa:hover{
-  box-shadow: 0px 0px 4px 4px #F2F2F2;
-  color: #202124;
-  background-color: transparent;
+	box-shadow: 0px 0px 4px 4px #F2F2F2;
+	color: #202124;
+	background-color: transparent;
 }
 .comentario{
-  font-size: small;
-  font-family: arial,sans-serif;
-  color: #222;
-  margin-top: 20px;
+	font-size: small;
+	font-family: arial,sans-serif;
+	color: #222;
+	margin-top: 20px;
 }
 /* Footer Style */
 footer{
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
 .flex-footer{
-  text-align: center;
-  background-color: #F2F2F2;
-  height: 42px;
-  font-size: 14px;
-  font-family: arial,sans-serif;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+	text-align: center;
+	background-color: #F2F2F2;
+	height: 42px;
+	font-size: 14px;
+	font-family: arial,sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-bottom: 1px solid #E4E4E4;
 }
 .flex-footer-inter1{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 }
 .flex-footer-inter2{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 }
 .flex-footer-inter1 a{
 	text-decoration:none;
-  color: #808080;
-  margin: 10px;
-  margin-left: 25px;
+	color: #808080;
+	margin: 10px;
+	margin-left: 25px;
 }
 .flex-footer-inter2 a{
 	text-decoration:none;
-  color: #808080;
-  margin: 10px;
-  margin-right: 25px;
+	color: #808080;
+	margin: 10px;
+	margin-right: 25px;
 }
 .flex-footer-inter1 p{
-  color: #808080;
-  margin: 10px;
-  margin-left: 23px;
+	color: #808080;
+	margin: 10px;
+	margin-left: 23px;
 }
 .flex-footer-inter1 a:hover{
 	text-decoration:underline;
-  color: #808080;
+	color: #808080;
 }
 .flex-footer-inter2 a:hover{
 	text-decoration:underline;
-  color: #808080;
+	color: #808080;
 }
