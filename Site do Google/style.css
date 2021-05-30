@@ -158,13 +158,6 @@ section{
   color: #222;
   margin-top: 20px;
 }
-/* Espaçamentos */
-.topo{
-  height: 2px;
-}
-.fundo{
-  height: 2px;
-}
 /* Footer Style */
 footer{
   position: fixed;
