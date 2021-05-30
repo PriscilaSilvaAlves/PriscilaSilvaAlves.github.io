@@ -170,6 +170,8 @@
 /* Footer Style */
 .alinhamento-horizontal{
 	width: 100%;
+	position: fixed;
+	bottom: 0;
 }
 .flex-footer{
 	text-align: center;
