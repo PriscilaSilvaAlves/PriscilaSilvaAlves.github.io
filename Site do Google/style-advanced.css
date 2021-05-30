@@ -162,8 +162,7 @@ footer{
 	list-style: none;
 	text-align: center;
   	position: relative;
-	margin: 1VW;
-	padding: 0VW;
+	margin-left: 45px;
 }
 .flex-footer li {
   	float: left;
@@ -172,7 +171,7 @@ footer{
   	font-size: 15px;
 }
 .flex-footer ul li a {
-  	padding: 0.3VW;
+  	padding-left: 27px;
   	text-decoration: none;
   	color: rgba(0,0,0,0.54);
 }	
