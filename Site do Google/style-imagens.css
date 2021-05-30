@@ -1,6 +1,15 @@
 *{
   margin: 0px;
 }
+#grid-alinhamento-horizontal{
+	display: grid;
+	grid-row-gap: 2px;
+	grid-template-rows: auto auto auto auto;	
+}
+.alinhamento-horizontal{
+	width:100%;
+}
+/* Menu */
 #menu{
   height: 40px;
   padding: 4px;
@@ -56,10 +65,8 @@
   align-items: center;
 }
 /* Conteúdo */
-section{
-  font-family: 'Source Sans Pro', sans-serif;
-}
 .flex-section{
+  font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
   display: flex;
   flex-wrap: nowrap;
@@ -180,11 +187,6 @@ section{
   height: 2px;
 }
 /* Footer Style */
-#footer{
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
 .flex-footer{
   text-align: center;
   background-color: #F2F2F2;
@@ -233,4 +235,3 @@ section{
   text-decoration:underline;
   color: #808080;
 }
-
