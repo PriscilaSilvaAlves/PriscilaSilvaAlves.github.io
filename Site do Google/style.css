@@ -1,7 +1,14 @@
 *{
 	margin: 0px;
 }
+#grid-alinhamento-horizontal{
+	display: grid;
+	grid-row-gap: 2px;
+	grid-template-columns: auto auto auto;
+}
 /* Menu Style */
+.alinhamento-horizontal{
+	width:100%;
 #menu{
 	height: 40px;
 	padding: 4px;
@@ -58,7 +65,7 @@
 	align-items: center;
 }
 /* Conteúdo */
-section{
+.alinhamento-horizontal{
 	font-family: 'Source Sans Pro', sans-serif;
 	margin: 2px 0px 2px 0px;
 }
@@ -160,9 +167,7 @@ section{
 	margin-top: 20px;
 }
 /* Footer Style */
-#footer{
-	position: fixed;
-	bottom: 0;
+.alinhamento-horizontal{
 	width: 100%;
 }
 .flex-footer{
