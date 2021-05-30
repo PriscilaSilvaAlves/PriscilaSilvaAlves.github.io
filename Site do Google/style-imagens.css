@@ -194,20 +194,19 @@ footer{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-top: 1px solid #E4E4E4;
 }
 .flex-footer-inter1{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid #E4E4E4; 
+  align-items: center; 
 }
 .flex-footer-inter2{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid #E4E4E4; 
+  align-items: center; 
 }
 .flex-footer-inter1 a{
   text-decoration:none;
