@@ -180,7 +180,7 @@ section{
   height: 2px;
 }
 /* Footer Style */
-footer{
+#footer{
   position: fixed;
   bottom: 0;
   width: 100%;
