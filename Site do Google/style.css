@@ -1,5 +1,7 @@
 *{
 	margin: 0px;
+}
+html,body{
 	min-height: 100%;
 }
 #grid-alinhamento-horizontal{
