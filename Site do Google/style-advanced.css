@@ -169,9 +169,9 @@ footer{
   	margin: 0px;
   	height: 40px;
   	font-size: 15px;
+	padding: 27px;
 }
 .flex-footer ul li a {
-  	padding-left: 27px;
   	text-decoration: none;
   	color: rgba(0,0,0,0.54);
 }	
