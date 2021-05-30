@@ -143,6 +143,7 @@ table tr td{
 footer{
   position: fixed;
   bottom: 1;
+  width: 100%;
 }
 .flex-footer{
 	text-align: center;
