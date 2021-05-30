@@ -149,7 +149,7 @@ footer{
 .flex-footer{
 	text-align: center;
 	background-color: #F2F2F2;
-  	color: rgba(0,0,0,.54);
+  	color: rgba(0,0,0,0.54);
   	height: 42px;
   	display: flex;
   	font-family: font-family: arial,sans-serif;
@@ -174,7 +174,7 @@ footer{
 .flex-footer ul li a {
   	padding: 0.3VW;
   	text-decoration: none;
-  	color: rgba(0,0,0,.54);
+  	color: rgba(0,0,0,0.54);
 }	
 .flex-footer a:hover{
 	text-decoration:underline;
