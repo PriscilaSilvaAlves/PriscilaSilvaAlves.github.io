@@ -186,8 +186,8 @@ footer{
   width: 100%;
 }
 .flex-footer{
-	text-align: center;
-	background-color: #F2F2F2;
+  text-align: center;
+  background-color: #F2F2F2;
   height: 42px;
   font-size: 14px;
   font-family: arial,sans-serif;
@@ -200,21 +200,23 @@ footer{
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid #E4E4E4; 
 }
 .flex-footer-inter2{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid #E4E4E4; 
 }
 .flex-footer-inter1 a{
-	text-decoration:none;
+  text-decoration:none;
   color: #808080;
   margin: 10px;
   margin-left: 25px;
 }
 .flex-footer-inter2 a{
-	text-decoration:none;
+  text-decoration:none;
   color: #808080;
   margin: 10px;
   margin-right: 25px;
@@ -225,11 +227,11 @@ footer{
   margin-left: 23px;
 }
 .flex-footer-inter1 a:hover{
-	text-decoration:underline;
+  text-decoration:underline;
   color: #808080;
 }
 .flex-footer-inter2 a:hover{
-	text-decoration:underline;
+  text-decoration:underline;
   color: #808080;
 }
 
