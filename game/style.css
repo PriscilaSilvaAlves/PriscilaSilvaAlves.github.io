@@ -1,0 +1,75 @@
+body{
+  display: grid;
+  place-items: center;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(90deg, #D3D3D3, #808080);
+  background-repeat: no-repeat;
+  background-size: 100% 300%;
+}
+#titulo{
+  margin-top: 30px;
+  font-size: 65px;
+  font-family: 'ZCOOL KuaiLe', cursive;
+  font-weight: bold;
+  animation-name: titulo;
+  animation-duration: 10s;
+}
+button{
+  margin-top: 20px;
+  height: 40px;
+  background: #F3F3F3;
+  border: 1px solid #F3F3F3;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+button:hover{
+  border: 1px solid blue;
+}
+#grid{
+  margin-top: 20px;
+  display: grid;
+  grid-column-gap: 50px;
+  height: 240px;
+  grid-template-columns: 300px 300px;
+}
+.grid-class{
+  background: grey;
+  color:white;
+  font-weight: bolder;
+  text-align: center;
+  border-radius: 5px;
+}
+.formatChoices{
+  margin-top: 15px;
+  font-size: 25px;
+}
+.resultComputer, .resultYou{
+  margin-top: 10px;
+  font-size: 25px;
+  font-family: 'ZCOOL KuaiLe', cursive;
+}
+#resultado{
+  margin-top: 30px;
+  width: 650px;
+  height: 50px;
+  background: grey;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 5px;
+  color:white;
+  font-family: 'Sigmar One', cursive;
+  text-stroke: 2px blue;
+}
+#listYou, #listComputer, #result{
+  list-style: none;
+  margin:0px;
+  padding:0px;
+}
+@keyframes titulo {
+  from{
+    color:transparent;
+  }
+  to{
+    color:black;
+  }
+}
