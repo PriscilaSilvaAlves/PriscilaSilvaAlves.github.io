@@ -51,7 +51,7 @@ function playRound(you, computer){
     alert(cw);
     contComputer++;
   }else{
-    alert("Wrong value.");
+    alert("Wrong value. The computer won the round.");
     contComputer++;
   }
 }
