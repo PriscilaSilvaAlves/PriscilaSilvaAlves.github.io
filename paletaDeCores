@@ -1,1 +1,0 @@
-execute o index.html
