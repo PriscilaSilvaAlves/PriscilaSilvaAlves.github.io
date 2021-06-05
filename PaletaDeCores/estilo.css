@@ -1,0 +1,40 @@
+body{
+  display: grid;
+  place-items: center;
+  background: #F8F8F8;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+}
+#gridID{
+  display: grid;
+  grid-column-gap: 1px;
+  grid-template-columns: auto auto auto;
+}
+.classID{
+  text-align: center;
+}
+#matriz{
+  width: 150px;
+}
+#topo{
+  margin-top: 5px;
+  width: 512px; /* É múltiplo de 2*/
+  height: 50px;
+  background: white;
+  border: 1px solid #C8C8C8;
+}
+#corpo{
+  margin-top: 5px;
+  background: white;
+  width: 512px;
+  height: 512px;
+  border: 1px solid #C8C8C8;
+}
+#gd{
+  width: 512px;
+  height: 512px;
+  display: grid;
+}
+.gridClass{
+  border: 1px solid #F8F8F8;
+}
