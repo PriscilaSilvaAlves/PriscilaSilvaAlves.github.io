@@ -64,6 +64,7 @@ function limpar(){
   listNum2=[];
   publicar='';
   operacaoMatematica='';
+  document.getElementById('dados').innerHTML=" "
   document.getElementById('resultado').innerHTML=publicar;
 }
 function sqrt(){
