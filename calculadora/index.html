@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body>
+    <div id="gd">
+      <div class="gdc"></div>
+      <div class="gdc">
+        <div id="gd2">
+          <div class="gdc2"></div>
+          <div class="gdc2" id="calculadora">
+            <button id="dados"></button>
+            <button id="resultado"></button>
+              <div id="elementos">
+                <button id="del" onclick="delNumber()">Del</button>
+                <button id="ac" onclick="limpar()">AC</button>
+                <button id="sqrt" onclick="sqrt()" value="√">√</button>
+                <button id="exp" onclick="exp()" value="^">x<sup>y</sup></button>
+                <button id="sete" onclick="insertSete()" value="7">7</button>
+                <button id="oito" onclick="insertOito()" value="8">8</button>
+                <button id="nove" onclick="insertNove()" value="9">9</button>
+                <button id="dividido" onclick="dividido()" value="/">/</button>
+                <button id="quatro" onclick="insertQuatro()" value="4">4</button>
+                <button id="cinco" onclick="insertCinco()" value="5">5</button>
+                <button id="seis" onclick="insertSeis()" value="6">6</button>
+                <button id="vezes" onclick="vezes()" value="x">x</button>
+                <button id="um" onclick="insertUm()" value="1">1</button>
+                <button id="dois" onclick="insertDois()" value="2">2</button>
+                <button id="tres" onclick="insertTres()" value="3">3</button>
+                <button id="menos" onclick="menos()" value="-">-</button>
+                <button id="zero" onclick="insertZero()" value="0">0</button>
+                <button id="ponto" onclick="ponto()" value=".">.</button>
+                <button id="igual" onclick="calc()">=</button>
+                <button id="mais" onclick="mais()" value="+">+</button>
+             </div>
+          </div>
+          <div class="gdc2"></div>
+        </div>
+      </div>
+      <div class="gdc"></div>
+    </div>
+  </body>
+</html>
