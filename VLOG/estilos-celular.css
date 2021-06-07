@@ -45,7 +45,7 @@ iframe {
 .logo{
 	float:left;
 	background-color:#DAA520;
-  width: 100%;
+  	width: 100%;
 }
 .menu ul ul {
   position: absolute;
@@ -110,9 +110,11 @@ iframe {
 }
 .corpo-filme-branco{
   background-color: white;
+  width: 100%;
 }
 .corpo-filme-colorido{
 	background-color: #FFFDD0;
+	width: 100%;
 }
 .link-avaliacao {
   text-align: center;
