@@ -59,6 +59,7 @@ function sqrt(){
   }
   if(listNum.length==cont){
     listNum1=listNum;
+    var stringList1=listNum1.join('');
     listNum=[];
     document.getElementById('dados').innerHTML="√" +stringList1 + " = "
     var result=Math.sqrt(stringList1);
