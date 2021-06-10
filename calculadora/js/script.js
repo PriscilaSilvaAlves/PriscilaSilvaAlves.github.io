@@ -69,7 +69,6 @@ function sqrt(){
 function exp(){
   var cont=0;
   operacaoMatematica = document.getElementById('exp').value;
-  console.log(operacaoMatematica)
   for (var i = 0; i < listNum.length; i++){
     if(listNum[i]!='+' && listNum[i]!='-' && listNum[i]!='X' && listNum[i]!='/' && listNum[i]!='√' && listNum[i]!='^'){
       cont++;
