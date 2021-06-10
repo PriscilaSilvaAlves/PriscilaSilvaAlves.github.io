@@ -4,51 +4,33 @@ var listNum2=[];
 var publicar='';
 var operacaoMatematica='';
 function calc(){
-  console.log(listNum1)
-  console.log(listNum)
   listNum2=listNum;
-  console.log(listNum2)
   var stringList1=listNum1.join('');
-  console.log(stringList1)
   var stringList2=listNum2.join('');
-  console.log(stringList2)
-  console.log(operacaoMatematica)
   if(operacaoMatematica=='+'){
-    console.log("Entrou no calculo do mais")
     document.getElementById('dados').innerHTML=stringList1 + " + " + stringList2 + " = "
     var result=parseFloat(stringList1) + parseFloat(stringList2);
-    console.log(result)
     document.getElementById('resultado').innerHTML=result;
   }else if(operacaoMatematica=='-'){
-    console.log("Entrou no calculo do menos")
     document.getElementById('dados').innerHTML=stringList1 + " - " + stringList2 + " = "
     var result=parseFloat(stringList1) - parseFloat(stringList2);
     document.getElementById('resultado').innerHTML=result;
-    console.log(result)
   }else if(operacaoMatematica=='/'){
-    console.log("Entrou no calculo da divisao")
     document.getElementById('dados').innerHTML=stringList1 + " / " + stringList2 + " = "
     var result=parseFloat(stringList1) / parseFloat(stringList2);
     document.getElementById('resultado').innerHTML=result;
-    console.log(result)
   }else if(operacaoMatematica=='x'){
-    console.log("Entrou no calculo da multiplicacao")
     document.getElementById('dados').innerHTML=stringList1 + " X " + stringList2 + " = "
     var result=parseFloat(stringList1) * parseFloat(stringList2);
     document.getElementById('resultado').innerHTML=result;
-    console.log(result)
   }else if(operacaoMatematica=='^'){
-    console.log("Entrou no calculo do expoente")
     document.getElementById('dados').innerHTML=stringList1 + "^" + stringList2 + " = "
     var result=Math.pow(parseFloat(stringList1), parseInt(stringList2));
     document.getElementById('resultado').innerHTML=result;
-    console.log(result)
   }else if(operacaoMatematica=='√'){
-    console.log("Entrou no calculo da raiz de base 2")
     document.getElementById('dados').innerHTML="√" +stringList1 + " = "
     var result=Math.sqrt(stringList1);
     document.getElementById('resultado').innerHTML=result;
-    console.log(result)
   }
 }
 function delNumber(){
@@ -78,7 +60,9 @@ function sqrt(){
   if(listNum.length==cont){
     listNum1=listNum;
     listNum=[];
-    document.getElementById('resultado').innerHTML=operacaoMatematica;
+    document.getElementById('dados').innerHTML="√" +stringList1 + " = "
+    var result=Math.sqrt(stringList1);
+    document.getElementById('resultado').innerHTML=result;
   }
 }
 function exp(){
