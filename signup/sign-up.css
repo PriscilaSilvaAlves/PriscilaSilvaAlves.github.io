@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: 'Norse';
+    src: url('Norse-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+#left{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    height: 100vh;
+    font-size: 25px;
+}
+#container{
+    display: flex;  
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+}
+.right{
+    height: 100vh;
+    width: 100%;
+    background-image: url("pandu-ior.jpg");
+    background-position:center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#top{
+    background-color: #F0F0F0;
+    height: 33vh;
+    padding: 40px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+#middle{
+    background-color: white;
+    height: 33vh;
+    padding: 40px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+#down{
+    background-color: #F0F0F0;
+    height: 34vh;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 40px;
+}
+.table label{
+    font-size: 15px;
+    font-family: 'Rajdhani', sans-serif;
+}
+table tr td input{
+    width: 300px;
+}
+#text4{
+    font-size: 15px;
+}
+button{
+    background-color: #556b2f;
+    border: 1px solid #556b2f;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 6px;
+}
+#text4 span a{
+    color: #556b2f;
+    text-decoration: none;
+}
+#top1{
+    height: 33vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+#down1{
+    height: 77vh;
+    width: 100%;
+}
+#banner{
+    background-color: black;
+    opacity: 0.8;
+    height: 20vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+#banner img{
+    height: 15vh;
+    width: auto;
+}
+#text5{
+    font-size: 60px;
+    font-weight: bolder;
+    font-family: 'Norse';
+}
+#text1, #text2, #text3, #text4, button{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: bolder;
+}
