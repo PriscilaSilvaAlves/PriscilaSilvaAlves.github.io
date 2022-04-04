@@ -85,6 +85,10 @@ table tr td input:focus{
     width: 100%;
     color: white; 
 }
+#authorimg a{
+    text-decoration: none;
+    color: white;
+}
 #banner{
     background-color: black;
     opacity: 0.8;
