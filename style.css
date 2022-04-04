@@ -25,7 +25,7 @@
 }
 .right{
     height: 100vh;
-    background-image: url("pandu-ior.jpg");
+    background-image: url("background.jpeg");
     background-position:center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -110,7 +110,7 @@ table tr td input:focus{
 #image img{
     width: 160px;
     border-radius: 80px;
-    box-shadow: 0px 0px 4px 1px #596D48;
+    box-shadow: 0px 0px 4px 1px grey;
 }
 @media(orientation: portrait){
     #container{
