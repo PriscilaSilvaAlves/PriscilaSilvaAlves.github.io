@@ -95,6 +95,7 @@ table tr td input:focus{
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 10px;
 }
 #text5{
     font-size: 40px;
