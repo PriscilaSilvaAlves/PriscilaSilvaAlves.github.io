@@ -146,6 +146,7 @@
 .barraFalsa input{
 	background-color: transparent;
 	border: none;
+	box-shadow: 0px white;
 	height: 15px;
 	width: 480px;
 	font-size: 20px;
