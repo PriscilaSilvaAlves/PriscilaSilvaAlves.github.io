@@ -61,6 +61,7 @@
 table tr td input{
     width: 300px;
     border: 1px solid #E5E7EB;
+    outline: none;
 }
 table tr td input:focus{
     border: 1px solid blue;
