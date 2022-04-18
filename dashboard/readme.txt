@@ -1,1 +1,1 @@
-Execute o index.html
+Execute o dashboard.html
