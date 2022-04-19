@@ -111,15 +111,6 @@ table tr td input:focus{
     border-radius: 80px;
     box-shadow: 0px 0px 4px 1px grey;
 }
-.javascript{
-    background-color: #dbeafe;   
-}
-.htmlcss{
-    background-color: #ede9fe;
-}
-.academic{
-    background-color: #fce7f3; 
-}
 @media(orientation: portrait){
     #container{
         display: flex;  
