@@ -112,13 +112,13 @@ table tr td input:focus{
     box-shadow: 0px 0px 4px 1px grey;
 }
 .javascript{
-    background-color: #eff6ff;   
+    background-color: #dbeafe;   
 }
 .htmlcss{
-    background-color: #f5f3ff;
+    background-color: #ede9fe;
 }
 .academic{
-    background-color: #fdf2f8; 
+    background-color: #fce7f3; 
 }
 @media(orientation: portrait){
     #container{
