@@ -125,7 +125,7 @@ function openForm(){
     document.getElementById("alreadyread").appendChild(option1);
     var option2 = document.createElement("option");
     option2.setAttribute("value","Did not Read");
-    option2.innerHTML="Not";
+    option2.innerHTML="No";
     document.getElementById("alreadyread").appendChild(option2);
 
     var addbuttons = document.createElement("div");
