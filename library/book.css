@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 90px auto;
+    grid-template-columns: 100%;
+}
+#menu{
+    background-color: #155e75;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+}
+#library{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+}
+#menu button{
+    height: 50px;
+    width: 200px;
+    background-color: #d1d5db;
+    border: 0;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#container1{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: white;
+}
+.book{
+    background-color: #ca8a04;
+    border-radius: 3px;
+    border-left: 8px solid #854d0e;
+    box-shadow: 0px 0px 4px 1px #fef08a;
+    color:white;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    height: 300px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    gap: 10px;
+}
+.title, .author, .pages, .lido{
+    text-align: center;
+}
+.btnrmv, .btnmd{
+    height: 30px;
+    width: 150px;
+    font-size: 16px;
+    background-color: #713f12;
+    border: 0px;
+    border-radius: 3px;
+    color: white;
+}
+#addbook{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px;
+    justify-content: center;
+    box-shadow: 0px 0px 4px 1px grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 8px;
+}
+#addcontent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+#addtitle, #addauthor, #addpages, #addread{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#addbuttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 20px;
+}
+#addbuttons button{
+    height: 30px;
+    width: 150px;
+    font-size: 16px;
+    background-color: #d1d5db;
+    border: 0px;
+    border-radius: 5px;
+}
