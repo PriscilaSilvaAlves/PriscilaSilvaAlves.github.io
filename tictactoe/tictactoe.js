@@ -153,7 +153,7 @@ function printWinner(vencedor){
   var button = document.createElement("button");
   button.setAttribute("id","playAgain");
   button.setAttribute("onclick","newGame()");
-  button.innerHTML="Jogar novamente";
+  button.innerHTML="Play Again!";
   document.getElementById("container3").appendChild(button);
   document.getElementById("bt1").style.fontSize="40px";
   document.getElementById("bt1").innerHTML="Game Over";
