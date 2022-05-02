@@ -148,12 +148,10 @@ function openForm(){
 }
 function fechar(){
     document.getElementById("addbook").removeAttribute("style");
-    var node = document.getElementById("addcontent");
-    if (node.parentNode) {
-        node.parentNode.removeChild(node);
-    }
-    var node = document.getElementById("addbuttons");
-    if (node.parentNode) {
-        node.parentNode.removeChild(node);
+    var node1 = document.getElementById("addcontent");
+    var node2 = document.getElementById("addbuttons");
+    if (node1.parentNode) {
+        node1.parentNode.removeChild(node1);
+        node2.parentNode.removeChild(node2);
     }
 }
