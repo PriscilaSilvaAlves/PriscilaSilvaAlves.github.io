@@ -102,6 +102,9 @@ table tr td input:focus{
     font-weight: bolder;
     font-family: arial;
 }
+#text6{
+    color: yellow;   
+}
 #text1, #text3, #text4, button{
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: bolder;
