@@ -1,1 +1,1 @@
-O código da página está em index.html
+O arquivo principal é o index.html
