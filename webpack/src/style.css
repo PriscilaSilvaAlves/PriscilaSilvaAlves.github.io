@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#content{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px auto;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+}
+#top{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around; 
+    padding-left: 50px;  
+}
+#topRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#topLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#topRight img{
+    height: 60px;
+}
+#menu{
+    background-color: white;
+    width: 500px;
+    height: 60px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+    font-size: 20px;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+.menu:hover, .menu:focus{
+    background-color: red;
+    color: white;
+} 
+.menu:active{
+    transform: scale(0.98);
+}
+#down{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('./burger.jpg');
+    background-size: auto 100%;
+}
+#quadro{
+    height: 60vh;
+    width: 60vw;
+    background-color: black;
+    opacity: 0.9;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    color: white;
+    flex-direction:column;
+    gap: 40px;
+    padding: 40px;
+    margin: 40px;
+    overflow: scroll;
+}
+#messange, #title{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+#quadro img{
+    height: 200px;
+    width: auto;
+}
+#item1{
+    background-image: url('./xburguer.jpg');
+    background-size: 100% auto;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+#item2{
+    background-image: url('./xfrango.png');
+    background-size: 100% auto;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+#item3{
+    background-image: url('./xsalada.jpg');
+    background-size: 100% auto;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+#item4{
+    background-image: url('./bauru.jpg');
+    background-size: 100% auto;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+#item5{
+    background-image: url('./xfrango.png');
+    background-size: 100% auto;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+#item6{
+    background-image: url('./xburguer.jpg');
+    background-size: 100% auto;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+#item7{
+    background-image: url('./xburguer.jpg');
+    background-size: 100% auto;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+#item8{
+    background-image: url('./xburguer.jpg');
+    background-size: 100% auto;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+#item9{
+    background-image: url('./xburguer.jpg');
+    background-size: 100% auto;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+#item10{
+    background-image: url('./xburguer.jpg');
+    background-size: 100% auto;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+#d1, #d2, #d3, #d4, #d5, #d6, #d7, #d8, #d9, #d10{
+    width: 200px;
+    height: 40px;
+    font-size: 17px;
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.selection{
+    height: 0px;
+    width: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0;
+}
+#item1:hover > .selection, #item2:hover > .selection, #item3:hover > .selection, #item4:hover > .selection, #item5:hover > .selection, #item6:hover > .selection, #item7:hover > .selection, #item8:hover > .selection, #item9:hover > .selection, #item10:hover > .selection{
+    background-color: red;
+    height: 160px;
+    width: 200px;
+    font-size: 60px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#item1:hover, #item2:hover, #item3:hover, #item4:hover, #item5:hover, #item6:hover,  #item7:hover, #item8:hover, #item9:hover, #item10:hover{
+    border: 2px solid #AE0000;
+}
+#item1:active, #item2:active, #item3:active, #item4:active, #item5:active, #item6:active, #item7:active, #item8:active, #item9:active, #item10:active{
+    border: none;
+}
+iframe{
+    height: 250px;
+    width: 600px;
+}
+#address, #phone{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
