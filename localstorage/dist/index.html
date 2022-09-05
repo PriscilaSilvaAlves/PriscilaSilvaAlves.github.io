@@ -30,11 +30,13 @@
         //Funções do Facebook para coleta de dados:
         //
         function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
-         // The current login status of the person.
+          console.log('statusChangeCallback');
+          console.log(response);                   // The current login status of the person.
           if (response.status === 'connected') {   // Logged into your webpage and Facebook.
             testAPI();  
           } else {                                 // Not logged into your webpage or we are unable to tell.
-            
+            document.getElementById('status').innerHTML = 'Please log ' +
+              'into this webpage.';
           }
         }
         function checkLoginState() {               // Called when a person is finished with the Login Button.
@@ -54,10 +56,13 @@
           });
         };
         function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
+          console.log('Welcome!  Fetching your information.... ');
           FB.api('/me', {fields: 'first_name,last_name,email,picture'}, function(response) {
+            console.log('Successful login for: ' + response.name);
             localStorage.setItem("firstName",response.first_name);
             localStorage.setItem("Email",response.email);
             localStorage.setItem("Foto",response.picture.data.url);
-            window.location.href="https://priscilasilvaalves.github.io/localstorage/index2.html";
+            window.location.href="https://localhost/todolist/files/index2.html";
           });
-        }</script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script></head><body><div id="fb-root"></div><div id="center"><div id="centertop"><h1>Todo List</h1></div><div id="centerdown"><div id="login"><h1>Sign Up</h1></div><div id="btns"><div id="buttonDiv"></div><div class="fb-login-button" data-width="300" data-size="large" data-button-type="login_with" data-layout="rounded" data-auto-logout-link="false" data-use-continue-as="false" onlogin="checkLoginState();" scope="public_profile"></div></div></div></div></body></html>
+        }
+      </script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script></head><body><div id="fb-root"></div><div id="center"><div id="centertop"><h1>Todo List</h1></div><div id="centerdown"><div id="login"><h1>Sign Up</h1></div><div id="btns"><div id="buttonDiv"></div><div class="fb-login-button" data-width="300" data-size="large" data-button-type="login_with" data-layout="rounded" data-auto-logout-link="false" data-use-continue-as="false" onlogin="checkLoginState();" scope="public_profile"></div></div></div></div></body></html>
