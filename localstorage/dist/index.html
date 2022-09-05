@@ -57,6 +57,16 @@
         };
         function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
           console.log('Welcome!  Fetching your information.... ');
+          FB.login(function(response) {
+                if (response.authResponse) {
+                 console.log('Welcome!  Fetching your information.... ');
+                 FB.api('/me', function(response) {
+                   console.log('Good to see you, ' + response.name + '.');
+                 });
+                } else {
+                 console.log('User cancelled login or did not fully authorize.');
+                }
+            });
           FB.api('/me', {fields: 'first_name,last_name,email,picture'}, function(response) {
             console.log('Successful login for: ' + response.name);
             localStorage.setItem("firstName",response.first_name);
