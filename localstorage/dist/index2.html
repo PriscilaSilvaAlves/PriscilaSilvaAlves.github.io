@@ -1,0 +1,41 @@
+<!doctype html><head><meta charset="utf-8"/><title>Todo List</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@600&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap" rel="stylesheet"><script src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script></head><body><script>window.addEventListener('DOMContentLoaded', (event) => {
+                const taskNumber=localStorage.getItem("TaskNumber");
+                const tn = parseInt(taskNumber);
+                var projects=[];
+                for(var i=0; i<taskNumber;i++){
+                    var num = i+1;
+                    if(localStorage.getItem("task"+num)!=null && localStorage.getItem("Email")!=null){
+                        const task = localStorage.getItem("task"+num);
+                        const email = localStorage.getItem("Email");
+                        const taskList = task.split(",");
+                        projects.push(taskList[2]);
+                        var err=0;
+                        for(var j=0;j<projects.length;j++){
+                            if(projects[j]==taskList[2]){
+                                err++;
+                            }
+                        }
+                        if(email==taskList[6] && err==1  && taskList[2]!=null && taskList[2]!=""){
+                            const option = document.createElement("option");
+                            option.setAttribute("value",taskList[2]);
+                            option.innerHTML=taskList[2];
+                            document.getElementById("proj").appendChild(option);
+                            //Create button:
+                            const div = document.createElement("div");
+                            div.setAttribute("class","clepp");
+                            div.setAttribute("id","clepn"+num);
+                            const btn = document.createElement("button");
+                            btn.setAttribute("id","btnproj"+num);
+                            btn.setAttribute("onclick","showProjeto('"+taskList[2]+"')");
+                            btn.innerHTML=taskList[2];
+                            document.getElementById("clep").appendChild(div);
+                            document.getElementById("clepn"+num).appendChild(btn);
+                        }  
+                    }
+                }
+            });</script><div id="documento"><div id="menuSuperior"><div id="mse"><div id="mseicon"><button onclick="menuLateral()"><img src="view-dashboard.png"></button></div><div id="mselogo">Todo List</div></div><div id="msd"><div id="msdtext"><div id="msdtext1">Welcome</div><div id="msdtext2"></div></div><div id="msdimg"></div><img src="logout.png" onclick="logout()"></div></div><div id="corpo"><div id="cle"><div id="cles"><div id="th" class="btn"><button onclick="showToday()">Show today's tasks</button></div><div id="ts" class="btn"><button onclick="showWeek()">Show next 7 days tasks</button></div><div id="tf" class="btn"><button onclick="showAll()">Show all tasks</button></div></div><div id="clet">Projects:</div><div id="clep"></div></div><div id="cld"><div id="cldt"><table><tr><th class="cldttext">Title:</th><th colspan="4"><input id="title"></th></tr><tr><th class="cldttext">Description:</th><th colspan="4"><input id="description"></th></tr><tr><th class="cldttext">Project:</th><th colspan="2"><input id="projectname"></th><th id="option"><button onclick="createProject()">Create</button></th><th id="project"><select name="Project" id="proj"></select></th></tr><tr><th class="cldttext">Date:</th><th id="cldtdate"><input type="date" id="date"></th><th class="cldttext" colspan="2" id="pri">Priority:</th><th id="priority"><select name="priority" id="prior"><option value="Low">Low</option><option value="Normal">Normal</option><option value="High">High</option></select></th></tr><tr><th id="space"></th></tr><tr><th></th><th></th><th></th><th></th><th id="cldtbtn"><button onclick="createTask()">Submit</button></th></tr></table></div><div id="cldd"></div></div><div id="edit"></div></div></div><script>const firstName=localStorage.getItem("firstName");
+            const foto=localStorage.getItem("Foto");
+            document.getElementById("msdtext2").innerHTML=firstName;
+            const photo = document.createElement("img");
+            photo.setAttribute("src",foto);
+            document.getElementById("msdimg").appendChild(photo);</script></body>
