@@ -62,14 +62,10 @@
                     function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
                       console.log('Welcome!  Fetching your information.... ');
                       FB.api('/me', {fields: 'first_name,email,picture'}, function(response) {
-                        console.log('Successful login for: ' + response.name);
+                        console.log('Successful login for: ' + response.first_name);
                         localStorage.setItem("firstName",response.first_name);
                         localStorage.setItem("Email",response.email);
                         localStorage.setItem("Foto",response.picture.data.url);
-                            console.log(response.first_name);
-                            console.log(response.email);
-                            console.log(response.picture);
-                            console.log(response);
                         //window.location.href="https://localhost/todolist/files/index2.html";
                       });
                     }
