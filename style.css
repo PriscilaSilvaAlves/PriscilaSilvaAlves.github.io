@@ -115,6 +115,9 @@ table tr td input:focus{
     border-radius: 80px;
     box-shadow: 0px 0px 4px 1px grey;
 }
+td{
+ width: 300px;   
+}
 @media(orientation: portrait){
     #container{
         display: flex;  
