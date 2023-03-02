@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    width: 880px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    overflow:hidden;
+
+}
+.foto{
+    height: 400px;
+    width: 600px;
+    transform: translate(100%,0%);
+    transition: all 2s ease-in-out;
+}
+#botoes{
+    height: 10px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.botao{
+    height: 10px;
+    width: 10px;
+    border: 0;
+    border-radius: 5px;
+}
+#bt1{
+    background-color: #9ca3af;
+}
+#bt2{
+    background-color: #d1d5db;
+}
+#bt3{
+    background-color: #d1d5db;
+}
+#setas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 900px;
+    top: 50%;
+    position: absolute;
+}
+.seta{
+    background-color: #d1d5db;
+    border: 0;
+    border-radius: 10px;
+    height: 20px;
+    width: 20px;
+    color: white;
+    font-size: 20px;
+    align-items: center;
+}
+.seta:hover{
+    background-color: #9ca3af;
+}
+.seta:active{
+    transform: scale(0.8);
+}
