@@ -74,9 +74,13 @@ class Book{
 }
 class Form{
     static openForm(){
+        var form = document.createElement("form");
+        form.setAttribute("id","form");
+        document.getElementById("addbook").appendChild(form);
+
         var addcontent = document.createElement("div");
         addcontent.setAttribute("id","addcontent");
-        document.getElementById("addbook").appendChild(addcontent);
+        document.getElementById("form").appendChild(addcontent);
     
         var addtitle = document.createElement("div");
         addtitle.setAttribute("id","addtitle");
@@ -87,6 +91,10 @@ class Form{
         var addinput1 = document.createElement("input");
         addinput1.setAttribute("type","text");
         addinput1.setAttribute("id","texttitle");
+        addinput1.required=true;
+        addinput1.setAttribute("name","title");
+        addinput1.setAttribute("minlength","3");
+        addinput1.setAttribute("maxlength","60");
         document.getElementById("addtitle").appendChild(addinput1);
     
         var addauthor = document.createElement("div");
@@ -98,6 +106,10 @@ class Form{
         var addinput2 = document.createElement("input");
         addinput2.setAttribute("type","text");
         addinput2.setAttribute("id","textauthor");
+        addinput2.required=true;
+        addinput2.setAttribute("name","author");
+        addinput2.setAttribute("minlength","3");
+        addinput2.setAttribute("maxlength","60");
         document.getElementById("addauthor").appendChild(addinput2);
     
         var addpages = document.createElement("div");
@@ -107,8 +119,13 @@ class Form{
         addlabel3.innerHTML="Number of Pages:";
         document.getElementById("addpages").appendChild(addlabel3);
         var addinput3 = document.createElement("input");
-        addinput3.setAttribute("type","text");
+        addinput3.setAttribute("type","number");
         addinput3.setAttribute("id","textpages");
+        addinput3.required=true;
+        addinput3.setAttribute("min","1");
+        addinput3.setAttribute("max","2000");
+        addinput3.setAttribute("step","1");
+        addinput3.setAttribute("name","numpages");
         document.getElementById("addpages").appendChild(addinput3);
     
         var addread = document.createElement("div");
@@ -132,7 +149,7 @@ class Form{
     
         var addbuttons = document.createElement("div");
         addbuttons.setAttribute("id","addbuttons");
-        document.getElementById("addbook").appendChild(addbuttons);
+        document.getElementById("form").appendChild(addbuttons);
         var button1 = document.createElement("button");
         button1.setAttribute("onclick","Book.newBook()");
         button1.innerHTML="Add a new book";
@@ -144,7 +161,7 @@ class Form{
     
         document.getElementById("addbook").style.position="fixed";
         document.getElementById("addbook").style.width="400px";
-        document.getElementById("addbook").style.height="200px";
+        document.getElementById("addbook").style.height="220px";
         document.getElementById("addbook").style.backgroundColor="white";
         document.getElementById("addbook").style.padding="20px";
     }
@@ -160,3 +177,7 @@ class Form{
 }
 const form = new Form();
 form.openForm();
+
+
+
+

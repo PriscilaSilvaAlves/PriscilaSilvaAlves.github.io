@@ -1,7 +1,7 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-        
+        <meta http-equiv="Content-type" content="text/html"; charset="utf-8" />
         <title>Book</title>
         <link rel="stylesheet" href="book.css">
         <script type="text/javascript" src="book-ob.js"></script>
@@ -19,5 +19,43 @@
         <div id="addbook">
             
         </div>
+        <script>
+            document.addEventListener('click', function(){
+                const titulo = document.getElementById("texttitle");
+                titulo.addEventListener("input", (event) => {
+                    if (titulo.validity.tooLong) {
+                        titulo.setCustomValidity("Title is too long, it needs to be less than 60 characters.");
+                    }else if(titulo.validity.tooShort){
+                        titulo.setCustomValidity("Title is too short, it needs to be more than 3 characters.");
+                    } else {
+                        titulo.setCustomValidity("");
+                    }
+                });
+                const autor = document.getElementById("textauthor");
+                autor.addEventListener("input", (event) => {
+                    if (autor.validity.tooLong) {
+                        autor.setCustomValidity("Author is too long, it needs to be less than 60 characters.");
+                    }else if(autor.validity.tooShort){
+                        autor.setCustomValidity("Author is too short, it needs to be more than 3 characters.");
+                    } else {
+                        autor.setCustomValidity("");
+                    }
+                });
+                const paginas = document.getElementById("textpages");
+                paginas.addEventListener("input", (event)=>{
+                    if (paginas.validity.rangeOverflow) {
+                        paginas.setCustomValidity("The number of pages is too large, it needs to be less than 2000.");
+                    }else if(paginas.validity.rangeUnderflow){
+                        paginas.setCustomValidity("The number of pages is too small, it needs to be greater than 1.");
+                    } else {
+                        paginas.setCustomValidity("");
+                    }
+                });
+                var form = document.querySelector('form');
+                form.addEventListener('submit', function(e){
+                    e.preventDefault(); 
+                });
+            });
+        </script>
     </body>
 </html>
