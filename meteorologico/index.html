@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Clima</title>
+        <link rel="stylesheet" href="estilo.css">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="busca">
+                <div id="title">Weather forecast</div>
+                <div id="labelinput">
+                    <label for="text">City</label>
+                    <input type="text" id="text">
+                </div>
+                <input type="submit" onclick="search()" value="Search" id="submit">
+                <button onclick="changeUnity()" id="btn">Change to Fahrenheit</button>
+            </div>
+            <div id="dados">
+                <div id="city"></div>
+                <div id="temperatura"></div>
+                <div id="details">
+                    <div class="details-c">
+                        <div>Min: </div>
+                        <div id="temp-min"></div>
+                    </div>
+                    <div class="details-c">
+                        <div>Max: </div>
+                        <div id="temp-max"></div>
+                    </div>
+                    <div class="details-c">
+                        <div>Humidity: </div>
+                        <div id="umidade"></div>
+                    </div>
+                    <div class="details-c">
+                        <div>Weather: </div>
+                        <div id="clima"></div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </body>
+</html>
