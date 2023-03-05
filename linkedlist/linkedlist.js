@@ -68,8 +68,10 @@ class LinkedList{
         let temp = this.fulllist;
         let lista = new Node(null, null);
         while(temp.nextNode != null){
-            lista.value=temp.value;
+            lista=temp;
+            temp=temp.nextNode;
         }
+        lista.nextNode=null;
     }
     contains(value){
         //retorna true se o value estiver na lista a false caso contrário
@@ -130,6 +132,7 @@ const tail = node.tail();
 console.log(tail);
 const node2 = node.at(1);
 console.log(node2);
+node.pop();
 const boo = node.contains("Pera");
 console.log(boo);
 const a = node.find("outro");
