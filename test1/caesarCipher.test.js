@@ -6,4 +6,5 @@ test("Check de Caesar Cipher", ()=>{
     expect(caesarCipher("amor, amor",25)).toBe("zlnq, zlnq");
     expect(() => caesarCipher("amor",26)).toThrow();
     expect(caesarCipher("zeus",25)).toBe("ydtr");
+    expect(caesarCipher("ZEus",25)).toBe("YDtr");
 })

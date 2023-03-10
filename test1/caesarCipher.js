@@ -19,6 +19,8 @@ function cipher(letter, n){
     for(var i = 0; i<26; i++){
         if(string[i]==letter){
             lettershifted=string[i+n];
+        }else if(string[i].toUpperCase()==letter){
+            lettershifted=string[i+n].toUpperCase();
         }
     }
     return lettershifted;
