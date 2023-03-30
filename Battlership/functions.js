@@ -1,10 +1,18 @@
 import { myCoordinates } from "./gameboard.js";
-import { attackPoints } from "./player.js";
 import { Gameboard } from "./gameboard.js";
 import { Player } from "./player.js";
 import { ship } from "./gameboard.js";
+import { attackOnTarget, hit, attackPoints } from "./player.js";
 
-export function receiveAttack(coordinate){  
+var myAttacks=[];
+
+export function receiveAttack(coordinate){ 
+    for(let i=0; i<myAttacks.length; i++){
+        if(coordinate==myAttacks[i]){
+            return false;
+        }
+    }
+    myAttacks.push(coordinate); 
     const game = new Gameboard();
     game.displayAttack(coordinate);
     const issAllSunk = game.receiveAttack(coordinate);
@@ -24,6 +32,8 @@ export function receiveAttack(coordinate){
     } 
 }
 export function placeShip(coordinate){
+    const audio = new Audio("ring.mp3");
+    audio.play();
     paintShips(coordinate);
     const game = new Gameboard();
     const ship = game.placeShips(coordinate);
@@ -40,7 +50,34 @@ function paintCoordinate(move){
     document.getElementById(move).style.backgroundColor="#fca5a5";
 }
 export function generateMove(){
-    var move = sortNumber(0);
+    if(hit==true){
+        if(attackOnTarget[attackOnTarget.length-2]!=null){
+            if(attackOnTarget[attackOnTarget.length-1]>attackOnTarget[attackOnTarget.length-2]){
+                move=attackOnTarget[attackOnTarget.length-1]+1;
+            }else{
+                move=attackOnTarget[attackOnTarget.length-1]-1;
+            }
+        }else{
+            move=attackOnTarget[attackOnTarget.length-1]+1;
+        }
+    }else{
+        if(attackOnTarget[attackOnTarget.length-1]!=null){
+            if(attackOnTarget[attackOnTarget.length-1]==attackPoints[attackPoints.length-2]){
+                var attack=attackOnTarget[attackOnTarget.length-1]-1;
+                for(let i=0; i<attackOnTarget.length; i++){
+                    if(attack==attackOnTarget[i]){
+                        attack--;
+                        i=0;
+                    }
+                }
+                move=attack;
+            }else{
+                var move = sortNumber(0);
+            }
+        }else{
+            var move = sortNumber(0);
+        }
+    }
     for(let i=0; i<attackPoints.length; i++){
         if(attackPoints[i]==move){
             move = sortNumber(0);

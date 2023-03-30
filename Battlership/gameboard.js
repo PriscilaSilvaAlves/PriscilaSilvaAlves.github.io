@@ -58,7 +58,7 @@ export class Gameboard{
             ship--;
             return [ship, myCoordinates];  
         }
-    }
+    } 
     displayScenario(){
         var sort=108;
         while(sort==108 || sort==109 || sort==110 || sort==118 || sort==119 || sort==120
