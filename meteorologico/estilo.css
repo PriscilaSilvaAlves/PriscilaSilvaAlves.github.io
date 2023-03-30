@@ -90,3 +90,49 @@ body{
     font-size: 30px;
     font-weight: bolder;
 }
+@media screen and (orientation: portrait) {
+    body{
+        background-size: auto 100%;
+    }
+    #container{
+        justify-content: center;
+        flex-direction: column;
+        gap: 100px;
+    }
+    #busca{
+        height: 800px;
+        width: 720px;
+        border-radius: 20px;
+    }
+    #title{
+        font-size: 90px;
+    }
+    #labelinput{
+        width: 620px;
+        gap: 20px;
+    }
+    #busca label{
+        font-size: 90px;
+    }
+    #busca input, #busca button{
+        width: 620px;
+        height: 90px;
+        font-size: 60px;
+    }
+    #labelinput input{
+        border: 4px solid black;
+    }
+    #dados{
+        width: 700px;
+        height: 700px;
+    }
+    #city{
+        font-size: 80px;
+    }
+    #temperatura{
+        font-size: 200px;
+    }
+    #details{
+        font-size: 60px;
+    }
+}
