@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    gap: 10px;
+    background-color: #f3f4f6;
+}
+#title{
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 50px;
+}
+#text{
+    font-size: 30px;
+}
+.battlefield{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+.field{
+    width: 38px;
+    height: 38px;
+    border: 1px solid black;
+}
+#area{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.opponent:hover{
+    background-color: red;
+}
+#alert{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 200px;
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+button{
+    width: 80px;
+    height: 30px;
+}
+@media screen and (orientation: portrait) {
+    #title{
+        font-size: 70px;
+    }
+    #text{
+        font-size: 40px;
+    }
+    .battlefield{
+        width: 800px;
+        height: 800px;
+    }
+    .field{
+        width: 76px;
+        height: 76px;
+        border: 2px solid black;
+    }
+    #alert{
+        width: 400px;
+        height: 280px;
+        border: 2px solid black;
+    }
+    #text2{
+        font-size: 60px;
+    }
+    button{
+        width: 250px;
+        height: 60px;
+        font-size: 40px;
+    }
+}

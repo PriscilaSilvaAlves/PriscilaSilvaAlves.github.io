@@ -1,0 +1,113 @@
+import { myCoordinates } from "./gameboard.js";
+import { attackPoints } from "./player.js";
+import { Gameboard } from "./gameboard.js";
+import { Player } from "./player.js";
+import { ship } from "./gameboard.js";
+
+export function receiveAttack(coordinate){  
+    const game = new Gameboard();
+    game.displayAttack(coordinate);
+    const issAllSunk = game.receiveAttack(coordinate);
+    if(issAllSunk){
+        const audioCompleted = new Audio("completed.wav");
+        audioCompleted.play();
+        game.gameOver();
+    }else{
+        const player = new Player();
+        const play = player.makeMove();
+        paintCoordinate(play[0]);
+        if(play[1]){
+            const audioFailure = new Audio("failure.wav");
+            audioFailure.play();
+            game.gameOver();
+        }
+    } 
+}
+export function placeShip(coordinate){
+    paintShips(coordinate);
+    const game = new Gameboard();
+    const ship = game.placeShips(coordinate);
+    if(ship[0]==0){
+        printScenario();
+        const game = new Gameboard();
+        game.displayScenario();
+    }
+}
+export function reload(){
+    document.location.reload(true);
+}
+function paintCoordinate(move){
+    document.getElementById(move).style.backgroundColor="#fca5a5";
+}
+export function generateMove(){
+    var move = sortNumber(0);
+    for(let i=0; i<attackPoints.length; i++){
+        if(attackPoints[i]==move){
+            move = sortNumber(0);
+            i=0;
+        }
+    }
+    return move;
+}
+function paintShips(coordinate){
+    if(ship==4 || ship==null){
+        const obj = document.getElementById(coordinate);
+        obj.style.backgroundImage="url('ship.jpg')";
+        obj.style.backgroundSize="100%";
+        const obj2 = document.getElementById(coordinate+1);
+        obj2.style.backgroundImage="url('ship.jpg')";
+        obj2.style.backgroundSize="100%";
+        const obj3 = document.getElementById(coordinate+2);
+        obj3.style.backgroundImage="url('ship.jpg')";
+        obj3.style.backgroundSize="100%";
+        const obj4 = document.getElementById(coordinate+3);
+        obj4.style.backgroundImage="url('ship.jpg')";
+        obj4.style.backgroundSize="100%";
+    }else if(ship==3){
+        const obj = document.getElementById(coordinate);
+        obj.style.backgroundImage="url('ship.jpg')";
+        obj.style.backgroundSize="100%";
+        const obj2 = document.getElementById(coordinate+1);
+        obj2.style.backgroundImage="url('ship.jpg')";
+        obj2.style.backgroundSize="100%";
+        const obj3 = document.getElementById(coordinate+2);
+        obj3.style.backgroundImage="url('ship.jpg')";
+        obj3.style.backgroundSize="100%";
+    }else if(ship==2){
+        const obj = document.getElementById(coordinate);
+        obj.style.backgroundImage="url('ship.jpg')";
+        obj.style.backgroundSize="100%";
+        const obj2 = document.getElementById(coordinate+1);
+        obj2.style.backgroundImage="url('ship.jpg')";
+        obj2.style.backgroundSize="100%";
+    }
+}
+export function sortNumber(a){
+    var num=Math.floor(Math.random()*100+a);
+    while(num==a){
+        var num=Math.floor(Math.random()*100+a);
+    }
+    return num;
+}
+function printScenario(){
+    var node = document.getElementById("container");
+    if (node.parentNode) {
+        node.parentNode.removeChild(node);
+    }
+    document.body.innerHTML="<div id='container'><div id='title'><h1>Battlership</h1></div><div id='text'><p>Attack your opponent!</p></div><div id='area'><div class='battlefield' id='my'></div><div class='battlefield' id='enemy'></div></div></div>";
+    var div1="";
+    for(let i=1; i<=100; i++){
+        div1 += '<div id="'+i+'" class="field"></div>';
+    }
+    document.getElementById("my").innerHTML=div1;
+    var div2="";
+    for(let i=101; i<=200; i++){
+        div2 += '<div id="'+i+'" class="field opponent" onclick="receiveAttack('+i+')"></div>';
+    }
+    document.getElementById("enemy").innerHTML=div2;
+    for(let i=0; i<myCoordinates.length; i++){
+        let id=myCoordinates[i];
+        document.getElementById(id).style.backgroundImage="url('ship.png')";
+        document.getElementById(id).style.backgroundSize="100%";
+    }
+}
