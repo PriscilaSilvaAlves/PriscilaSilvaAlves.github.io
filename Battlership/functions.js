@@ -54,8 +54,10 @@ export function generateMove(){
         if(attackOnTarget[attackOnTarget.length-2]!=null){
             if(attackOnTarget[attackOnTarget.length-1]>attackOnTarget[attackOnTarget.length-2]){
                 move=attackOnTarget[attackOnTarget.length-1]+1;
-            }else{
+            }else if(attackOnTarget[attackOnTarget.length-2]-1==attackOnTarget[attackOnTarget.length-1]){
                 move=attackOnTarget[attackOnTarget.length-1]-1;
+            }else{
+                move=attackOnTarget[attackOnTarget.length-1]+1;
             }
         }else{
             move=attackOnTarget[attackOnTarget.length-1]+1;
