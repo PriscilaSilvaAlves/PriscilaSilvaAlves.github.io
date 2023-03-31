@@ -54,10 +54,32 @@ export function generateMove(){
         if(attackOnTarget[attackOnTarget.length-2]!=null){
             if(attackOnTarget[attackOnTarget.length-1]>attackOnTarget[attackOnTarget.length-2]){
                 move=attackOnTarget[attackOnTarget.length-1]+1;
+                for(let i=0; i<attackPoints.length-1; i++){
+                    console.log("Entrou no for dos pontos já atacados");
+                    if(attackPoints[i]==move){
+                        console.log("Entrou no if dos pontos já atacados");
+                        move=attackOnTarget[attackOnTarget.length-1]-1;
+                        console.log("Subtraiu 1 do move");
+                        for(let j=0; j<attackOnTarget.length; j++){
+                            console.log("Entrou no for dos pontos já acertados");
+                            if(move==attackOnTarget[j]){
+                                move--;
+                                j=0;
+                            }
+                        } 
+                    }
+                }
             }else if(attackOnTarget[attackOnTarget.length-2]-1==attackOnTarget[attackOnTarget.length-1]){
+                console.log("Verifica se o último alvo é igual ao penúltimo menos 1");
                 move=attackOnTarget[attackOnTarget.length-1]-1;
             }else{
+                console.log("O último ataque é muito menor que o penúltimo");
                 move=attackOnTarget[attackOnTarget.length-1]+1;
+                for(let i=0; i<attackOnTarget.length-1;i++){
+                    if(move==attackOnTarget[i]){
+                        move=attackOnTarget[attackOnTarget.length-1]-1;
+                    }
+                }
             }
         }else{
             move=attackOnTarget[attackOnTarget.length-1]+1;
@@ -65,11 +87,15 @@ export function generateMove(){
     }else{
         if(attackOnTarget[attackOnTarget.length-1]!=null){
             if(attackOnTarget[attackOnTarget.length-1]==attackPoints[attackPoints.length-2]){
+                console.log("O último ataque no alvo é igual ao penúltimo ataque?");
                 var attack=attackOnTarget[attackOnTarget.length-1]-1;
                 for(let i=0; i<attackOnTarget.length; i++){
                     if(attack==attackOnTarget[i]){
-                        attack--;
+                        console.log("Ataque igual a alvo já alvejado");
+                        attack=attack-1;
                         i=0;
+                        console.log("Attack: "+attack);
+                        console.log("i: "+i);
                     }
                 }
                 move=attack;
@@ -86,6 +112,7 @@ export function generateMove(){
             i=0;
         }
     }
+    console.log(move);
     return move;
 }
 function paintShips(coordinate){
