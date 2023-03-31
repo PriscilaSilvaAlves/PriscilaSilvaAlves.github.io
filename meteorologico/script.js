@@ -87,11 +87,11 @@ function changeToCel(unidade, entrada){
     }
 }
 function changebg(clima){
-    if(clima=="Clouds" || clima=="Clear"){
-        document.body.style.backgroundImage='url("nuvens.webp")';
+    if(clima=="Clouds"){
+        document.body.style.backgroundImage='url("clouds.webp")';
     }else if(clima=="Rain"){
         document.body.style.backgroundImage='url("rain.webp")';
-    }else if(clima=="Haze"){
+    }else if(clima=="Haze" || clima=="Fog"){
         document.body.style.backgroundImage='url("haze.jpg")';
     }else if(clima=="Snow"){
         document.body.style.backgroundImage='url("snow.jpg")';
