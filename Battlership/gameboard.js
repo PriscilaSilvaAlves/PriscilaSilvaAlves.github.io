@@ -66,7 +66,7 @@ export class Gameboard{
             || sort==148 || sort==149 || sort==150 || sort==158 || sort==159 || sort==160
             || sort==168 || sort==169 || sort==170 || sort==178 || sort==179 || sort==180
             || sort==188 || sort==189 || sort==190 || sort==198 || sort==199 || sort==200){
-                var sort = sortNumber(100);
+                sort = sortNumber(100);
             }
         enemyCoordinates.push(sort);
         enemyCoordinates.push(sort+1);
@@ -79,7 +79,7 @@ export class Gameboard{
             || sort==189 || sort==190 || sort==199 || sort==200
             || sort==enemyCoordinates[0] || sort==enemyCoordinates[1]
             || sort==enemyCoordinates[2] || sort==enemyCoordinates[3]){
-                var sort = sortNumber(100);
+                sort = sortNumber(100);
             }
         enemyCoordinates.push(sort);
         enemyCoordinates.push(sort+1);
@@ -88,9 +88,8 @@ export class Gameboard{
             || sort==150 || sort==160 || sort==170 || sort==180
             || sort==190 || sort==200 || sort==enemyCoordinates[0] || sort==enemyCoordinates[1]
             || sort==enemyCoordinates[2] || sort==enemyCoordinates[3]
-            || sort==enemyCoordinates[4] || sort==enemyCoordinates[5]
-            || sort==enemyCoordinates[6]){
-                var sort = sortNumber(100);
+            || sort==enemyCoordinates[4] || sort==enemyCoordinates[5] || sort==enemyCoordinates[6]){
+                sort = sortNumber(100);
             }
         enemyCoordinates.push(sort);
         enemyCoordinates.push(sort+1);    
@@ -98,7 +97,7 @@ export class Gameboard{
             || sort==enemyCoordinates[2] || sort==enemyCoordinates[3]
             || sort==enemyCoordinates[4] || sort==enemyCoordinates[5]
             || sort==enemyCoordinates[6] || sort==enemyCoordinates[7] || sort==enemyCoordinates[8]){
-                var sort = sortNumber(100);
+                sort = sortNumber(100);
             }
         enemyCoordinates.push(sort);    
         return enemyCoordinates;
