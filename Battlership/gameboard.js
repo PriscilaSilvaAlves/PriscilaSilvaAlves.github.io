@@ -78,7 +78,11 @@ export class Gameboard{
             || sort==169 || sort==170 || sort==179 || sort==180
             || sort==189 || sort==190 || sort==199 || sort==200
             || sort==enemyCoordinates[0] || sort==enemyCoordinates[1]
-            || sort==enemyCoordinates[2] || sort==enemyCoordinates[3]){
+            || sort==enemyCoordinates[2] || sort==enemyCoordinates[3]
+            || sort+1==enemyCoordinates[0] || sort+1==enemyCoordinates[1]
+            || sort+1==enemyCoordinates[2] || sort+1==enemyCoordinates[3]
+            || sort+2==enemyCoordinates[0] || sort+2==enemyCoordinates[1]
+            || sort+2==enemyCoordinates[2] || sort+2==enemyCoordinates[3]){
                 sort = sortNumber(100);
             }
         enemyCoordinates.push(sort);
@@ -88,7 +92,10 @@ export class Gameboard{
             || sort==150 || sort==160 || sort==170 || sort==180
             || sort==190 || sort==200 || sort==enemyCoordinates[0] || sort==enemyCoordinates[1]
             || sort==enemyCoordinates[2] || sort==enemyCoordinates[3]
-            || sort==enemyCoordinates[4] || sort==enemyCoordinates[5] || sort==enemyCoordinates[6]){
+            || sort==enemyCoordinates[4] || sort==enemyCoordinates[5] || sort==enemyCoordinates[6]
+            || sort+1==enemyCoordinates[0] || sort+1==enemyCoordinates[1]
+            || sort+1==enemyCoordinates[2] || sort+1==enemyCoordinates[3]
+            || sort+1==enemyCoordinates[4] || sort+1==enemyCoordinates[5] || sort+1==enemyCoordinates[6]){
                 sort = sortNumber(100);
             }
         enemyCoordinates.push(sort);
