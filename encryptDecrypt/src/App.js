@@ -43,7 +43,7 @@ function App() {
   }
 
   function Decrypt(){
-    var text = document.getElementById("pText").value;
+    var text = document.getElementById("textInput").value;
     var decryptText="";
     for(let i=0; i<text.length; i++){
       if(text[i]==="e" && text[i+1]==="n" && text[i+2]==="t" && text[i+3]==="e" && text[i+4]==="r"){
