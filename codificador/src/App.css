@@ -154,7 +154,7 @@ button:active{
   width: 360px;
   height: 100%;
 }
-@media screen and (orientation: portrait){
+@media screen and (max-width: 574px){
   #input{
     padding: 40px;
     justify-content: left;
@@ -186,5 +186,11 @@ button:active{
   }
   body{
     background-color: #F3F5FC;
+  }
+  #right img{
+    display: none;
+  }
+  #text{
+    width: 260px;
   }
 }
