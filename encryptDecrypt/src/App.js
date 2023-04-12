@@ -35,7 +35,7 @@ function App() {
 
   function Encrypt(){
     var text = document.getElementById("textInput").value;
-    var encryptText=""; 
+    var encryptText="";
     for(let i=0; i<text.length; i++){
         encryptText = encryptText + changeLetter(text[i]);
     }
@@ -76,13 +76,13 @@ function App() {
   }
 
   return (
-    <form>
+    <form action="#" onsubmit="return false">
       <div id="container">
         <div id="left">
               <div id="left-top">
                   <img src={ ImageLogo } alt="Letra A símbolo da Alura"></img>
                   <div id="input">
-                      <input id="textInput" placeholder="Digite o seu texto" pattern="([a-z]+)" title="Apenas letas minúsculas, sem acentos e sem caracteres especiais" required></input>
+                      <input id="textInput" placeholder="Digite o seu texto" pattern="([a-z ]+)" maxLength="200" title="Apenas letas minúsculas, sem acentos e sem caracteres especiais" required></input>
                   </div>
               </div>
               <div id="left-down">
