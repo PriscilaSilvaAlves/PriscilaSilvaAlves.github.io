@@ -153,6 +153,7 @@ button:active{
   border: none;
   width: 360px;
   height: 100%;
+  resize: none;
 }
 @media screen and (max-width: 574px){
   #input{
