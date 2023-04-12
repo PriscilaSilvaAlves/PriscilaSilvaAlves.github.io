@@ -76,27 +76,29 @@ function App() {
   }
 
   return (
-    <div id="container">
-       <div id="left">
-            <div id="left-top">
-                <img src={ ImageLogo } alt="Letra A símbolo da Alura"></img>
-                <div id="input">
-                    <input id="textInput" placeholder="Digite o seu texto" required></input>
-                </div>
-            </div>
-            <div id="left-down">
-                <div id="alert">
-                    <img src={ ImageAlert } alt="Símbolo de alerta"></img>
-                    <p>Apenas letras minúsculas e sem acento.</p>
-                </div>
-                <div id="buttons">
-                    <button id="btn1" onClick={ Encrypt }>Criptografar</button>
-                    <button id="btn2" onClick={ Decrypt }>Decriptografar</button>
-                </div>
-            </div>
-        </div>
-        { right }
-    </div>
+    <form>
+      <div id="container">
+        <div id="left">
+              <div id="left-top">
+                  <img src={ ImageLogo } alt="Letra A símbolo da Alura"></img>
+                  <div id="input">
+                      <input id="textInput" placeholder="Digite o seu texto" pattern="([a-z]+)" title="Apenas letas minúsculas, sem acentos e sem caracteres especiais" required></input>
+                  </div>
+              </div>
+              <div id="left-down">
+                  <div id="alert">
+                      <img src={ ImageAlert } alt="Símbolo de alerta"></img>
+                      <p>Apenas letras minúsculas e sem acento.</p>
+                  </div>
+                  <div id="buttons">
+                      <button id="btn1" onClick={ Encrypt }>Criptografar</button>
+                      <button id="btn2" onClick={ Decrypt }>Decriptografar</button>
+                  </div>
+              </div>
+          </div>
+          { right }
+      </div>
+    </form>
   );
 }
 
