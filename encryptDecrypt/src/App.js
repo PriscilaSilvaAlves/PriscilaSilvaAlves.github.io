@@ -23,6 +23,7 @@ function changeLetter(letter){
 function App() {
   const title = "Nenhuma mensagem encontrada";
   const text = "Digite um texto que você gostaria de criptografar ou decriptografar."
+  var [valorInput, setValorInput] = useState('');
   var [right, setRight ] = useState(
     <div id="right">
         <img src={ Image } alt="Imagem azul de menino segurando uma lupa"></img>
@@ -34,35 +35,33 @@ function App() {
   );
 
   function Encrypt(){
-    var text = document.getElementById("textInput").value;
     var encryptText="";
-    for(let i=0; i<text.length; i++){
-        encryptText = encryptText + changeLetter(text[i]);
+    for(let i=0; i<valorInput.length; i++){
+        encryptText = encryptText + changeLetter(valorInput[i]);
     }
     setRight(<div id="right"><div id="formatRight"><div id="encryptText"><textarea id="pText" value={ encryptText }></textarea></div><button id="copy" onClick={ Copy }>Copiar</button></div></div>);
   }
 
   function Decrypt(){
-    var text = document.getElementById("textInput").value;
     var decryptText="";
-    for(let i=0; i<text.length; i++){
-      if(text[i]==="e" && text[i+1]==="n" && text[i+2]==="t" && text[i+3]==="e" && text[i+4]==="r"){
+    for(let i=0; i<valorInput.length; i++){
+      if(valorInput[i]==="e" && valorInput[i+1]==="n" && valorInput[i+2]==="t" && valorInput[i+3]==="e" && valorInput[i+4]==="r"){
         decryptText=decryptText+"e";
         i=i+4;
-      }else if(text[i]==="i" && text[i+1]==="m" && text[i+2]==="e" && text[i+3]==="s"){
+      }else if(valorInput[i]==="i" && valorInput[i+1]==="m" && valorInput[i+2]==="e" && valorInput[i+3]==="s"){
         decryptText = decryptText + "i";
         i=i+3;
-      }else if(text[i]==="a" && text[i+1]==="i"){
+      }else if(valorInput[i]==="a" && valorInput[i+1]==="i"){
         decryptText = decryptText + "a";
         i=i+1;
-      }else if(text[i]==="o" && text[i+1]==="b" && text[i+2]==="e" && text[i+3]==="r"){
+      }else if(valorInput[i]==="o" && valorInput[i+1]==="b" && valorInput[i+2]==="e" && valorInput[i+3]==="r"){
         decryptText = decryptText + "o";
         i=i+3;
-      }else if(text[i]==="u" && text[i+1]==="f" && text[i+2]==="a" && text[i+3]==="t"){
+      }else if(valorInput[i]==="u" && valorInput[i+1]==="f" && valorInput[i+2]==="a" && valorInput[i+3]==="t"){
         decryptText = decryptText + "u";
         i=i+3;
       }else{
-        decryptText = decryptText + text[i];
+        decryptText = decryptText + valorInput[i];
       }
     }
     setRight(<div id="right"><div id="formatRight"><div id="encryptText"><textarea id="pText" value={ decryptText }></textarea></div><button id="copy" onClick={ Copy }>Copiar</button></div></div>);
@@ -79,6 +78,10 @@ function App() {
     event.preventDefault();
   }
 
+  function HandleChangeInput(event){
+    setValorInput(event.target.value);
+  }
+
   return (
       <main>
         <div id="left">
@@ -86,7 +89,7 @@ function App() {
             <div id="left-top">
                 <img src={ ImageLogo } alt="Letra A símbolo da Alura"></img>
                 <div id="input">
-                    <input id="textInput" placeholder="Digite o seu texto" pattern="([a-z ]+)" maxLength="150" title="Apenas letas minúsculas, sem acentos e sem caracteres especiais" required></input>
+                  <input id="textInput" placeholder="Digite o seu texto" pattern="([a-z ]+)" maxLength="150" title="Apenas letas minúsculas, sem acentos e sem caracteres especiais" onChange={ HandleChangeInput } required></input>
                 </div>
             </div>
             <div id="left-down">
