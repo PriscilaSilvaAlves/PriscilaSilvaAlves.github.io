@@ -37,7 +37,15 @@ function App() {
   function Encrypt(){
     var encryptText="";
     for(let i=0; i<valorInput.length; i++){
+      if(valorInput[i] === valorInput[i].toUpperCase()){
+        return false;
+      }else if(valorInput[i] === "à" || valorInput[i] === "á" ||valorInput[i] === "é" ||valorInput[i] === "í" ||valorInput[i] === "ó" ||valorInput[i] === "ú"){
+        return false;
+      }else if(valorInput[i] === "ç" || valorInput[i] === "@" || valorInput[i] === "!" || valorInput[i] === "#" || valorInput[i] === "$" || valorInput[i] === "&" || valorInput[i] === "*" || valorInput[i] === "^"){
+        return false;
+      }else{
         encryptText = encryptText + changeLetter(valorInput[i]);
+      } 
     }
     setRight(<div id="right"><div id="formatRight"><div id="encryptText"><textarea id="pText" value={ encryptText }></textarea></div><button id="copy" onClick={ Copy }>Copiar</button></div></div>);
   }
