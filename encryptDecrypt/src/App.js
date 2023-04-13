@@ -75,30 +75,34 @@ function App() {
     document.execCommand("copy");
   }
 
+  function HandleSubmit(event){
+    event.preventDefault();
+  }
+
   return (
-    <form action="#" onsubmit="return false">
-      <div id="container">
+      <main>
         <div id="left">
-              <div id="left-top">
-                  <img src={ ImageLogo } alt="Letra A símbolo da Alura"></img>
-                  <div id="input">
-                      <input id="textInput" placeholder="Digite o seu texto" pattern="([a-z ]+)" maxLength="200" title="Apenas letas minúsculas, sem acentos e sem caracteres especiais" required></input>
-                  </div>
-              </div>
-              <div id="left-down">
-                  <div id="alert">
-                      <img src={ ImageAlert } alt="Símbolo de alerta"></img>
-                      <p>Apenas letras minúsculas e sem acento.</p>
-                  </div>
-                  <div id="buttons">
-                      <button id="btn1" onClick={ Encrypt }>Criptografar</button>
-                      <button id="btn2" onClick={ Decrypt }>Decriptografar</button>
-                  </div>
-              </div>
-          </div>
-          { right }
-      </div>
-    </form>
+          <form id="formId" onSubmit={ HandleSubmit }>
+            <div id="left-top">
+                <img src={ ImageLogo } alt="Letra A símbolo da Alura"></img>
+                <div id="input">
+                    <input id="textInput" placeholder="Digite o seu texto" pattern="([a-z ]+)" maxLength="150" title="Apenas letas minúsculas, sem acentos e sem caracteres especiais" required></input>
+                </div>
+            </div>
+            <div id="left-down">
+                <div id="alert">
+                    <img src={ ImageAlert } alt="Símbolo de alerta"></img>
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div id="buttons">
+                    <button id="btn1" name="btn1" onClick={ Encrypt }>Criptografar</button>
+                    <button id="btn2" name="btn2" onClick={ Decrypt }>Decriptografar</button>
+                </div>
+            </div>
+          </form>
+        </div>
+        { right }
+      </main>
   );
 }
 
