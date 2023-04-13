@@ -186,7 +186,14 @@ button:active{
   #right{
     height: auto;
     margin: 20px;
-    width: calc(100%-40px);
+    width: calc(100% - 40px);
+  }
+  #pText{
+    width: 100%;
+  }
+  #encryptText{
+    width: calc(100% - 40px);
+    padding: 20px;
   }
   #root{
     height: 100%;
@@ -198,6 +205,7 @@ button:active{
     display: none;
   }
   #text{
-    width: 260px;
+    padding: 20px;
+    width: calc(100% - 40px);
   }
 }
