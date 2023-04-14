@@ -36,8 +36,18 @@ function App() {
 
   function Encrypt(){
     var encryptText="";
+    let regex = /\W|_/;
+    //let regex = /[@!#$%^&*()/\\áéíóúàèìòùãẽĩõũñâêîôûç]/;
     for(let i=0; i<valorInput.length; i++){
+      if(valorInput[i] === valorInput[i].toUpperCase() && valorInput[i] !== " "){
+        return false;
+      }else if(!isNaN(valorInput[i]) && valorInput[i] !== " "){
+        return false;
+      }else if(regex.test(valorInput[i]) && valorInput[i] !== " "){
+        return false;
+      }else{
         encryptText = encryptText + changeLetter(valorInput[i]);
+      }
     }
     setRight(<div id="right"><div id="formatRight"><div id="encryptText"><textarea id="pText" value={ encryptText }></textarea></div><button id="copy" onClick={ Copy }>Copiar</button></div></div>);
   }
