@@ -39,11 +39,11 @@ function App() {
     let regex = /\W|_/;
     //let regex = /[@!#$%^&*()/\\áéíóúàèìòùãẽĩõũñâêîôûç]/;
     for(let i=0; i<valorInput.length; i++){
-      if(valorInput[i] === valorInput[i].toUpperCase() && valorInput[i] !== " "){
+      if(valorInput[i] === valorInput[i].toUpperCase() && valorInput[i] !== " " && valorInput[i] !== "," && valorInput[i] !== "." && valorInput[i] !== "!"){
         return false;
       }else if(!isNaN(valorInput[i]) && valorInput[i] !== " "){
         return false;
-      }else if(regex.test(valorInput[i]) && valorInput[i] !== " "){
+      }else if(regex.test(valorInput[i]) && valorInput[i] !== " " && valorInput[i] !== "," && valorInput[i] !== "." && valorInput[i] !== "!"){
         return false;
       }else{
         encryptText = encryptText + changeLetter(valorInput[i]);
@@ -54,24 +54,33 @@ function App() {
 
   function Decrypt(){
     var decryptText="";
+    let regex = /\W|_/;
     for(let i=0; i<valorInput.length; i++){
-      if(valorInput[i]==="e" && valorInput[i+1]==="n" && valorInput[i+2]==="t" && valorInput[i+3]==="e" && valorInput[i+4]==="r"){
-        decryptText=decryptText+"e";
-        i=i+4;
-      }else if(valorInput[i]==="i" && valorInput[i+1]==="m" && valorInput[i+2]==="e" && valorInput[i+3]==="s"){
-        decryptText = decryptText + "i";
-        i=i+3;
-      }else if(valorInput[i]==="a" && valorInput[i+1]==="i"){
-        decryptText = decryptText + "a";
-        i=i+1;
-      }else if(valorInput[i]==="o" && valorInput[i+1]==="b" && valorInput[i+2]==="e" && valorInput[i+3]==="r"){
-        decryptText = decryptText + "o";
-        i=i+3;
-      }else if(valorInput[i]==="u" && valorInput[i+1]==="f" && valorInput[i+2]==="a" && valorInput[i+3]==="t"){
-        decryptText = decryptText + "u";
-        i=i+3;
+      if(valorInput[i] === valorInput[i].toUpperCase() && valorInput[i] !== " " && valorInput[i] !== "," && valorInput[i] !== "." && valorInput[i] !== "!"){
+        return false;
+      }else if(!isNaN(valorInput[i]) && valorInput[i] !== " "){
+        return false;
+      }else if(regex.test(valorInput[i]) && valorInput[i] !== " " && valorInput[i] !== "," && valorInput[i] !== "." && valorInput[i] !== "!"){
+        return false;
       }else{
-        decryptText = decryptText + valorInput[i];
+        if(valorInput[i]==="e" && valorInput[i+1]==="n" && valorInput[i+2]==="t" && valorInput[i+3]==="e" && valorInput[i+4]==="r"){
+          decryptText=decryptText+"e";
+          i=i+4;
+        }else if(valorInput[i]==="i" && valorInput[i+1]==="m" && valorInput[i+2]==="e" && valorInput[i+3]==="s"){
+          decryptText = decryptText + "i";
+          i=i+3;
+        }else if(valorInput[i]==="a" && valorInput[i+1]==="i"){
+          decryptText = decryptText + "a";
+          i=i+1;
+        }else if(valorInput[i]==="o" && valorInput[i+1]==="b" && valorInput[i+2]==="e" && valorInput[i+3]==="r"){
+          decryptText = decryptText + "o";
+          i=i+3;
+        }else if(valorInput[i]==="u" && valorInput[i+1]==="f" && valorInput[i+2]==="a" && valorInput[i+3]==="t"){
+          decryptText = decryptText + "u";
+          i=i+3;
+        }else{
+          decryptText = decryptText + valorInput[i];
+        }
       }
     }
     setRight(<div id="right"><div id="formatRight"><div id="encryptText"><textarea id="pText" value={ decryptText }></textarea></div><button id="copy" onClick={ Copy }>Copiar</button></div></div>);
@@ -99,7 +108,7 @@ function App() {
             <div id="left-top">
                 <img src={ ImageLogo } alt="Letra A símbolo da Alura"></img>
                 <div id="input">
-                  <input id="textInput" placeholder="Digite o seu texto" pattern="([a-z ]+)" maxLength="150" title="Apenas letas minúsculas, sem acentos e sem caracteres especiais" onChange={ HandleChangeInput } required></input>
+                  <input id="textInput" placeholder="Digite o seu texto" pattern="([a-z ,.!]+)" maxLength="150" title="Apenas letas minúsculas, sem acentos e sem caracteres especiais" onChange={ HandleChangeInput } required></input>
                 </div>
             </div>
             <div id="left-down">
