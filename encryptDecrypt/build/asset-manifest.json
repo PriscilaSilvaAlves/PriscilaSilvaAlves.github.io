@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/encryptDecrypt/build/static/css/main.67b36b40.css",
-    "main.js": "/encryptDecrypt/build/static/js/main.5db66115.js",
+    "main.css": "/encryptDecrypt/build/static/css/main.a1bb171a.css",
+    "main.js": "/encryptDecrypt/build/static/js/main.257cc7b8.js",
     "static/js/787.81217180.chunk.js": "/encryptDecrypt/build/static/js/787.81217180.chunk.js",
     "static/media/lupa.svg": "/encryptDecrypt/build/static/media/lupa.cd57497a937c57681e0c30c45b9d3db9.svg",
-    "static/media/Logo.svg": "/encryptDecrypt/build/static/media/Logo.e08e3a4a1d93e7072e3ee793985ddf71.svg",
+    "static/media/Logo.svg": "/encryptDecrypt/build/static/media/Logo.0866b68224abb9cc222350af7d5fa2d6.svg",
     "static/media/Vector.svg": "/encryptDecrypt/build/static/media/Vector.59a7e2024b6e5887f17afb221aa4d077.svg",
     "index.html": "/encryptDecrypt/build/index.html",
-    "main.67b36b40.css.map": "/encryptDecrypt/build/static/css/main.67b36b40.css.map",
-    "main.5db66115.js.map": "/encryptDecrypt/build/static/js/main.5db66115.js.map",
+    "main.a1bb171a.css.map": "/encryptDecrypt/build/static/css/main.a1bb171a.css.map",
+    "main.257cc7b8.js.map": "/encryptDecrypt/build/static/js/main.257cc7b8.js.map",
     "787.81217180.chunk.js.map": "/encryptDecrypt/build/static/js/787.81217180.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.67b36b40.css",
-    "static/js/main.5db66115.js"
+    "static/css/main.a1bb171a.css",
+    "static/js/main.257cc7b8.js"
   ]
 }

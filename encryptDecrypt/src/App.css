@@ -6,7 +6,7 @@ body{
 header{
   position: fixed;
   padding-left: 50px;
-  width: 100%;
+  width: calc(100% - 50px);
   height: 150px;
   display: flex;
   align-items: center;
@@ -193,11 +193,14 @@ footer{
 @media screen and (max-width: 900px){
   header{
     position:relative;
+    padding-left: 25px;
+    width: calc(100% - 25px);
+    height: 100px;
   }
   #input{
-    padding: 20px;
+    padding: 25px;
     justify-content: left;
-    width: calc(100% - 40px);
+    width: calc(100% - 50px);
   }
   #input input{
     width: 100%;
@@ -206,6 +209,9 @@ footer{
   }
   #left{
     width: 100%;
+  }
+  #left-top{
+    justify-content: flex-start;
   }
   #left form{
     margin-top: 40px;
