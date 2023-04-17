@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/curriculo/build/static/css/main.ff748944.css",
+    "main.js": "/curriculo/build/static/js/main.53102070.js",
+    "static/js/787.3b86ad0b.chunk.js": "/curriculo/build/static/js/787.3b86ad0b.chunk.js",
+    "static/media/cv2.webp": "/curriculo/build/static/media/cv2.ef69b748186e73d8a5ff.webp",
+    "index.html": "/curriculo/build/index.html",
+    "main.ff748944.css.map": "/curriculo/build/static/css/main.ff748944.css.map",
+    "main.53102070.js.map": "/curriculo/build/static/js/main.53102070.js.map",
+    "787.3b86ad0b.chunk.js.map": "/curriculo/build/static/js/787.3b86ad0b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff748944.css",
+    "static/js/main.53102070.js"
+  ]
+}

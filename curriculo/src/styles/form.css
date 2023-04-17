@@ -1,0 +1,197 @@
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+#form{
+    width: 100%;
+    padding: 40px 0;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    width: 940px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.background{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 940px;
+}
+.background h2{
+    background-color: #6b7280;
+    color: #FFFFFF;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formEducation{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.formExperience{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+}
+.formPersonal{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.formPersonal .input{
+    width: calc((100% - 120px)/4);
+    display: flex;
+    flex-direction: column;
+}
+.formPersonal .textarea{
+    width: calc(100% - 40px - ((100% - 120px)/4));
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+}
+.formExperience .textarea{
+    width: calc(100% - 210px);
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+}
+.textarea textarea{
+    height: 100%;
+    resize: none;
+}
+.inputExperience{
+    width: calc((100% - 120px)/4);
+    display: flex;
+    flex-direction: column; 
+}
+.dateExperience{
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+}
+.inputEducation{
+    width: calc((100% - 80px)/3);
+    display: flex;
+    flex-direction: column;
+}
+.inputEducation input{
+    width: 100%;
+}
+.dateEducation{
+    width: 170px;
+}
+#buttons{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    width: 170px;
+    height: 35px;
+    font-size: 18px;
+    border: none;
+    background-color: #f97316;
+    color: white;
+}
+button:hover{
+    background-color: #ea580c;
+}
+button:active{
+    transform: scale(0.8);
+}
+#backgroundCurriculo{
+    width: 100%;
+    background-color: #d1d5db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+@media screen and (max-width: 900px){
+    header{
+        height: auto;
+        padding: 30px 0;
+    }
+    header img{
+        display: none;
+    }
+    form{
+        width: 100%;
+    }
+    .background{
+        width: 100%;
+    }
+    .background h2{
+        height: 60px;
+        font-size: 30px;
+    }
+    .formPersonal, .formEducation, .formExperience{
+        padding: 20px;
+        width: calc(100% - 40px);
+    }
+    .formPersonal .input, .formPersonal .textarea, .formEducation .inputEducation, .formExperience .inputExperience, .formExperience .textarea{
+        width: calc(100% - 40px);
+    }
+    .input label, .textarea label, .inputEducation label, .inputExperience label{
+        font-size: 30px;
+    }
+    .input input, .inputEducation input, .inputExperience input{
+        height: 40px;
+        font-size: 30px;
+    }
+    .formPersonal .textarea, .formExperience .textarea{
+        height: auto;
+    }
+    .textarea textarea{
+        height: 200px;
+        font-size: 30px;
+    }
+    #backgroundCurriculo{
+        background-color: #FFFFFF;
+    }
+    button{
+        width: calc(100% - 40px);
+        height: 50px;
+        font-size: 30px;
+    }
+    #buttons{
+        width: 100%;
+    }
+    footer p{
+        width: calc(100% - 40px);
+    }
+    .background{
+        padding: 0;
+    }
+}
