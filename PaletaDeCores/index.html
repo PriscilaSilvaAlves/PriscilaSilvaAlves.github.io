@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+  <head> 
     <meta charset="utf-8">
     <link rel="stylesheet" href="estilo.css">
     <script type="text/javascript" src="js/script.js"></script>
@@ -16,10 +16,20 @@
         }
         document.getElementById(`gd`).innerHTML = escrever;
         document.getElementById(`gd`).style.gridTemplateColumns=colunas;
-        for (var i = 0; i<256; i++) {
-          document.getElementById(`${i}`).style.height="30px";
-          document.getElementById(`${i}`).style.width="30px";
+
+        if(window.innerHeight > window.innerWidth){
+          for (var i = 0; i<256; i++) {
+            document.getElementById(`${i}`).style.height="50px";
+            document.getElementById(`${i}`).style.width="50px";
+          }
+        }else{
+          for (var i = 0; i<256; i++) {
+            document.getElementById(`${i}`).style.height="30px";
+            document.getElementById(`${i}`).style.width="30px";
+          }
         }
+    
+        
       });
     </script>
     <title>Divs</title>
@@ -29,6 +39,7 @@
       <form>
         <div id="gridID">
           <div class="classID">
+            <label>Number of squares:</label>
             <input type="number" id="matriz" max="100" min="1">
           </div>
           <div class="classID">
@@ -40,44 +51,61 @@
         </div>
       </form>
     </div>
+    <div id="cores">
+      <p>Select a color: </p>
+      <div id="preto" class="cor"></div>
+      <div id="cinza" class="cor"></div>
+      <div id="azul" class="cor"></div>
+      <div id="vermelho" class="cor"></div>
+      <div id="amarelo" class="cor"></div>
+      <div id="rosa" class="cor"></div>
+      <div id="verde" class="cor"></div>
+      <div id="marrom" class="cor"></div>
+    </div>
     <div id="corpo">
       <div id="gd">
       </div>
     </div>
     <script type="text/javascript">
+        var cor="preto";
+        let cores = document.getElementById("cores");
+        cores.addEventListener("click", function(event){
+          cor = event.target.id;
+          console.log(cor);
+        })
         let obj = document.getElementById("gd");
-        obj.addEventListener("mouseover", function(event){
+        obj.addEventListener("click", function(event){
           let quant = event.target.attributes.quantidade.value;
           if(quant==1){
-            event.target.style.backgroundColor="rgb(255, 0, 0, 10%)";
+            event.target.style.backgroundColor= selectRGB(cor, "10%");
             event.target.setAttribute('quantidade','2')
           }else if(quant==2){
-            event.target.style.backgroundColor="rgb(255, 0, 0,20%)";
+            event.target.style.backgroundColor=selectRGB(cor, "20%");
             event.target.setAttribute('quantidade','3')
           }else if(quant==3){
-            event.target.style.backgroundColor="rgb(255, 0, 0, 30%)";
+            event.target.style.backgroundColor=selectRGB(cor, "30%");
             event.target.setAttribute('quantidade','4')
           }else if(quant==4){
-            event.target.style.backgroundColor="rgb(255, 0, 0, 40%)";
+            event.target.style.backgroundColor=selectRGB(cor, "40%");
             event.target.setAttribute('quantidade','5')
           }else if(quant==5){
-            event.target.style.backgroundColor="rgb(255, 0, 0, 50%)";
+            event.target.style.backgroundColor=selectRGB(cor, "50%");
             event.target.setAttribute('quantidade','6')
           }else if(quant==6){
-            event.target.style.backgroundColor="rgb(255, 0, 0, 60%)";
+            event.target.style.backgroundColor=selectRGB(cor, "60%");
             event.target.setAttribute('quantidade','7')
           }else if(quant==7){
-            event.target.style.backgroundColor="rgb(255, 0, 0, 70%)";
+            event.target.style.backgroundColor=selectRGB(cor, "70%");
             event.target.setAttribute('quantidade','8')
           }else if(quant==8){
-            event.target.style.backgroundColor="rgb(255, 0, 0, 80%)";
+            event.target.style.backgroundColor=selectRGB(cor, "80%");
             event.target.setAttribute('quantidade','9')
           }else if(quant==9){
-            event.target.style.backgroundColor="rgb(255, 0, 0, 90%)"
+            event.target.style.backgroundColor=selectRGB(cor, "90%");
             event.target.setAttribute('quantidade','10')
           }else if(quant==10){
-            event.target.style.backgroundColor="rgb(255, 0, 0, 100%)";
-            event.target.setAttribute('quantidade','11')
+            event.target.style.backgroundColor=selectRGB(cor, "100%");
+            event.target.setAttribute('quantidade','11');
           }
         }, false);
     </script>
