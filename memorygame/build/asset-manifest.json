@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/memorygame/build/static/css/main.1874a271.css",
+    "main.js": "/memorygame/build/static/js/main.c6a0a871.js",
+    "static/js/787.5c91c138.chunk.js": "/memorygame/build/static/js/787.5c91c138.chunk.js",
+    "static/media/Bellatrix-Lestrange.png": "/memorygame/build/static/media/Bellatrix-Lestrange.cefdb56edef87693c7ef.png",
+    "static/media/Dobby.png": "/memorygame/build/static/media/Dobby.b051d0e2041f4d33e10a.png",
+    "static/media/Neville-Longbottom.png": "/memorygame/build/static/media/Neville-Longbottom.356093edd4e69c534915.png",
+    "static/media/Hermione-Granger.png": "/memorygame/build/static/media/Hermione-Granger.f13775f36a4c2191e54b.png",
+    "static/media/Rúbeo-Hagrid.png": "/memorygame/build/static/media/Rúbeo-Hagrid.3729051e04e3e23403de.png",
+    "static/media/Draco-Malfoy.png": "/memorygame/build/static/media/Draco-Malfoy.8a7a9fc36175315c7e70.png",
+    "static/media/Ginevra-Molly-Weasley.png": "/memorygame/build/static/media/Ginevra-Molly-Weasley.b8077f57693a66aaebb6.png",
+    "static/media/Severus-Snape.png": "/memorygame/build/static/media/Severus-Snape.39100e23030790c15901.png",
+    "static/media/Harry-Potter.png": "/memorygame/build/static/media/Harry-Potter.00c47bc3f245fd4caa06.png",
+    "static/media/Sirius-Black.jpg": "/memorygame/build/static/media/Sirius-Black.d80befbb2b5a4c35120b.jpg",
+    "static/media/Luna-Lovegood.jpg": "/memorygame/build/static/media/Luna-Lovegood.ec37bc6e0d03918aad04.jpg",
+    "static/media/Albus-Dumbledore.jpg": "/memorygame/build/static/media/Albus-Dumbledore.37deb276a810fa402947.jpg",
+    "static/media/Ron-Weasley.jpg": "/memorygame/build/static/media/Ron-Weasley.5ff47387d846b42a0bb2.jpg",
+    "static/media/Minerva-McGonagall.jpg": "/memorygame/build/static/media/Minerva-McGonagall.2cb8b1f2f074e9e4f15c.jpg",
+    "static/media/Dolores-Umbridge.jpg": "/memorygame/build/static/media/Dolores-Umbridge.ec595d7149ed17e1a3d3.jpg",
+    "static/media/Lord-Voldemort.jpg": "/memorygame/build/static/media/Lord-Voldemort.06c1a383a3d13c368fb0.jpg",
+    "index.html": "/memorygame/build/index.html",
+    "main.1874a271.css.map": "/memorygame/build/static/css/main.1874a271.css.map",
+    "main.c6a0a871.js.map": "/memorygame/build/static/js/main.c6a0a871.js.map",
+    "787.5c91c138.chunk.js.map": "/memorygame/build/static/js/787.5c91c138.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1874a271.css",
+    "static/js/main.c6a0a871.js"
+  ]
+}
