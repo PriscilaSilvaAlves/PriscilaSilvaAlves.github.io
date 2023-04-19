@@ -134,6 +134,7 @@ td{
     }
     #middle{
         overflow:visible;
+        height: auto;
     }
     #right{
        width: 100%;
