@@ -97,16 +97,28 @@ function play(position){
   var listaJogadas = updateBoard(position, p);
   contador++;
   var vencedor = winner(listaJogadas);
+  if(vencedor != "X" && vencedor != "O" && vencedor != "empate"){
+    print(listaJogadas);
+  }
+  const bt1 = document.getElementById("bt1").innerHTML;
+  const bt2 = document.getElementById("bt2").innerHTML;
+  const bt3 = document.getElementById("bt3").innerHTML;
+  const bt4 = document.getElementById("bt4").innerHTML;
+  const bt5 = document.getElementById("bt5").innerHTML;
+  const bt6 = document.getElementById("bt6").innerHTML;
+  const bt7 = document.getElementById("bt7").innerHTML;
+  const bt8 = document.getElementById("bt8").innerHTML;
+  const bt9 = document.getElementById("bt9").innerHTML;
   if(contador==9 && vencedor==""){
-    if(document.getElementById("bt1").innerHTML=="X" || document.getElementById("bt1").innerHTML=="O"){
-      if(document.getElementById("bt2").innerHTML=="X" || document.getElementById("bt2").innerHTML=="O"){
-        if(document.getElementById("bt3").innerHTML=="X" || document.getElementById("bt3").innerHTML=="O"){
-          if(document.getElementById("bt4").innerHTML=="X" || document.getElementById("bt4").innerHTML=="O"){
-            if(document.getElementById("bt5").innerHTML=="X" || document.getElementById("bt5").innerHTML=="O"){
-              if(document.getElementById("bt6").innerHTML=="X" || document.getElementById("bt6").innerHTML=="O"){
-                if(document.getElementById("bt7").innerHTML=="X" || document.getElementById("bt7").innerHTML=="O"){
-                  if(document.getElementById("bt8").innerHTML=="X" || document.getElementById("bt8").innerHTML=="O"){
-                    if(document.getElementById("bt9").innerHTML=="X" || document.getElementById("bt9").innerHTML=="O"){
+    if(bt1=="X" || bt1=="O"){
+      if(bt2=="X" || bt2=="O"){
+        if(bt3=="X" || bt3=="O"){
+          if(bt4=="X" || bt4=="O"){
+            if(bt5=="X" || bt5=="O"){
+              if(bt6=="X" || bt6=="O"){
+                if(bt7=="X" || bt7=="O"){
+                  if(bt8=="X" || bt8=="O"){
+                    if(bt9=="X" || bt9=="O"){
                       vencedor="empate";
                     }
                   }
@@ -117,10 +129,6 @@ function play(position){
         }
       } 
     }
-    
-  }
-  if(vencedor != "X" && vencedor != "O" && vencedor != "empate"){
-    print(listaJogadas);
   }
   if(vencedor=="X" || vencedor=="O"|| vencedor=="empate"){
     print(listaJogadas);
@@ -153,7 +161,7 @@ function printWinner(vencedor){
   var button = document.createElement("button");
   button.setAttribute("id","playAgain");
   button.setAttribute("onclick","newGame()");
-  button.innerHTML="Play Again!";
+  button.innerHTML="Jogar novamente";
   document.getElementById("container3").appendChild(button);
   document.getElementById("bt1").style.fontSize="40px";
   document.getElementById("bt1").innerHTML="Game Over";

@@ -74,3 +74,30 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
+@media screen and (max-width: 900px){
+    #menu{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 20px 0;
+    }
+    .player{
+        width: calc(100% - 40px);
+    }
+    .player input{
+        height: 40px;
+        font-size: 25px;
+        width: 200px;
+        
+    }
+    #textp1, #textp2{
+        text-align: center;
+    }
+    .bt{
+        height: 130px;
+        width: 130px;
+    }
+    #container2{
+        grid-template-columns: 130px 130px 130px;
+        grid-template-rows: 130px 130px 130px;
+    }
+}
