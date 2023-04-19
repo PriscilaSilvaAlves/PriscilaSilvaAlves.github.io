@@ -7,7 +7,9 @@ class Curriculo extends Component{
         return (
             <section id="curriculo">
                 <div id="personal">
-                    <img src={ form.personalInformations.photo } alt="Perfil"></img>
+                    {(form.personalInformations.photo !== "") 
+                        ? <img src={ form.personalInformations.photo } alt="Perfil"></img> 
+                        : ""}
                     <div id="personalData">
                         <h1>{ form.personalInformations.name }</h1>
                         <h2>{ form.personalInformations.title }</h2>
