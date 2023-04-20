@@ -9,7 +9,6 @@ body{
 }
 #container{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content:space-around;
@@ -94,48 +93,59 @@ body{
 @media screen and (orientation: portrait) {
     body{
         background-size: auto 100%;
+        -webkit-background-size: auto 100%;
+        -moz-background-size: auto 100%;
+        -o-background-size: auto 100%;
+        max-width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        display: block;
+        background-position: top center;
+        background-repeat:  no-repeat;
+        background-attachment: fixed;
     }
     #container{
         justify-content: center;
+        gap: 30px;
+        height: 100vh;
         flex-direction: column;
-        gap: 100px;
     }
-    #busca{
-        height: 800px;
-        width: 720px;
-        border-radius: 20px;
-    }
+    
     #title{
-        font-size: 90px;
+        font-size: 30px;
     }
     #labelinput{
-        width: 620px;
+        width: 230px;
         gap: 20px;
     }
+    #busca{
+        height: 300px;
+        width: 280px;
+    }
     #busca label{
-        font-size: 90px;
+        font-size: 30px;
     }
     #busca input, #busca button{
-        width: 620px;
-        height: 90px;
-        font-size: 60px;
+        width: 230px;
+        height: 35px;
+        font-size: 25px;
     }
     #labelinput input{
-        border: 4px solid black;
+        border: 1px solid black;
     }
     #dados{
-        width: 700px;
-        height: 700px;
+        width: 280px;
+        height: 260px;
         align-items: center;
     }
     #city{
-        font-size: 80px;
+        font-size: 30px;
     }
     #temperatura{
-        font-size: 200px;
+        font-size: 80px;
     }
     #details{
-        font-size: 60px;
+        font-size: 30px;
         align-items: center;
         justify-content: center;
     }
