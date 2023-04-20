@@ -149,7 +149,7 @@ function printScenario(){
     if (node.parentNode) {
         node.parentNode.removeChild(node);
     }
-    document.body.innerHTML="<div id='container'><div id='title'><h1>Battlership</h1></div><div id='text'><p>Attack your opponent!</p></div><div id='area'><div class='battlefield' id='my'></div><div class='battlefield' id='enemy'></div></div></div>";
+    document.body.innerHTML="<div id='container'><div id='title'><h1>Battlership</h1></div><div id='text'><p>Click to attack your opponent!</p></div><div id='area'><div class='battlefield' id='my'></div><div class='battlefield' id='enemy'></div></div></div>";
     var div1="";
     for(let i=1; i<=100; i++){
         div1 += '<div id="'+i+'" class="field"></div>';

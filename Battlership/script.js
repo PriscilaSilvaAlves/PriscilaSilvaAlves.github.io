@@ -4,7 +4,7 @@ import { reload, placeShip, receiveAttack } from "./functions.js";
 
 document.addEventListener("DOMContentLoaded", function(){
     const container = document.getElementById("container");
-    container.innerHTML="<div id='title'><h1>Battlership</h1></div><div id='text'><p>Place your ships in the position you want.</p></div><div id='battlefield' class='battlefield'></div>";
+    container.innerHTML="<div id='title'><h1>Battlership</h1></div><div id='text'><p>Click to place your ships in the position you want.</p></div><div id='battlefield' class='battlefield'></div>";
     var div = "";
     for(let i=1; i<=100; i++){
         div += '<div id="'+i+'" class="field" onclick="placeShip('+i+')"></div>';
