@@ -63,6 +63,8 @@ function selectRGB(cor,taxa){
       return `rgb(233, 194, 166)`;
     }else if(cor=="bege"){
       return `rgb(234, 234, 174)`;
+    }else if(cor=="branco"){
+      return `rgb(255, 255, 255)`;
     }
   }else{
     if(cor=="preto"){
@@ -93,6 +95,8 @@ function selectRGB(cor,taxa){
       return `rgba(233, 194, 166, ${taxa})`;
     }else if(cor=="bege"){
       return `rgba(234, 234, 174, ${taxa})`;
+    }else if(cor=="branco"){
+      return `rgb(255, 255, 255, ${taxa})`;
     }
   }
 }

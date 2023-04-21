@@ -105,6 +105,9 @@ body{
 #bege{
   background-color: rgb(234,234,174);
 }
+#branco{
+  background-color: rgb(255,255,255);
+}
 .cor{
   width: 32px;
   height: 32px;
