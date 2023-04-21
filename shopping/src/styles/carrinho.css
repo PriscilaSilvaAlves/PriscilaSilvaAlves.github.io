@@ -1,0 +1,92 @@
+#produtoCarrinho{
+    padding: 100px 40px 40px 40px;
+    min-height: calc(100vh - 140px);
+    height: auto;
+    width: calc(100% - 80px);
+    background-image: linear-gradient(to right top, #5eead4, pink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+}
+#fundoCarrinho{
+    width: 900px;
+    height: auto;
+    min-height: 300px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: justify;
+    gap: 40px;
+}
+#fundoCarrinho img{
+    height: 250px;
+    background-color: grey;
+ }
+#itenCarrinho{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: justify;
+    gap: 40px;
+}
+#btnIncrementar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#btnIncrementar button{
+    height: 30px;
+    width: 30px;
+}
+#btnCompre button{
+    height: 60px;
+    width: 280px;
+    font-size: 20px;
+    background-color: #4b5563;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: none;
+}
+#fundoCarrinho h2{
+    width: 100%;
+    text-align: right;
+    color: red;
+}
+#fundoCarrinho h1{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+}
+#fundoCarrinho h3{
+    font-size: 30px;
+    margin: 0;
+}
+@media screen and (max-width: 900px) {
+    #produtoCarrinho{
+        width: 100%;
+        padding: 120px 0 50px 0;
+        height: auto;
+    }
+    #fundoCarrinho{
+        width: calc(100% - 40px);
+        padding: 20px;
+        border-radius: 0;
+    }
+    #fundoCarrinho img{
+        width: calc(100% - 40px);
+        height: auto;
+    }
+    #itenCarrinho{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
