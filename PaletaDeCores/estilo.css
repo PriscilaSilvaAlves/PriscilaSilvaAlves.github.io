@@ -53,7 +53,7 @@ body{
   border: 1px solid #C8C8C8;
 }
 #cores{
-  width: 512px;
+  width: 600px;
   height: 32px;
   display: flex;
   align-items: center;
@@ -81,11 +81,29 @@ body{
 #rosa{
   background-color: rgb(255,0,255);
 }
+#pink{
+  background-color: rgb(255,28,174);
+}
 #verde{
   background-color: green;
 }
+#verdeLimao{
+  background-color: rgb(0,255,0);
+}
 #marrom{
   background-color: rgb(184,115,51);
+}
+#ciano{
+  background-color: rgb(0,255,255);
+}
+#laranja{
+  background-color: rgb(255,165,0);
+}
+#rosaBebe{
+  background-color: rgb(233,194,166);
+}
+#bege{
+  background-color: rgb(234,234,174);
 }
 .cor{
   width: 32px;
@@ -98,12 +116,15 @@ body{
   }
   #gridID{
     gap: 40px;
+    padding: 0 20px;
+    width: calc(100% - 40px);
   }
   .classID{
     height: 120px;
   }
   .classID label{
     font-size: 30px;
+    width: 150px;
   }
   .classID input{
     height: 60px;
@@ -111,13 +132,14 @@ body{
   }
   button{
     height: 60px;
-    width: 250px;
+    width: 180px;
     font-size: 30px;
   }
   #cores{
-    width: calc(100% - 100px);
-    height: 100px;
+    width: calc(100% - 10px);
+    height: auto;
     gap: 40px;
+    flex-wrap: wrap;
     text-align: center;
   }
   #cores p{

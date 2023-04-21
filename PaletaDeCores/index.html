@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head> 
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="estilo.css">
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript">
@@ -10,7 +11,7 @@
         let colunas=' ';
         for (var i = 0; i<256; i++) {
           escrever += `<div id="${i}" class="gridClass" quantidade="1"> </div>`
-        }
+        } 
         for (var i = 0; i <16; i++) {
           colunas += "auto "
         }
@@ -43,24 +44,29 @@
             <input type="number" id="matriz" max="100" min="1">
           </div>
           <div class="classID">
-            <button type="button" onclick="createDivs()">Create squares</button>
+            <button type="button" onclick="createDivs()">Create</button>
           </div>
           <div class="classID">
-            <button type="button" onclick="cleanDivs()">Clean square</button>
+            <button type="button" onclick="cleanDivs()">Clean</button>
           </div>
         </div>
       </form>
     </div>
     <div id="cores">
-      <p>Select a color: </p>
       <div id="preto" class="cor"></div>
       <div id="cinza" class="cor"></div>
       <div id="azul" class="cor"></div>
+      <div id="ciano" class="cor"></div>
       <div id="vermelho" class="cor"></div>
+      <div id="laranja" class="cor"></div>
       <div id="amarelo" class="cor"></div>
       <div id="rosa" class="cor"></div>
+      <div id="rosaBebe" class="cor"></div>
+      <div id="pink" class="cor"></div>
       <div id="verde" class="cor"></div>
+      <div id="verdeLimao" class="cor"></div>
       <div id="marrom" class="cor"></div>
+      <div id="bege" class="cor"></div>
     </div>
     <div id="corpo">
       <div id="gd">
@@ -71,41 +77,25 @@
         let cores = document.getElementById("cores");
         cores.addEventListener("click", function(event){
           cor = event.target.id;
-          console.log(cor);
         })
         let obj = document.getElementById("gd");
         obj.addEventListener("click", function(event){
           let quant = event.target.attributes.quantidade.value;
           if(quant==1){
-            event.target.style.backgroundColor= selectRGB(cor, "10%");
+            event.target.style.backgroundColor= selectRGB(cor, "20%");
             event.target.setAttribute('quantidade','2')
           }else if(quant==2){
-            event.target.style.backgroundColor=selectRGB(cor, "20%");
+            event.target.style.backgroundColor=selectRGB(cor, "40%");
             event.target.setAttribute('quantidade','3')
           }else if(quant==3){
-            event.target.style.backgroundColor=selectRGB(cor, "30%");
+            event.target.style.backgroundColor=selectRGB(cor, "60%");
             event.target.setAttribute('quantidade','4')
           }else if(quant==4){
-            event.target.style.backgroundColor=selectRGB(cor, "40%");
+            event.target.style.backgroundColor=selectRGB(cor, "80%");
             event.target.setAttribute('quantidade','5')
           }else if(quant==5){
-            event.target.style.backgroundColor=selectRGB(cor, "50%");
-            event.target.setAttribute('quantidade','6')
-          }else if(quant==6){
-            event.target.style.backgroundColor=selectRGB(cor, "60%");
-            event.target.setAttribute('quantidade','7')
-          }else if(quant==7){
-            event.target.style.backgroundColor=selectRGB(cor, "70%");
-            event.target.setAttribute('quantidade','8')
-          }else if(quant==8){
-            event.target.style.backgroundColor=selectRGB(cor, "80%");
-            event.target.setAttribute('quantidade','9')
-          }else if(quant==9){
-            event.target.style.backgroundColor=selectRGB(cor, "90%");
-            event.target.setAttribute('quantidade','10')
-          }else if(quant==10){
             event.target.style.backgroundColor=selectRGB(cor, "100%");
-            event.target.setAttribute('quantidade','11');
+            event.target.setAttribute('quantidade','6')
           }
         }, false);
     </script>
