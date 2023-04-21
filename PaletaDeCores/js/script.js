@@ -5,8 +5,8 @@ function createDivs(){
     num=100;
   }
   if(window.innerHeight > window.innerWidth){
-    var h=(384/num)-2;
-    var w=(384/num)-2;
+    var h=(320/num)-2;
+    var w=(320/num)-2;
   }else{
     var h=(512/num)-2;
     var w=(512/num)-2;

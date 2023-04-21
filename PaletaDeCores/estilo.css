@@ -50,7 +50,7 @@ body{
   display: grid;
 }
 .gridClass{
-  border: 1px solid #C8C8C8;
+  border: 1px solid #e5e7eb;
 }
 #cores{
   width: 600px;
@@ -158,14 +158,19 @@ body{
    
   }
   #corpo{
-    width: 384px;
-    height: 384px;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   #gd{
-    width: 384px;
-    height: 384px;
+    width: auto;
+    height: auto;
     display: grid;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    padding: 0;
   }
 }
