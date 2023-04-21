@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import App from "../App.js";
 import Products from "./Products.js";
 import Item from './Item.js';
@@ -190,7 +190,7 @@ const RouteSwitch = () => {
   }
 
   return (
-    <BrowserRouter>
+    <HashRouter>
         <Nav></Nav>
         <Routes>    
             <Route path="/" element={<App itens={ itens } />} />
@@ -198,7 +198,7 @@ const RouteSwitch = () => {
             <Route path="/products/:id" element={<Item itens={ itens } setCarrinho={ setCarrinho } />} />
             <Route path="/carrinho/" element={<Carrinho ItensCarrinho={ ItensCarrinho } incrementeCarrinho={ incrementeCarrinho } decrementeCarrinho={ decrementeCarrinho } />} />
         </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

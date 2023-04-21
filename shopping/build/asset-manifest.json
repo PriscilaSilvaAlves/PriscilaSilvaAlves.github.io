@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping/build/static/css/main.e4158ba5.css",
-    "main.js": "/shopping/build/static/js/main.247ee390.js",
+    "main.js": "/shopping/build/static/js/main.8c70e559.js",
     "static/js/787.eaad36ba.chunk.js": "/shopping/build/static/js/787.eaad36ba.chunk.js",
     "static/media/mouse2.png": "/shopping/build/static/media/mouse2.cab6e516d344d074f682.png",
     "static/media/caixa-de-som.png": "/shopping/build/static/media/caixa-de-som.6a024742e90a5509c37f.png",
@@ -20,11 +20,11 @@
     "static/media/hd.png": "/shopping/build/static/media/hd.4d7064aa7f7c36209ee7.png",
     "index.html": "/shopping/build/index.html",
     "main.e4158ba5.css.map": "/shopping/build/static/css/main.e4158ba5.css.map",
-    "main.247ee390.js.map": "/shopping/build/static/js/main.247ee390.js.map",
+    "main.8c70e559.js.map": "/shopping/build/static/js/main.8c70e559.js.map",
     "787.eaad36ba.chunk.js.map": "/shopping/build/static/js/787.eaad36ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e4158ba5.css",
-    "static/js/main.247ee390.js"
+    "static/js/main.8c70e559.js"
   ]
 }
