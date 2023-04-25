@@ -7,9 +7,9 @@ function Nav() {
         <nav>
             <img src={ logo } alt="Logo"></img>
             <ul>
-                <Link to="/"><li>Início</li></Link>
-                <Link to="/products"><li>Produtos</li></Link>
-                <Link to="/carrinho"><li>Carrinho</li></Link>
+                <Link to="/" data-testid="navInicio"><li>Início</li></Link>
+                <Link to="/products" data-testid="navProdutos"><li>Produtos</li></Link>
+                <Link to="/carrinho" data-testid="navCarrinho"><li>Carrinho</li></Link>
             </ul>
         </nav>
     );

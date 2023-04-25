@@ -8,7 +8,7 @@ function Products({ itens }){
       <h1>Produtos disponíveis</h1>
       <div id="lista">
         {itens.map((item) => (
-            <Link to={ `/products/${item.id}` }>
+            <Link to={ `/products/${item.id}` } data-testid={`productsItem${item.id}`}>
               <div className="item" key={item.id}>
                   <img src={ item.src } alt={ item.nome }></img>
                   <h2>{ item.nome }</h2>
@@ -17,7 +17,7 @@ function Products({ itens }){
               </div>
             </Link>
         ))}
-      </div>
+      </div> 
     </div>
   );
 }

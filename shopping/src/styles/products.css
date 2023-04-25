@@ -24,8 +24,6 @@
 }
 .item{
     background-color: #FFFFFF;
-    border-radius: 30px;
-    padding: 10px;
     height: 320px;
     width: 200px;
     display: flex;
@@ -33,7 +31,7 @@
     align-items: center;
     justify-content: flex-start;
     text-align: center;
-    gap: 10px;
+    gap: 5px;
 }
 #lista a{
     text-decoration: none;
@@ -44,9 +42,8 @@
 }
 .item img{
     width: 200px;
-    border-radius: 30px 30px 0 0;
     margin-bottom: 10px;
-    background-color: #9ca3af;
+    background-color: #e5e7eb;
 }
 .item h2{
     font-size: 16px;
@@ -61,6 +58,7 @@
 }
 .promoPreco{
     color: red;
+    padding-bottom: 10px;
 }
 @media screen and (max-width: 900px){
     #products h1{

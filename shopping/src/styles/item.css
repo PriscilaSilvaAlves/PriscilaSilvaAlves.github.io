@@ -11,7 +11,7 @@
 #fundo{
     width: 900px;
     height: 360px;
-    padding: 40px;
+    padding: 10px;
     background-color: white;
     border-radius: 20px;
     display: flex;
@@ -53,6 +53,9 @@
 #btnCompre button:active{
     transform: scale(0.8);
 }
+#detalhes{
+    padding: 20px;
+}
 #detalhes h1{
     margin: 0;
     font-size: 30px;
@@ -75,7 +78,10 @@
     }
     #fundo img, #detalhes{
         height: auto;
-        width: calc(100% - 40px);
+        width: 100%;
+    }
+    #detalhes{
+        padding: 0;
     }
     #detalhes h1{
         text-align: center;

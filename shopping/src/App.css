@@ -107,9 +107,6 @@ body{
 }
 .itemPromo{
   background-color: #FFFFFF;
-  border-radius: 0 60px 0 60px;
-  padding: 16px;
-  height: 320px;
   width: 220px;
   display: flex;
   flex-direction: column;
@@ -119,14 +116,14 @@ body{
   gap: 10px;
 }
 .itemPromo img{
-  width: 210px;
-  border-radius: 0 60px 0 0;
+  width: 220px;
   margin-bottom: 10px;
-  background-color: #9ca3af;
+  background-color: #e5e7eb;
 }
 .itemPromo h2{
   font-size: 16px;
   height: 40px;
+  width: calc(100% - 20px);
   margin: 0;
   text-transform: uppercase;
   font-weight: 500;
@@ -140,6 +137,7 @@ body{
 }
 .promoPreco{
   color: red;
+  padding-bottom: 10px;
 }
 #contact{
     background-image: linear-gradient(to right bottom, #5eead4, pink);
@@ -203,9 +201,13 @@ body{
     padding: 80px 20px 0 20px;
     gap: 40px
   }
-  #homeProductButtons, #publi img{
+  #homeProductButtons{
     width: calc(100% - 80px);
     padding: 0 40px;
+  }
+  #publi img{
+    width: 100%;
+    padding: 0;
   }
   .btn{
     width: 280px;
@@ -216,6 +218,6 @@ body{
     text-align: center;
   }
   #publiText{
-    width: calc(100% - 40px);
+    width: 100%;
   }
 }

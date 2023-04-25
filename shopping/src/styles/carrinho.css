@@ -13,7 +13,7 @@
     width: 900px;
     height: auto;
     min-height: 300px;
-    padding: 40px;
+    padding: 10px;
     background-color: white;
     border-radius: 20px;
     display: flex;
@@ -21,11 +21,11 @@
     align-items: flex-start;
     justify-content: center;
     text-align: justify;
-    gap: 40px;
+    gap: 10px;
 }
 #fundoCarrinho img{
     height: 250px;
-    background-color: grey;
+    background-color: #e5e7eb;
  }
 #itenCarrinho{
     display: flex;
@@ -60,6 +60,7 @@
     width: 100%;
     text-align: right;
     color: red;
+    margin: 0;
 }
 #fundoCarrinho h1{
     width: 100%;
@@ -82,7 +83,7 @@
         border-radius: 0;
     }
     #fundoCarrinho img{
-        width: calc(100% - 40px);
+        width: 100%;
         height: auto;
     }
     #itenCarrinho{

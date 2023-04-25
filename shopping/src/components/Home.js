@@ -9,8 +9,8 @@ function Home(){
                     <h1>Fone de ouvido com microfone OEX Drop Hs210</h1>
                 </div>
                 <div id="homeProductButtons">
-                    <Link to="/products/11"><p className="btn">Compre agora</p></Link>
-                    <Link to="/products"><p className="btn">Compre tudo</p></Link>
+                    <Link to="/products/11" data-testid="homeItem"><p className="btn">Compre agora</p></Link>
+                    <Link to="/products" data-testid="homeItens"><p className="btn">Compre tudo</p></Link>
                 </div>
             </div>
             <img src={ Phone } alt="White headset"></img>

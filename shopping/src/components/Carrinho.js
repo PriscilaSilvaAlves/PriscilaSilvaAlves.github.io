@@ -13,7 +13,7 @@ function Carrinho( { ItensCarrinho, incrementeCarrinho, decrementeCarrinho }){
     console.log(ItensCarrinho);
     return (
         <div id="produtoCarrinho">
-            <div id="fundoCarrinho">
+            <div id="fundoCarrinho" key="1">
                 <h1>Carrinho</h1>
                 {ItensCarrinho.map((item) => (
                     <div id="itenCarrinho">
@@ -23,9 +23,9 @@ function Carrinho( { ItensCarrinho, incrementeCarrinho, decrementeCarrinho }){
                             <p>{ item.detalhes }</p>
                             <p>{ (item.promo !=="0") ? "De R$ " + item.preco + ",00 por R$ " + item.promo+",00" : "R$ "+item.preco+",00" }</p>
                             <div id="btnIncrementar">
-                                <button onClick={ () => { decrementeCarrinho(item.id) } }> - </button>
+                                <button name="btnincrement" onClick={ () => { decrementeCarrinho(item.id) } }> - </button>
                                 <p> { item.quantidade } </p>
-                                <button onClick={ () => { incrementeCarrinho(item.id) } }> + </button>  
+                                <button name="btndecrement" onClick={ () => { incrementeCarrinho(item.id) } }> + </button>  
                             </div>
                         </div>
                     </div>
