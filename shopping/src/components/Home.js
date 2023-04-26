@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet';
 function Home(){
     return (
         <div id="home">
-            <Helmet><title>Shopping | Início</title></Helmet>
+            <Helmet><title>Rektr | Início</title></Helmet>
             <div id="homeProduct">
                 <div id="homeProductName">
                     <h1>Fone de ouvido com microfone OEX Drop Hs210</h1>

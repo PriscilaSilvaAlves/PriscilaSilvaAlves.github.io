@@ -1,6 +1,6 @@
 #corpoItem{
     height: calc(100vh - 100px);
-    overflow: scroll;
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
 }

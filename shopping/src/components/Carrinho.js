@@ -15,7 +15,7 @@ function Carrinho( { ItensCarrinho, incrementeCarrinho, decrementeCarrinho }){
     })
     return (
         <div id="corpoCarrinho">
-            <Helmet><title>Shopping | Carrinho</title></Helmet>
+            <Helmet><title>Rektr | Carrinho</title></Helmet>
             <div id="produtoCarrinho">
                 <div id="fundoCarrinho" key="1">
                     <h1>Carrinho</h1>

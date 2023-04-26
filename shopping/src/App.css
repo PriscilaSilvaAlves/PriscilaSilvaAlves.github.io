@@ -5,7 +5,7 @@ body{
 }
 #corpo{
   width: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
   height: calc(100vh - 80px);
 }
 #home{
@@ -142,7 +142,7 @@ body{
   padding-bottom: 10px;
 }
 #contact{
-    height: calc(100vh - 80px);
+    height: calc(100vh - 160px);
     padding: 80px 40px 80px 40px;
     width: calc(100% - 80px);
     display: flex;

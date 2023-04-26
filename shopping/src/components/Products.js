@@ -9,7 +9,7 @@ function Products({ itens }){
   return (
     <>
       <div id="products">
-      <Helmet><title>Shopping | Produtos</title></Helmet>
+      <Helmet><title>Rektr | Produtos</title></Helmet>
         <h1>Produtos disponíveis</h1>
         <div id="lista">
           {itens.map((item) => (

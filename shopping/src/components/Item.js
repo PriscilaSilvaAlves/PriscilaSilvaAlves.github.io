@@ -10,7 +10,7 @@ function Item({ itens, setCarrinho }){
     const item = itens.find((item) =>item.id===id);
     return (
         <div id="corpoItem">
-            <Helmet><title>Shopping | Detalhes</title></Helmet>
+            <Helmet><title>Rektr | Detalhes</title></Helmet>
             <div id="produto">
                 <div id="fundo">
                     <img src={ item.src } alt={ item.nome }></img>
