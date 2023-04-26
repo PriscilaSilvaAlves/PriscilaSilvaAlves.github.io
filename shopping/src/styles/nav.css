@@ -4,9 +4,9 @@ nav ul{
 }
 nav li{
     color: black;
-    display: inline;
-    padding-right: 100px;
+    display: inline-block;
     font-family: 'Quicksand', sans-serif;
+    width: 140px;
 }
 nav li:hover{
     font-weight: 600;
@@ -15,7 +15,7 @@ nav a{
     text-decoration: none;
 }
 nav{
-    position: fixed;
+    background-color: transparent;
     height: 80px;
     width: 100%;
     display: flex;

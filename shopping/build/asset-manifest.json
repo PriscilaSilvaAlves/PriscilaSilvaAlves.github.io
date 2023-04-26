@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shopping/build/static/css/main.5bcf5245.css",
-    "main.js": "/shopping/build/static/js/main.af5c348e.js",
+    "main.css": "/shopping/build/static/css/main.916401b8.css",
+    "main.js": "/shopping/build/static/js/main.f69df1ac.js",
     "static/js/787.eaad36ba.chunk.js": "/shopping/build/static/js/787.eaad36ba.chunk.js",
     "static/media/mouse2.png": "/shopping/build/static/media/mouse2.cab6e516d344d074f682.png",
     "static/media/caixa-de-som.png": "/shopping/build/static/media/caixa-de-som.6a024742e90a5509c37f.png",
@@ -19,12 +19,12 @@
     "static/media/fone1.png": "/shopping/build/static/media/fone1.d5a08bfa1b53170fdf48.png",
     "static/media/hd.png": "/shopping/build/static/media/hd.4d7064aa7f7c36209ee7.png",
     "index.html": "/shopping/build/index.html",
-    "main.5bcf5245.css.map": "/shopping/build/static/css/main.5bcf5245.css.map",
-    "main.af5c348e.js.map": "/shopping/build/static/js/main.af5c348e.js.map",
+    "main.916401b8.css.map": "/shopping/build/static/css/main.916401b8.css.map",
+    "main.f69df1ac.js.map": "/shopping/build/static/js/main.f69df1ac.js.map",
     "787.eaad36ba.chunk.js.map": "/shopping/build/static/js/787.eaad36ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5bcf5245.css",
-    "static/js/main.af5c348e.js"
+    "static/css/main.916401b8.css",
+    "static/js/main.f69df1ac.js"
   ]
 }

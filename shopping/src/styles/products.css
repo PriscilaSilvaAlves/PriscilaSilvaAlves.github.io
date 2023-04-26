@@ -1,17 +1,17 @@
 #products{
-    padding: 100px 40px 40px 40px;
-    height: auto;
+    padding: 0 40px 0 40px;
+    height: calc(100vh - 80px);
+    overflow: scroll;
     width: calc(100% - 80px);
-    background-image: linear-gradient(to right top, #5eead4, pink);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content:flex-start;
     gap: 40px;
     font-family: 'Quicksand', sans-serif;
 }
 #products h1{
-    margin: 0;
+    margin-top: 50px;
 }
 #lista{
     height: auto;
@@ -21,6 +21,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
+    margin-bottom: 50px;
 }
 .item{
     background-color: #FFFFFF;
@@ -37,8 +38,8 @@
     text-decoration: none;
     color: black;
 }
-#lista a:hover{
-    transform: scale(1.2);
+#lista img:hover{
+    transform: scale(1.4);
 }
 .item img{
     width: 200px;

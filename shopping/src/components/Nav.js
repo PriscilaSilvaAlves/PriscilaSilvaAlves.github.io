@@ -5,7 +5,7 @@ import logo from '../images/logo.png';
 function Nav() {
     return (
         <nav>
-            <img src={ logo } alt="Logo"></img>
+            <Link to="/" data-testid="navInicio"><img src={ logo } alt="Logo"></img></Link>
             <ul>
                 <Link to="/" data-testid="navInicio"><li>Início</li></Link>
                 <Link to="/products" data-testid="navProdutos"><li>Produtos</li></Link>

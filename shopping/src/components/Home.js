@@ -1,9 +1,11 @@
 import Phone from '../images/fone2.png';
 import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet';
 
 function Home(){
     return (
         <div id="home">
+            <Helmet><title>Shopping | Início</title></Helmet>
             <div id="homeProduct">
                 <div id="homeProductName">
                     <h1>Fone de ouvido com microfone OEX Drop Hs210</h1>

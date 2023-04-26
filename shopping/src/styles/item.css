@@ -1,14 +1,19 @@
-#produto{
-    padding: 100px 40px 0 40px;
+#corpoItem{
     height: calc(100vh - 100px);
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+}
+#produto{
+    padding: 0 40px 0 40px;
     width: calc(100% - 80px);
-    background-image: linear-gradient(to right top, #5eead4, pink);
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Quicksand', sans-serif;
 }
 #fundo{
+    margin-top: 80px;
     width: 900px;
     height: 360px;
     padding: 10px;
@@ -22,6 +27,9 @@
 }
 #fundo img{
    height: 360px;
+}
+#fundo img:hover{
+    transform: scale(1.4);
 }
 #btnCompre{
     width: 100%;
