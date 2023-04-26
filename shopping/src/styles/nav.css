@@ -28,7 +28,8 @@ nav img{
 }
 @media screen and (max-width: 900px){
     nav li{
-        padding-right: 10px;
+        width: 90px;
+        text-align: center;
     }
     nav img{
         padding-left: 0;
@@ -43,7 +44,7 @@ nav img{
         padding: 10px 10px;
         justify-content: center;
         flex-wrap: wrap;
-        height: auto;
+        height: 110px;
         gap: 20px;
     }
 }

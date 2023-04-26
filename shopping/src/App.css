@@ -197,6 +197,9 @@ body{
   #home{
     height: auto;
   }
+  #homeProduct{
+    width: calc(100% - 40px);
+  }
   #publi{
     height: auto;
     padding: 80px 20px 0 20px;
@@ -220,5 +223,8 @@ body{
   }
   #publiText{
     width: 100%;
+  }
+  #corpo{
+    height: calc(100vh - 130px);
   }
 }

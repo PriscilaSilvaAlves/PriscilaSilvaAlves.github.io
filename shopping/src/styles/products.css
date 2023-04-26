@@ -65,4 +65,7 @@
     #products h1{
         text-align: center;
     }
+    #products{
+        height: calc(100vh - 130px);
+    }
 }

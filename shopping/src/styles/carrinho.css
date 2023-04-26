@@ -81,13 +81,14 @@
 @media screen and (max-width: 900px) {
     #produtoCarrinho{
         width: 100%;
-        padding: 120px 0 50px 0;
+        padding: 20px 0 50px 0;
         height: auto;
     }
     #fundoCarrinho{
         width: calc(100% - 40px);
         padding: 20px;
         border-radius: 0;
+        margin-top: 0;
     }
     #fundoCarrinho img{
         width: 100%;
@@ -96,5 +97,8 @@
     #itenCarrinho{
         width: 100%;
         flex-wrap: wrap;
+    }
+    #corpoCarrinho{
+        height: calc(100vh - 130px);
     }
 }
