@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import '../styles/main.css';
 import HarryPotter from '../images/Harry-Potter.png';
 import AlbusDumbledore from '../images/Albus-Dumbledore.jpg';
@@ -100,10 +100,18 @@ function Main(){
             src: SiriusBlack
         }
     ];
+    var local=0;
+    const localHS = localStorage.getItem("HighestScore");
+    if(localHS !== null){
+        local = localHS;
+    }
     const [score, setScore]=useState(0);
-    const [highest, setHighest]=useState(0);
+    const [highest, setHighest]=useState(local);
     const [pictures, setPictures]=useState(arrPictures); 
     const [lastPicture, setLastPicture]=useState([]); 
+    useEffect(() => {
+        localStorage.setItem("HighestScore", highest);
+      }, [highest]);
     function shuffleArray(arr) {
         for (let i = arr.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -149,18 +157,18 @@ function Main(){
     return (
         <main>
             <div id="score">
-                <p>Current score: { score }</p>
-                <p>Highest score: { highest }</p>
+                <p id="current-score">Current score: { score }</p>
+                <p id="highest-score" aria-labelledby="current-score highest-score">Highest score: { highest }</p>
             </div>
             <div id="instructions">
                 <p>Click to select a different card each round.</p>
             </div>
             <div id="cards">
                 {pictures.map((picture) => (
-                    <div className="card" key={ picture.id } onClick={ () => { selectCard(picture.id) } }>
-                        <img src={ picture.src } alt={ picture.name }></img>
-                        <p>{ picture.name }</p>
-                    </div>
+                    <button type="button" aria-label={"Select the card of" + picture.name} className="card" key={ picture.id } onClick={ () => { selectCard(picture.id) } }>
+                        <img src={ picture.src } alt={ picture.name } aria-describedby={"p-" + picture.id }></img>
+                        <p id={"p-" + picture.id }>{ picture.name }</p>
+                    </button>
                 ))}
             </div>
         </main>

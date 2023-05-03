@@ -45,11 +45,23 @@ main{
     justify-content: center;
     width: 250px;
     height: auto;
-    background-color: #1f2937;
+    background-color: transparent   ;
     color: #FFFFFF;
+    border: none;
+}
+.card p{
+    width: 250px;
+    background-color: #1f2937;
+    height: 40px;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .card img{
     width: 250px;
+    object-fit: cover;
 }
 .card:active{
     transform: scale(0.9);

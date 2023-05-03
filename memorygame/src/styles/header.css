@@ -6,6 +6,7 @@ header{
     justify-content: center;
     text-align: center;
     animation: changeBackgroundColor 3s infinite;
+    animation-direction: alternate;
 }
 header h1{
     font-size: 60px;
