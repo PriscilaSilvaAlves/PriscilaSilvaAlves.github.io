@@ -165,7 +165,7 @@ function Main(){
             </div>
             <div id="cards">
                 {pictures.map((picture) => (
-                    <button type="button" aria-label={"Select the card of" + picture.name} className="card" key={ picture.id } onClick={ () => { selectCard(picture.id) } }>
+                    <button type="button" aria-label={"Select the card of " + picture.name} className="card" key={ picture.id } onClick={ () => { selectCard(picture.id) } }>
                         <img src={ picture.src } alt={ picture.name } aria-describedby={"p-" + picture.id }></img>
                         <p id={"p-" + picture.id }>{ picture.name }</p>
                     </button>
