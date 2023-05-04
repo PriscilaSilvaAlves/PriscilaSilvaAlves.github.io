@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/memorygame/build/static/css/main.d2262c9b.css",
+    "main.css": "/memorygame/build/static/css/main.5358e05c.css",
     "main.js": "/memorygame/build/static/js/main.63120780.js",
     "static/js/787.5c91c138.chunk.js": "/memorygame/build/static/js/787.5c91c138.chunk.js",
     "static/media/Bellatrix-Lestrange.png": "/memorygame/build/static/media/Bellatrix-Lestrange.cefdb56edef87693c7ef.png",
@@ -20,12 +20,12 @@
     "static/media/Dolores-Umbridge.jpg": "/memorygame/build/static/media/Dolores-Umbridge.ec595d7149ed17e1a3d3.jpg",
     "static/media/Lord-Voldemort.jpg": "/memorygame/build/static/media/Lord-Voldemort.06c1a383a3d13c368fb0.jpg",
     "index.html": "/memorygame/build/index.html",
-    "main.d2262c9b.css.map": "/memorygame/build/static/css/main.d2262c9b.css.map",
+    "main.5358e05c.css.map": "/memorygame/build/static/css/main.5358e05c.css.map",
     "main.63120780.js.map": "/memorygame/build/static/js/main.63120780.js.map",
     "787.5c91c138.chunk.js.map": "/memorygame/build/static/js/787.5c91c138.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2262c9b.css",
+    "static/css/main.5358e05c.css",
     "static/js/main.63120780.js"
   ]
 }
