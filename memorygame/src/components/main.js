@@ -158,7 +158,7 @@ function Main(){
         <main>
             <div id="score">
                 <p id="current-score">Current score: { score }</p>
-                <p id="highest-score" aria-labelledby="current-score highest-score">Highest score: { highest }</p>
+                <p id="highest-score">Highest score: { highest }</p>
             </div>
             <div id="instructions">
                 <p>Click to select a different card each round.</p>
