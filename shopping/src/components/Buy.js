@@ -8,12 +8,14 @@ function Buy({ itens }){
             <div id="buyProducts">
             {promo.map((item) => (
                 <Link to={`products/${item.id}`} data-testid="itensPromocao">
-                    <div className="itemPromo" key={ item.id }>
-                        <img src={ item.src } alt={ item.nome }></img>
-                        <h2>{ item.nome }</h2>
-                        <p className="precoNormal">De: R${ item.preco },00</p>
-                        <p className="promoPreco">Por: R${ item.promo },00</p>
-                    </div>
+                    <button className="itemPromo" key={ item.id } aria-label={ "Ir para a aba de detalhes do "+item.nome}>
+                        <img src={ item.src } alt={ item.nome } aria-describedby={ "detalhes-"+item.id }></img>
+                        <div id={ "detalhes-"+item.id } className="detalhes">
+                            <h2>{ item.nome }</h2>
+                            <p className="precoNormal">De: R${ item.preco },00</p>
+                            <p className="promoPreco">Por: R${ item.promo },00</p>
+                        </div>
+                    </button>
                 </Link> 
             ))}
             </div>

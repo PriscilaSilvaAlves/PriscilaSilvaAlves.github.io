@@ -27,7 +27,7 @@ body{
   font-weight: 300;
 }
 #home img{
-  width: 380px;
+  width: 35%;
 }
 #homeProductButtons{
   display: flex;
@@ -55,6 +55,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
 }
 .btn:active{
   transform: scale(0.8);
@@ -71,6 +72,9 @@ body{
   align-items: center;
   justify-content: center;
   gap: 100px;
+}
+#publi img{
+  width: 35%;
 }
 #publiText{
   width: 500px;
@@ -108,18 +112,27 @@ body{
   flex-wrap: wrap;
 }
 .itemPromo{
-  background-color: #FFFFFF;
+  background-color: transparent;
   width: 220px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: none;
+}
+.detalhes{
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
+  background-color: #FFFFFF;
+  width: 200px;
+  padding: 10px;
 }
 .itemPromo img{
   width: 220px;
-  margin-bottom: 10px;
   background-color: #e5e7eb;
 }
 .itemPromo h2{
@@ -138,7 +151,7 @@ body{
   text-decoration: line-through;
 }
 .promoPreco{
-  color: red;
+  color: #dc2626;
   padding-bottom: 10px;
 }
 #contact{
@@ -196,6 +209,9 @@ body{
   }
   #home{
     height: auto;
+  }
+  #home img{
+    width: 100%;
   }
   #homeProduct{
     width: calc(100% - 40px);

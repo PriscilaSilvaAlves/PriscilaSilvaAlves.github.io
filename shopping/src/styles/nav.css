@@ -13,6 +13,7 @@ nav li:hover{
 }
 nav a{
     text-decoration: none;
+    color: black;
 }
 nav{
     background-color: transparent;
