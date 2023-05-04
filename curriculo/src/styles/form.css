@@ -120,11 +120,11 @@ button{
     height: 35px;
     font-size: 18px;
     border: none;
-    background-color: #f97316;
+    background-color: #c2410c;
     color: white;
 }
 button:hover{
-    background-color: #ea580c;
+    background-color: #9a3412;
 }
 button:active{
     transform: scale(0.8);

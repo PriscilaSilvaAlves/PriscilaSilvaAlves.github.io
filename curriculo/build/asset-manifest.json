@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/curriculo/build/static/css/main.7da925cc.css",
-    "main.js": "/curriculo/build/static/js/main.ee4b981a.js",
+    "main.css": "/curriculo/build/static/css/main.a2942ac2.css",
+    "main.js": "/curriculo/build/static/js/main.f8f41e92.js",
     "static/js/787.3b86ad0b.chunk.js": "/curriculo/build/static/js/787.3b86ad0b.chunk.js",
     "static/media/cv2.webp": "/curriculo/build/static/media/cv2.ef69b748186e73d8a5ff.webp",
     "index.html": "/curriculo/build/index.html",
-    "main.7da925cc.css.map": "/curriculo/build/static/css/main.7da925cc.css.map",
-    "main.ee4b981a.js.map": "/curriculo/build/static/js/main.ee4b981a.js.map",
+    "main.a2942ac2.css.map": "/curriculo/build/static/css/main.a2942ac2.css.map",
+    "main.f8f41e92.js.map": "/curriculo/build/static/js/main.f8f41e92.js.map",
     "787.3b86ad0b.chunk.js.map": "/curriculo/build/static/js/787.3b86ad0b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7da925cc.css",
-    "static/js/main.ee4b981a.js"
+    "static/css/main.a2942ac2.css",
+    "static/js/main.f8f41e92.js"
   ]
 }

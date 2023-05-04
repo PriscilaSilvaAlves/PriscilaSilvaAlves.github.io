@@ -1,4 +1,3 @@
-import '../styles/main.css';
 import Form from './form.js';
 
 function Main(){
