@@ -8,7 +8,7 @@ function Right({ state }){
         if(state.text === undefined || state.text === ""){
           return (
             <section id="right">
-              <img src={ Image } alt="Imagem azul de menino segurando uma lupa"></img>
+              <img aria-describedby="text" src={ Image } alt="Imagem azul de menino segurando uma lupa"></img>
               <div id="text">
                   <h1>{ title }</h1>
                   <p>{ text }</p>
@@ -20,9 +20,9 @@ function Right({ state }){
                 <section id="right">
                   <div id="formatRight">
                     <div id="encryptText">
-                      <textarea id="pText" value={ state.text } readOnly></textarea>
+                      <textarea aria-label="Resultado da operação de criprografia ou decriptografia" id="pText" value={ state.text } readOnly></textarea>
                     </div>
-                    <button id="copy" onClick={ Copy }>Copiar</button>
+                    <button aria-label="Copiar o texto obtido após a operação de criptografia ou decriptografia" id="copy" onClick={ Copy }>Copiar</button>
                   </div>
                 </section>
                 );
@@ -31,6 +31,7 @@ function Right({ state }){
 
     function Copy(){
         let textoCopiado = document.getElementById("pText");
+        //navigator.clipboard.writeText(text)
         textoCopiado.select();
         textoCopiado.setSelectionRange(0, 99999)
         document.execCommand("copy");

@@ -81,17 +81,17 @@ function Left({ childToParent }){
             <form id="formId" onSubmit={ HandleSubmit }>
                 <div id="left-top"> 
                     <div id="input">
-                        <input id="textInput" placeholder="Digite o seu texto" pattern="([a-z ,.!]+)" maxLength="150" title="Apenas letas minúsculas, sem acentos e sem caracteres especiais" onChange={ HandleChangeInput } required></input>
+                        <input id="textInput" aria-label="Insira um texto para ser criptografado ou decriptografado" placeholder="Digite o seu texto" pattern="([a-z ,.!]+)" maxLength="150" title="Apenas letas minúsculas, sem acentos e sem caracteres especiais" onChange={ HandleChangeInput } required></input>
                     </div>
                 </div>
                 <div id="left-down">
                     <div id="alert">
-                        <img src={ ImageAlert } alt="Símbolo de alerta"></img>
+                        <img src={ ImageAlert } alt=""></img>
                         <p>Apenas letras minúsculas e sem acento.</p>
                     </div>
                     <div id="buttons">
-                        <button id="btn1" name="btn1" onClick={ Encrypt }>Criptografar</button>
-                        <button id="btn2" name="btn2" onClick={ Decrypt }>Decriptografar</button>
+                        <button aria-label="Criptografar o texto" id="btn1" name="btn1" onClick={ Encrypt }>Criptografar</button>
+                        <button aria-label="Decriptografar o texto" id="btn2" name="btn2" onClick={ Decrypt }>Decriptografar</button>
                     </div>
                 </div>
             </form>
