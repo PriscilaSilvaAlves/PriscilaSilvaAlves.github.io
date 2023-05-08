@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/encryptDecrypt/build/static/css/main.8c608475.css",
+    "main.js": "/encryptDecrypt/build/static/js/main.774144ca.js",
+    "static/js/787.8650e9f9.chunk.js": "/encryptDecrypt/build/static/js/787.8650e9f9.chunk.js",
+    "static/media/lupa.svg": "/encryptDecrypt/build/static/media/lupa.cd57497a937c57681e0c30c45b9d3db9.svg",
+    "static/media/Logo.svg": "/encryptDecrypt/build/static/media/Logo.0866b68224abb9cc222350af7d5fa2d6.svg",
+    "static/media/Vector.svg": "/encryptDecrypt/build/static/media/Vector.59a7e2024b6e5887f17afb221aa4d077.svg",
+    "index.html": "/encryptDecrypt/build/index.html",
+    "main.8c608475.css.map": "/encryptDecrypt/build/static/css/main.8c608475.css.map",
+    "main.774144ca.js.map": "/encryptDecrypt/build/static/js/main.774144ca.js.map",
+    "787.8650e9f9.chunk.js.map": "/encryptDecrypt/build/static/js/787.8650e9f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c608475.css",
+    "static/js/main.774144ca.js"
+  ]
+}
