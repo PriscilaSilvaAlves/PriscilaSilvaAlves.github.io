@@ -131,6 +131,7 @@ button:active{
   margin: 0 20px;
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 #text h1{
   font-family: 'Inter', sans-serif;
@@ -143,7 +144,6 @@ button:active{
   font-family: 'Inter', sans-serif;
   color: #495057;
   font-weight: 400;
-  margin: 0;
 }
 #formatRight{
   height: 100%;
