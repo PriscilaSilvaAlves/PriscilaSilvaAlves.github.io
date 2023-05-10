@@ -73,6 +73,7 @@ export function generateMove(){
     //Verifica se um navio foi afundado no último lance:
     if(verificaHorizontal === true){
         if(hit==true){
+            console.log(1.0);
             //Verifica se o penúltimo ataque no alvo é diferente de nulo
             if(attackOnTarget[attackOnTarget.length-2]!=null){
                 console.log(1);
@@ -82,6 +83,7 @@ export function generateMove(){
                     console.log(2);
                     //O próximo movimento será a posição do último ataque no alvo mais um
                     move=attackOnTarget[attackOnTarget.length-1]+1;
+                    console.log("Move: "+move);
                     //Percorre o vetor de ataques já lançados
                     for(let i=0; i<attackPoints.length-1; i++){
                         console.log(3);
@@ -90,6 +92,7 @@ export function generateMove(){
                         if(attackPoints[i]==move){
                             console.log(4);
                             move=attackOnTarget[attackOnTarget.length-1]-1;
+                            console.log("Move: "+move);
                             //Percorre os ataques já acertados no alvo
                             for(let j=0; j<attackOnTarget.length; j++){
                                 console.log(5);
@@ -97,6 +100,7 @@ export function generateMove(){
                                 if(move==attackOnTarget[j]){
                                     console.log(6);
                                     move--;
+                                    console.log("Move: "+move);
                                     j=-1;
                                 }
                             } 
@@ -108,12 +112,14 @@ export function generateMove(){
                     //Se move mais um passo a esquerda
                     console.log(7);
                     move=attackOnTarget[attackOnTarget.length-1]-1;
+                    console.log("Move: "+move);
                 }else{
                     //Se não estiver caminhando para a esquerda e se o último ataque no alvo
                     //não fo maior que o penúltimo, o próximo movimento será a posição
                     //do último ataque no alvo mais um
                     console.log(8);
                     move=attackOnTarget[attackOnTarget.length-1]+1;
+                    console.log("Move: "+move);
                     //Percorre o vetor de ataques no alvo
                     for(let i=0; i<attackOnTarget.length-1;i++){
                         console.log(9);
@@ -122,14 +128,36 @@ export function generateMove(){
                         if(move==attackOnTarget[i]){
                             console.log(10);
                             move=attackOnTarget[attackOnTarget.length-1]-1;
+                            console.log("Move: "+move);
                         }
+                    }
+                    //Verifica se o movimento selecionado já foi um lance feito anteriormente, 
+                    //caso positivo joga o último lance menos 1.
+                    var cont=0;
+                    for(let i=0; i<attackPoints.length; i++){
+                        console.log(10.1);
+                        if(attackPoints[i]==move){
+                            console.log(10.2);
+                            move=attackOnTarget[attackOnTarget.length-1]-1;
+                            console.log("Move: "+move);
+                            i=-1;
+                            cont++;
+                        }
+                    }
+                    //Caso o último lance menos 1 também já tenha sido uma jogada feita antes,
+                    //muda para o alinhamento vertical.
+                    if(cont>1){
+                        verificaHorizontal = false;
+                        verificaVertical = true;
                     }
                 }
             //Se não houve um penúltimo ataque no alvo, move recebe o último ataque no alvo mais um
             }else{
                 console.log(11);
                 move=attackOnTarget[attackOnTarget.length-1]+1;
+                console.log("Move: "+move);
             }
+        //Se o último ataque não foi no alvo:
         }else{
             console.log(12);
             //Verifica se houve algum ataque no alvo
@@ -151,7 +179,14 @@ export function generateMove(){
                             i=-1;
                         }
                     }
+                    for(let i=0; i<attackPoints.length; i++){
+                        if(attackPoints[i]==attack){
+                            verificaHorizontal = false;
+                            verificaVertical = true;
+                        }
+                    }
                     move=attack;
+                    console.log("Move: "+move);
                 }else{
                     console.log(17);
                     verificaHorizontal = false;
@@ -162,20 +197,23 @@ export function generateMove(){
             }else{
                 console.log(18);
                 move = sortNumber(0);
+                console.log("Move: "+move);
             }
         }
     }
     if(verificaVertical === true){
         if(hit==true){
+            console.log(21.0);
             //Verifica se o penúltimo ataque no alvo é diferente de nulo
             if(attackOnTarget[attackOnTarget.length-2]!=null){
                 console.log(21);
                 //Verifica se a posição do último ataque no alvo é maior que a do penúltimo
-                //Ou seja, verifica se está caminhando da esquerda para a direita
+                //Ou seja, verifica se está caminhando de cima para baixo
                 if(attackOnTarget[attackOnTarget.length-1]>attackOnTarget[attackOnTarget.length-2]){
                     console.log(22);
                     //O próximo movimento será a posição do último ataque no alvo mais dez
                     move=attackOnTarget[attackOnTarget.length-1]+10;
+                    console.log("Move: "+move);
                     //Percorre o vetor de ataques já lançados
                     for(let i=0; i<attackPoints.length-1; i++){
                         console.log(23);
@@ -184,6 +222,7 @@ export function generateMove(){
                         if(attackPoints[i]==move){
                             console.log(24);
                             move=attackOnTarget[attackOnTarget.length-1]-10;
+                            console.log("Move: "+move);
                             //Percorre os ataques já acertados no alvo
                             for(let j=0; j<attackOnTarget.length; j++){
                                 console.log(25);
@@ -191,6 +230,7 @@ export function generateMove(){
                                 if(move==attackOnTarget[j]){
                                     console.log(26);
                                     move=move-10;
+                                    console.log("Move: "+move);
                                     j=-1;
                                 }
                             } 
@@ -202,12 +242,14 @@ export function generateMove(){
                     //Se move mais um passo a esquerda
                     console.log(27);
                     move=attackOnTarget[attackOnTarget.length-1]-10;
+                    console.log("Move: "+move);
                 }else{
                     //Se não estiver caminhando para a esquerda e se o último ataque no alvo
                     //não fo maior que o penúltimo, o próximo movimento será a posição
                     //do último ataque no alvo mais um
                     console.log(28);
                     move=attackOnTarget[attackOnTarget.length-1]+10;
+                    console.log("Move: "+move);
                     //Percorre o vetor de ataques no alvo
                     for(let i=0; i<attackOnTarget.length-1;i++){
                         console.log(29);
@@ -216,6 +258,7 @@ export function generateMove(){
                         if(move==attackOnTarget[i]){
                             console.log(30);
                             move=attackOnTarget[attackOnTarget.length-1]-10;
+                            console.log("Move: "+move);
                         }
                     }
                 }
@@ -223,13 +266,15 @@ export function generateMove(){
             }else{
                 console.log(31);
                 move=attackOnTarget[attackOnTarget.length-1]+10;
+                console.log("Move: "+move);
             }
+        //Caso contrário, não houve acerto na jogada anteior, faça:
         }else{
             console.log(32);
             //Verifica se houve algum ataque no alvo
             if(attackOnTarget[attackOnTarget.length-1]!=null){
                 console.log(33);
-                //Verifique se o último ataque no alvo é igual ao penúltimo ataque lançado
+                //Verifique se o último ataque no alvo é igual ao penúltimo ou antepenúltimo ataque lançado
                 if(attackOnTarget[attackOnTarget.length-1]==attackPoints[attackPoints.length-2] || attackOnTarget[attackOnTarget.length-1]==attackPoints[attackPoints.length-3]){
                     console.log(34);
                     //Ataque recebe o último ataque no alvo menos um:
@@ -243,7 +288,7 @@ export function generateMove(){
                     for(let i=0; i<attackOnTarget.length; i++){
                         console.log(35);
                         //Se o ataque for igual a algum ataque já lançado no alvo,
-                        //ataque decrementa em um e o for reinicia
+                        //ataque soma dez e o for reinicia
                         if(attack==attackOnTarget[i]){
                             console.log(36);
                             attack=attack+10;
@@ -251,43 +296,53 @@ export function generateMove(){
                         }
                     }
                     move=attack;
+                    console.log("Move: "+move);
+                    //Verifica se o último ataque no alvo é igual ao ante-ante-panúltimo ataque lançado
                 }else if(attackOnTarget[attackOnTarget.length-1]==attackPoints[attackPoints.length-4]){
-                    console.log(34);
+                    console.log(37);
                     //Ataque recebe o último ataque no alvo menos mais dez:
                     attack=attackOnTarget[attackOnTarget.length-1]+10;
                     //Percorre o vetor de ataques no alvo:
                     for(let i=0; i<attackOnTarget.length; i++){
-                        console.log(35);
+                        console.log(38);
                         //Se o ataque for igual a algum ataque já lançado no alvo,
                         //ataque decrementa em um e o for reinicia
                         if(attack==attackOnTarget[i]){
-                            console.log(36);
+                            console.log(39);
                             attack=attack+10;
                             i=-1;
                         }
                     }
                     move=attack;
+                    console.log("Move: "+move);
                 }else{
-                    console.log(37);
+                    console.log(40);
                     move = sortNumber(0);
+                    console.log("Move: "+move);
                     verificaHorizontal = true;
                     verificaVertical = false;
                 }
             //Se não houve nenhum ataque no alvo:
             }else{
-                console.log(38);
+                console.log(41);
                 verificaHorizontal = true;
                 verificaVertical = false;
                 move = sortNumber(0);
+                console.log("Move: "+move);
             }
         }
     }
     
     for(let i=0; i<attackPoints.length; i++){
         if(attackPoints[i]==move){
-            console.log(40);
+            console.log(42);
             move = sortNumber(0);
+            console.log("Move: "+move);
             i=-1;
+            if(verificaHorizontal===false){
+                verificaHorizontal = true;
+                verificaVertical = false;
+            }
         }
     }
     return move;
