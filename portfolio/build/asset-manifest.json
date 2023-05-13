@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio/build/static/css/main.65c10c10.css",
+    "main.js": "/portfolio/build/static/js/main.295a6632.js",
+    "static/js/787.86f37fdd.chunk.js": "/portfolio/build/static/js/787.86f37fdd.chunk.js",
+    "static/media/pessoa-digitando.png": "/portfolio/build/static/media/pessoa-digitando.1376055abb3c5bce5fc0.png",
+    "static/media/Previsao-do-Tempo.png": "/portfolio/build/static/media/Previsao-do-Tempo.f6eb3c900b9b33606a84.png",
+    "static/media/harry-potter.png": "/portfolio/build/static/media/harry-potter.c3425e78a07fa172f21f.png",
+    "static/media/perfil.jpg": "/portfolio/build/static/media/perfil.fffc88baa5d7bc66ab10.jpg",
+    "static/media/pilha-de-livros.png": "/portfolio/build/static/media/pilha-de-livros.4977c09dea80aeb69cbb.png",
+    "static/media/shopping.png": "/portfolio/build/static/media/shopping.6d97a1b103ffcf502a5e.png",
+    "static/media/Batalha-Naval.png": "/portfolio/build/static/media/Batalha-Naval.2eb313876b3271cc0ef1.png",
+    "static/media/codificador.png": "/portfolio/build/static/media/codificador.711667ec5ce8b380f764.png",
+    "static/media/curriculo.png": "/portfolio/build/static/media/curriculo.369fd0ecbbb92ad3c0f1.png",
+    "static/media/link.png": "/portfolio/build/static/media/link.45c3d04990767977301d.png",
+    "index.html": "/portfolio/build/index.html",
+    "main.65c10c10.css.map": "/portfolio/build/static/css/main.65c10c10.css.map",
+    "main.295a6632.js.map": "/portfolio/build/static/js/main.295a6632.js.map",
+    "787.86f37fdd.chunk.js.map": "/portfolio/build/static/js/787.86f37fdd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65c10c10.css",
+    "static/js/main.295a6632.js"
+  ]
+}

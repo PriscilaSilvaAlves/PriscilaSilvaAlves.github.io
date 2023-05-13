@@ -1,0 +1,98 @@
+footer{
+    height: calc(100vh - 80px);
+    width: calc(100% - 80px);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 150px;
+}
+footer h1{
+    color: transparent;
+    transition-property: color;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+#contact{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+    font-size: 30px;
+}
+.contactitem{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.contactTitle{
+    font-weight: 800;
+    color: transparent;
+    transition-property: color;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+.contactInfo{
+    color: transparent;
+    transition-property: color;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+footer:hover > #contact .contactTitle{
+    color: white;
+}
+footer:hover > h1{
+    color: white;
+}
+footer:hover > #contact .contactInfo{
+    color: #a1a1aa;
+}
+@media screen and (max-width: 1000px){
+    .contactTitle{
+        color: white;
+        transition-property: none;
+    }
+    .contactInfo{
+        color: #a1a1aa;
+        transition-property: none;
+    }
+    footer h1{
+        color: white;
+        transition-property: none;
+        text-align: center;
+    }
+    footer{
+        gap: 40px;
+        height: auto;
+        align-items: center;
+    }
+    #contact{
+        gap: 40px;
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 600px){
+    .contactTitle{
+        color: white;
+        transition-property: none;
+    }
+    .contactInfo{
+        color: #a1a1aa;
+        transition-property: none;
+    }
+    footer h1{
+        color: white;
+        transition-property: none;
+        text-align: center;
+    }
+    footer{
+        gap: 40px;
+        height: auto;
+        align-items: center;
+    }
+    #contact{
+        gap: 40px;
+        font-size: 28px;
+    }
+}

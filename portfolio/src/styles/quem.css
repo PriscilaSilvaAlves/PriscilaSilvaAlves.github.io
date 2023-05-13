@@ -1,0 +1,97 @@
+#quem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    gap: 80px;
+    color: transparent;
+    transition-property: color;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+#quem img{
+    width: 40%;
+    border-radius: 50% 50%;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+#quemText{
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 80px;
+    flex-direction: column;
+}
+#quemText p{
+    text-align: justify;
+    font-size: 30px;
+}
+#quem:hover{
+    color: white;
+}
+#quem:hover > img{
+    opacity: 1;
+}
+@media screen and (max-width: 1000px){
+    #quem{
+     width: calc(100% - 80px);
+     padding: 40px;
+     height: auto;
+     color: white;
+     transition-property: none;
+     gap: 20px;
+    } 
+    #quem img{
+     width: 50%;
+     opacity: 1;
+     transition-property: none;
+    }
+    #quemText{
+     width: 100%;
+     align-items: center;
+    }
+    #quemText p{
+     font-size: 30px;
+    }
+    #quemText h1{
+     font-size: 80px;
+     text-align: center;
+    }
+    #quem:hover > img{
+         width: 50%;
+     }
+ }
+@media screen and (max-width: 600px){
+   #quem{
+    width: calc(100% - 80px);
+    padding: 40px;
+    height: auto;
+    color: white;
+    transition-property: none;
+    gap: 20px;
+   } 
+   #quem img{
+    width: 90%;
+    opacity: 1;
+    transition-property: none;
+   }
+   #quemText{
+    width: 100%;
+    align-items: center;
+   }
+   #quemText p{
+    font-size: 28px;
+   }
+   #quemText h1{
+    font-size: 60px;
+    text-align: center;
+   }
+   #quem:hover > img{
+        width: 90%;
+    }
+}
