@@ -3,6 +3,7 @@ import { Gameboard } from "./gameboard.js";
 import { Player } from "./player.js";
 import { ship } from "./gameboard.js";
 import { attackOnTarget, hit, attackPoints } from "./player.js";
+import { myShip4, myShip3, myShip2, myShip1 } from "./player.js";
  
 var myAttacks=[];
 export var position="horizontal";
@@ -73,7 +74,7 @@ export function generateMove(){
     //Verifica se um navio foi afundado no último lance:
     if(verificaHorizontal === true){
         if(hit==true){
-            console.log(1.0);
+            console.log("1.0");
             //Verifica se o penúltimo ataque no alvo é diferente de nulo
             if(attackOnTarget[attackOnTarget.length-2]!=null){
                 console.log(1);
@@ -135,9 +136,9 @@ export function generateMove(){
                     //caso positivo joga o último lance menos 1.
                     var cont=0;
                     for(let i=0; i<attackPoints.length; i++){
-                        console.log(10.1);
-                        if(attackPoints[i]==move){
-                            console.log(10.2);
+                        console.log("10.1");
+                        if(attackPoints[i]==move && cont<3){
+                            console.log("10.2");
                             move=attackOnTarget[attackOnTarget.length-1]-1;
                             console.log("Move: "+move);
                             i=-1;
@@ -203,7 +204,7 @@ export function generateMove(){
     }
     if(verificaVertical === true){
         if(hit==true){
-            console.log(21.0);
+            console.log("21.0");
             //Verifica se o penúltimo ataque no alvo é diferente de nulo
             if(attackOnTarget[attackOnTarget.length-2]!=null){
                 console.log(21);
@@ -280,7 +281,9 @@ export function generateMove(){
                     //Ataque recebe o último ataque no alvo menos um:
                     attack=attackOnTarget[attackOnTarget.length-1]-10;
                     for(let i=0; i<attackPoints.length; i++){
+                        console.log("34.1");
                         if(attackPoints[i]==attack){
+                            console.log("34.2");
                             attack=attackOnTarget[attackOnTarget.length-1]+10;
                         }
                     }
