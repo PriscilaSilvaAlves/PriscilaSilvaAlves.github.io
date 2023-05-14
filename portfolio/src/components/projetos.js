@@ -69,13 +69,13 @@ function Projetos(){
             <div id="projetosLista">
                 {list.map((item) => (
                     <div className="item" id={"item-"+item.id} key={item.id}>
-                        <img src={ item.img } alt={ item.name } className="projImg"></img>
-                        <div className="text">
+                        <img src={ item.img } alt={ item.name } className="projImg" aria-describedby={ "text-"+item.id }></img>
+                        <div className="text" id={ "text-"+item.id }>
                             <p className="title">{ item.name }</p>
                             <p className="detail">{ item.detail }</p>
-                            <a href={ item.live } target="_blank">Visualização em tempo real <img src={Link} alt=""></img></a>
-                            <a href={ item.javascript } target="_blank">Código JavaScript no GitHub <i className="devicon-github-original"></i></a>
-                            { (item.typescript==="") ? "" : <a href={ item.typescript } target="_blank">Código TypeScript no GitHub <i className="devicon-github-original"></i></a>}
+                            <a href={ item.live } target="_blank" aria-label={ "Abrir uma nova guia com a visualização da página do projeto "+item.name }>Visualização em tempo real <img src={Link} alt=""></img></a>
+                            <a href={ item.javascript } target="_blank" aria-label={ "Abrir uma nova guia com a visualização do código no GitHub do projeto "+item.name }>Código JavaScript no GitHub <i className="devicon-github-original"></i></a>
+                            { (item.typescript==="") ? "" : <a href={ item.typescript } target="_blank" aria-label={ "Abrir uma nova guia com a visualização do código no GitHub do projeto "+item.name }>Código TypeScript no GitHub <i className="devicon-github-original"></i></a>}
                         </div>
                     </div>
                 ))}
