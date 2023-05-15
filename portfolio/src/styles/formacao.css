@@ -10,7 +10,7 @@
     color: transparent;
     transition-property: color;
     transition-duration: 1s;
-    transition-timing-function: ease-out;
+    transition-timing-function: ease-in;
 }
 #formacaoLista{
     display: flex;
@@ -25,7 +25,7 @@
     opacity: 0;
     transition-property: all;
     transition-duration: 1s;
-    transition-timing-function: ease-out;
+    transition-timing-function: ease-in;
 }
 #formacaoLista ul{
     width: 40%;
@@ -34,7 +34,7 @@
     font-size: 24px;
     transition-property: all;
     transition-duration: 1s;
-    transition-timing-function: ease-out;
+    transition-timing-function: ease-in;
 }
 #formacao:hover{
     color: white;

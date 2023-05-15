@@ -9,7 +9,7 @@
     color: transparent;
     transition-property: color;
     transition-duration: 1s;
-    transition-timing-function: ease-out;
+    transition-timing-function: ease-in;
 }
 #quem img{
     width: 40%;
@@ -17,7 +17,7 @@
     opacity: 0;
     transition-property: all;
     transition-duration: 1s;
-    transition-timing-function: ease-out;
+    transition-timing-function: ease-in;
 }
 #quemText{
     width: 40%;
@@ -36,7 +36,7 @@
     color: transparent;
     transition-property: color;
     transition-duration: 1s;
-    transition-timing-function: ease-out;
+    transition-timing-function: ease-in;
 }
 #quemText p a:hover{
     text-decoration: underline;
