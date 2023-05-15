@@ -11,7 +11,7 @@ footer{
 footer h1{
     color: transparent;
     transition-property: color;
-    transition-duration: 2s;
+    transition-duration: 1s;
     transition-timing-function: ease-out;
 }
 #contact{
@@ -30,13 +30,13 @@ footer h1{
     font-weight: 800;
     color: transparent;
     transition-property: color;
-    transition-duration: 2s;
+    transition-duration: 1s;
     transition-timing-function: ease-out;
 }
 .contactInfo{
     color: transparent;
     transition-property: color;
-    transition-duration: 2s;
+    transition-duration: 1s;
     transition-timing-function: ease-out;
 }
 footer:hover > #contact .contactTitle{
