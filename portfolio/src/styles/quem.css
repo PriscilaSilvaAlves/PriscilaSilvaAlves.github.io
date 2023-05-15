@@ -31,11 +31,24 @@
     text-align: justify;
     font-size: 30px;
 }
+#quemText p a{
+    text-decoration: none;
+    color: transparent;
+    transition-property: color;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+#quemText p a:hover{
+    text-decoration: underline;
+}
 #quem:hover{
     color: white;
 }
 #quem:hover > img{
     opacity: 1;
+}
+#quem:hover > #quemText p a{
+    color: white;
 }
 @media screen and (max-width: 1000px){
     #quem{
@@ -58,6 +71,11 @@
     #quemText p{
      font-size: 30px;
     }
+    #quemText p a{
+    text-decoration: none;
+    color: white;
+    transition-property: none;
+}
     #quemText h1{
      font-size: 80px;
      text-align: center;

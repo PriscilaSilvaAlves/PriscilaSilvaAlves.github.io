@@ -8,7 +8,8 @@ function Quem(){
                 <h1>Quem é Priscila?</h1>
                 <p>Sou uma desenvolvedora front-end com experiência em React.
                     Atualmente, sou freelancer e moro em Currais Novos/RN, onde eu dedico o meu 
-                    tempo a me qualificar profissionalmente.
+                    tempo a me qualificar profissionalmente. 
+                    <a href="https://priscilasilvaalves.github.io" target="_blank" rel="noreferrer"> Para acessar meus projetos em Angular, PHP e demais, clique aqui.</a>
                 </p>
             </div>
             <img src={ Digitando } alt="Uma pessoa digitando no notebook"></img>
