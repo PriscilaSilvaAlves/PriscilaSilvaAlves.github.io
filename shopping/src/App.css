@@ -155,14 +155,14 @@ body{
   padding-bottom: 10px;
 }
 #contact{
-    height: calc(100vh - 160px);
-    padding: 80px 40px 80px 40px;
-    width: calc(100% - 80px);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Quicksand', sans-serif;
+  height: calc(100vh - 160px);
+  padding: 80px 40px 80px 40px;
+  width: calc(100% - 80px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Quicksand', sans-serif;
 }
 #contact h2{
   width: calc(50% - 40px);
@@ -190,7 +190,61 @@ body{
 #links a:hover{
   font-weight: 600;
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1000px){
+  #contact h2{
+    width: 100%;
+    text-align: center;
+  }
+  #formasContato{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  #contact{
+    height: auto;
+  }
+  #buy{
+    height: auto;
+  }
+  #home{
+    height: auto;
+  }
+  #home img{
+    width: 50%;
+  }
+  #homeProduct{
+    width: calc(100% - 40px);
+  }
+  #publi{
+    height: auto;
+    padding: 80px 20px 0 20px;
+    gap: 40px
+  }
+  #homeProductButtons{
+    width: calc(100% - 80px);
+    padding: 0 40px;
+  }
+  #publi img{
+    width: 50%;
+    padding: 0;
+  }
+  .btn{
+    width: 280px;
+    height: 60px;
+    font-size: 22px;
+  }
+  #publiText h1{
+    text-align: center;
+  }
+  #publiText{
+    width: 100%;
+  }
+  #corpo{
+    height: calc(100vh - 130px);
+  }
+}
+@media screen and (max-width: 600px){
   #contact h2{
     width: 100%;
     text-align: center;
