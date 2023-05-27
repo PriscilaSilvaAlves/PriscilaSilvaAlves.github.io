@@ -72,13 +72,15 @@ main{
   justify-content: center;
   margin-bottom: 20px;
   gap: 10px;
+  width: 100%;
 }
 #alert{
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
-  width: 100%;
+  width: calc(100% - 20px);
+  max-width: 676px;
 }
 #alert p{
   font-size: 12px;
@@ -92,9 +94,11 @@ main{
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  width: 100%;
 }
 button{
-  width: 328px;
+  width: calc(50% - 10px);
+  max-width: 328px;
   height: 67px;
   border-radius: 24px;
   font-size: 16px;
@@ -196,6 +200,67 @@ footer{
     width: calc(100% - 25px);
     height: 100px;
   }
+  button{
+    width: calc(50% - 20px);
+  }
+  #input{
+    padding: 25px;
+    justify-content: left;
+    width: calc(100% - 50px);
+  }
+  #input input{
+    width: 100%;
+    font-size: 32px;
+    background-color: transparent;
+  }
+  #left{
+    width: 100%;
+  }
+  #left-top{
+    justify-content: flex-start;
+  }
+  #left form{
+    margin-top: 40px;
+    margin-left: 0;
+    height: auto;
+  }
+  main{
+    height: auto;
+    justify-content: center;
+  }
+  #right{
+    height: auto;
+    margin: 20px;
+    width: calc(100% - 40px);
+  }
+  #pText{
+    width: 100%;
+  }
+  #encryptText{
+    width: calc(100% - 40px);
+    padding: 20px;
+  }
+  #root{
+    height: 100%;
+  }
+  #right img{
+    display: none;
+  }
+  #text{
+    padding: 20px;
+    width: calc(100% - 40px);
+  }
+}
+@media screen and (max-width: 600px){
+  header{
+    position:relative;
+    padding-left: 25px;
+    width: calc(100% - 25px);
+    height: 100px;
+  }
+  button{
+    width: calc(100% - 20px);
+  }
   #input{
     padding: 25px;
     justify-content: left;
@@ -222,7 +287,8 @@ footer{
     justify-content: center;
   }
   #alert{
-    width: 328px;
+    width: calc(100% - 20px);
+    max-width: 328px;
   }
   #right{
     height: auto;
