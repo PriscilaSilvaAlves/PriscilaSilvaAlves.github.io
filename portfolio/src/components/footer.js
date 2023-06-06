@@ -13,6 +13,9 @@ function Footer(){
                     <p className="contactTitle">Telefone/Whatsapp:</p>
                     <p className="contactInfo">+55 84 99654 2787</p>
                 </div>
+                <div className="contactItem">
+                    <p className="contactTitle"><a href="https://www.linkedin.com/in/priscila-alves-015b02169/">Me adicione no LinkedIn</a></p>
+                </div>
             </div>
         </footer>
     )

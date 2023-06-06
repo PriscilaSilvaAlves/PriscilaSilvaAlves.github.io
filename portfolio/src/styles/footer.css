@@ -17,7 +17,8 @@ footer h1{
 #contact{
     display: flex;
     flex-wrap: wrap;
-    gap: 200px;
+    column-gap: 200px;
+    row-gap: 50px;
     font-size: 30px;
 }
 .contactitem{
@@ -33,6 +34,16 @@ footer h1{
     transition-duration: 1s;
     transition-timing-function: ease-in;
 }
+.contactTitle a{
+    text-decoration: none;
+    color: transparent;
+    transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+.contactTitle a:hover{
+    text-decoration: underline;
+}
 .contactInfo{
     color: transparent;
     transition-property: color;
@@ -40,6 +51,9 @@ footer h1{
     transition-timing-function: ease-in;
 }
 footer:hover > #contact .contactTitle{
+    color: white;
+}
+footer:hover > #contact .contactTitle a{
     color: white;
 }
 footer:hover > h1{
@@ -50,6 +64,10 @@ footer:hover > #contact .contactInfo{
 }
 @media screen and (max-width: 1000px){
     .contactTitle{
+        color: white;
+        transition-property: none;
+    }
+    .contactTitle a{
         color: white;
         transition-property: none;
     }
@@ -77,6 +95,10 @@ footer:hover > #contact .contactInfo{
         color: white;
         transition-property: none;
     }
+    .contactTitle a{
+        color: white;
+        transition-property: none;
+    }
     .contactInfo{
         color: #a1a1aa;
         transition-property: none;
@@ -94,5 +116,6 @@ footer:hover > #contact .contactInfo{
     #contact{
         gap: 40px;
         font-size: 28px;
+        flex-direction: column;
     }
 }
