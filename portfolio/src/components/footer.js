@@ -14,7 +14,7 @@ function Footer(){
                     <p className="contactInfo">+55 84 99654 2787</p>
                 </div>
                 <div className="contactItem">
-                    <p className="contactTitle"><a href="https://www.linkedin.com/in/priscila-alves-015b02169/">Me adicione no LinkedIn</a></p>
+                    <p className="contactTitle"><a target="_blank" rel="noreferrer" aria-label="Abre a página do LinkedIn de Priscila em uma nova aba." href="https://www.linkedin.com/in/priscila-alves-015b02169/">Me adicione no LinkedIn</a></p>
                 </div>
             </div>
         </footer>
