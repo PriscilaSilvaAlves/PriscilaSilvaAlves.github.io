@@ -70,8 +70,8 @@ function Projetos(){
             name: "Portfólio",
             vidio: <iframe src="https://www.youtube.com/embed/L3LnX4oT8qg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
             detail: "Projeto Full-Stack feito em React e PHP. No Front-End foram utilizados conceitos de Mobile First, Atomic Designer e BEM. No Back-End foi utilizada uma API para integração com o banco de dados.",
-            javascript: "",
-            live: "",
+            javascript: "https://github.com/PriscilaSilvaAlves/PriscilaSilvaAlves.github.io/tree/main/portfolio2",
+            live: "https://priscilasilvaalves.github.io/portfolio2/build",
             typescript: "",
         }
     ];
