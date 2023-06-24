@@ -1,0 +1,4 @@
+.admin__mensagem{
+    width: calc(100% - 40px);
+    padding: 0 20px;
+}

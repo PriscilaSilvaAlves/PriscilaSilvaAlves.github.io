@@ -1,0 +1,17 @@
+.cabecalho__bloco{ 
+    width: calc(100% - 80px);
+    padding: 40px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+@media screen and (min-width: 1024px){
+    .cabecalho__bloco{
+        width: 60%;
+        align-items: flex-start;
+        text-align: start;
+    }
+}

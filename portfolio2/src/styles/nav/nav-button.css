@@ -1,0 +1,10 @@
+.nav__button{
+    height: 40px;
+    background-color: transparent;
+    border: none;
+}
+@media screen and (min-width: 1024px){
+    .nav__button{
+        display: none;
+    }
+}

@@ -1,0 +1,7 @@
+.footer__contato-link{
+    text-decoration: none;
+    color: white;
+}
+.footer__contato-link:hover{
+    text-decoration: underline;
+}

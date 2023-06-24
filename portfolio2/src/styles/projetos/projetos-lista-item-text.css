@@ -1,0 +1,19 @@
+.projetos__lista-item-text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    margin-top: 10px;
+    gap: 10px;
+}
+@media screen and (min-width: 768px) {
+    .projetos__lista-item-text{
+        height: 300px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .projetos__lista-item-text{
+        height: 290px;
+    }
+}

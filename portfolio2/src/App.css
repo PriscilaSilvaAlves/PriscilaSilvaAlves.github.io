@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-image: linear-gradient(to right top,#09090b, #52525b);
+  color: white;
+}
+h1{
+  font-size: 80px;
+  font-family: 'Poiret One', cursive;
+}
+p, li, a{
+  font-family: 'Abel', sans-serif;
+}
+.container{
+  width: 100%;
+  height: calc(100vh - 60px);
+  overflow: scroll;
+}

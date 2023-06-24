@@ -1,0 +1,15 @@
+.projetos__lista-item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 768px){
+    .projetos__lista-item{
+        width: 40%;
+    }
+}
+@media screen and (min-width: 1024px){
+    .projetos__lista-item{
+        width: 25%;
+    }
+}

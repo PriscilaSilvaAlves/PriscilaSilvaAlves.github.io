@@ -1,0 +1,30 @@
+.cabecalho__bloco-nome{
+    color: rgba(255,255,255, 0.75);
+    border-right: 2px solid;
+    font-size: 1.3rem;
+    animation: typing 4s steps(40) 1s normal, cursor 500ms steps(40) infinite normal;
+    white-space: nowrap;
+    overflow: hidden;
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 16em;
+    }
+}
+@keyframes cursor {
+    from{
+        border-right-color: rgba(255,255,255, 0.75);
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .cabecalho__bloco-nome{
+        font-size: 2rem;
+    }
+}

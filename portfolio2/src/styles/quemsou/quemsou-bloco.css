@@ -1,0 +1,15 @@
+.quem-sou__bloco{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-direction: column;
+}
+@media screen and (min-width: 1024px){
+   .quem-sou__bloco{
+        align-items: flex-start;
+        width: 40%;
+        gap: 40px;
+   }
+}

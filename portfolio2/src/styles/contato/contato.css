@@ -1,0 +1,19 @@
+.rodape{ 
+    height: auto;
+    width: calc(100% - 40px);
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+@media screen and (min-width: 1024px){
+    .rodape{
+        height: calc(100vh - 160px);
+        align-items: flex-start;
+        gap: 50px;
+        width: 940px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,9 @@
+.cabecalho__bloco-texto{
+    font-size: 4rem;
+}
+
+@media screen and (min-width: 768px){
+    .cabecalho__bloco-texto{
+        font-size: 5rem;
+    }
+}
