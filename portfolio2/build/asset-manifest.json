@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolio2/build/static/css/main.44d1d37f.css",
+    "main.js": "/portfolio2/build/static/js/main.aa4c6fc1.js",
+    "static/js/787.86f37fdd.chunk.js": "/portfolio2/build/static/js/787.86f37fdd.chunk.js",
+    "static/media/pessoa-digitando.png": "/portfolio2/build/static/media/pessoa-digitando.1376055abb3c5bce5fc0.png",
+    "static/media/brasao-ufrn.png": "/portfolio2/build/static/media/brasao-ufrn.315603cf2046c3cf6ad4.png",
+    "static/media/perfil.jpg": "/portfolio2/build/static/media/perfil.fffc88baa5d7bc66ab10.jpg",
+    "static/media/pilha-de-livros.png": "/portfolio2/build/static/media/pilha-de-livros.4977c09dea80aeb69cbb.png",
+    "static/media/tracos.png": "/portfolio2/build/static/media/tracos.43d3f4ad0b66785858b2.png",
+    "static/media/react-logo.png": "/portfolio2/build/static/media/react-logo.6ef7531429fa78c6182f.png",
+    "static/media/logo-php.png": "/portfolio2/build/static/media/logo-php.0b219192d2313755d9f4.png",
+    "static/media/logo-css.png": "/portfolio2/build/static/media/logo-css.7909c1cb83ed196d022e.png",
+    "static/media/logo-ifrn.png": "/portfolio2/build/static/media/logo-ifrn.48a830c1a1d99a791964.png",
+    "static/media/logo-javascript.png": "/portfolio2/build/static/media/logo-javascript.08fd04f66a488c0c3948.png",
+    "static/media/logo-html.png": "/portfolio2/build/static/media/logo-html.6e9ae782e3d8073c25ed.png",
+    "static/media/link.png": "/portfolio2/build/static/media/link.45c3d04990767977301d.png",
+    "index.html": "/portfolio2/build/index.html",
+    "main.44d1d37f.css.map": "/portfolio2/build/static/css/main.44d1d37f.css.map",
+    "main.aa4c6fc1.js.map": "/portfolio2/build/static/js/main.aa4c6fc1.js.map",
+    "787.86f37fdd.chunk.js.map": "/portfolio2/build/static/js/787.86f37fdd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44d1d37f.css",
+    "static/js/main.aa4c6fc1.js"
+  ]
+}
