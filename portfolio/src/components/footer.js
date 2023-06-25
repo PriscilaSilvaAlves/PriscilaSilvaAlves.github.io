@@ -8,7 +8,7 @@ import "../styles/footer/footer-contato-info.css";
 
 function Footer(){
     return (
-        <footer className="footer">
+        <footer className="footer" id="contato">
             <h1 className="footer__titulo">Entre em contato</h1>
             <div className="footer__contato">
                 <div className="footer__contato-item">
