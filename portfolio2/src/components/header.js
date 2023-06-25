@@ -11,6 +11,7 @@ import CSS from "../images/logo-css.png";
 import JavaScript from "../images/logo-javascript.png";
 import React from "../images/react-logo.png";
 import PHP from "../images/logo-php.png";
+import mysql from "../images/mysql.png"
 
 function Header(){
 
@@ -25,6 +26,7 @@ function Header(){
                     <img className="cabecalho__bloco-imagem" src={JavaScript} alt="" />
                     <img className="cabecalho__bloco-imagem" src={React} alt="" />
                     <img className="cabecalho__bloco-imagem" src={PHP} alt="" />
+                    <img className="cabecalho__bloco-imagem" src={mysql} alt="" />
                 </div>
             </div>
             <img className="cabecalho__imagem" src={ Perfil } alt="Priscila é uma mulher morena de cabelo curto e escovado, vestindo uma blusa verde e usando batom roxo."></img>
