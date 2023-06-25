@@ -1,0 +1,9 @@
+.projetos__lista-iframe{
+    width: 100%;
+    min-height: 200px;
+}
+@media screen and (min-width: 768px) {
+    .projetos__lista-iframe{
+        min-height: 400px;
+    }
+}

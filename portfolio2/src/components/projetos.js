@@ -2,6 +2,7 @@ import "../styles/projetos/projetos.css";
 import "../styles/projetos/projetos-titulo.css";
 import "../styles/projetos/projetos-lista.css";
 import "../styles/projetos/projetos-lista-item.css";
+import "../styles/projetos/projetos-lista-iframe.css";
 import "../styles/projetos/projetos-lista-item-title.css";
 import "../styles/projetos/projetos-lista-item-text.css";
 import "../styles/projetos/projetos-lista-item-link.css";
@@ -14,7 +15,7 @@ function Projetos(){
         {
             id: "1",
             name: "Informações sobre o tempo",
-            vidio: <iframe src="https://www.youtube.com/embed/5TTGKWaRVis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
+            vidio: <iframe className="projetos__lista-iframe" src="https://www.youtube.com/embed/5TTGKWaRVis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
             detail: "Site feito em JavaScript e que utiliza JSON para consultar uma API que fornece informações meteorológicas de qualquer lugar do mundo.",
             javascript: "https://github.com/PriscilaSilvaAlves/PriscilaSilvaAlves.github.io/tree/main/meteorologico",
             live: "https://priscilasilvaalves.github.io/meteorologico/index.html",
@@ -23,7 +24,7 @@ function Projetos(){
         {
             id: "2",
             name: "Batalha Naval",
-            vidio: <iframe src="https://www.youtube.com/embed/D8oE8s4zk34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
+            vidio: <iframe className="projetos__lista-iframe" src="https://www.youtube.com/embed/D8oE8s4zk34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
             detail: "Jogo desenvolvido em JavaScript utilizando Orientação a Objetos e testado com Jest.",
             javascript: "https://github.com/PriscilaSilvaAlves/PriscilaSilvaAlves.github.io/tree/main/Battlership",
             live: "https://priscilasilvaalves.github.io/Battlership/index.html",
@@ -32,7 +33,7 @@ function Projetos(){
         {
             id: "3",
             name: "Codificador de Texto",
-            vidio: <iframe src="https://www.youtube.com/embed/O7PVTauIpt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
+            vidio: <iframe className="projetos__lista-iframe" src="https://www.youtube.com/embed/O7PVTauIpt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
             detail: "Aplicativo feito em React para codificar e decodificar o texto informado pelo usuário. Utiliza REGEX para tratar os dados de entrada e WAI-ARIA para adicionar opções de acessibilidade.",
             javascript: "https://github.com/PriscilaSilvaAlves/PriscilaSilvaAlves.github.io/tree/main/encryptDecrypt",
             live: "https://priscilasilvaalves.github.io/encryptDecrypt/typescript/build/",
@@ -41,7 +42,7 @@ function Projetos(){
         {
             id: "4",
             name: "Gerador de Currículo",
-            vidio: <iframe src="https://www.youtube.com/embed/TmUuL8n7yv8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
+            vidio: <iframe className="projetos__lista-iframe" src="https://www.youtube.com/embed/TmUuL8n7yv8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
             detail: "Site feito em React para gerar um currículo automaticamente. Utiliza WAI-ARIA para adicionar opções de acessibilidade.",
             javascript: "https://github.com/PriscilaSilvaAlves/PriscilaSilvaAlves.github.io/tree/main/curriculo",
             live: "https://priscilasilvaalves.github.io/curriculo/build/",
@@ -50,7 +51,7 @@ function Projetos(){
         {
             id: "5",
             name: "Jogo da Memória do Harry Potter",
-            vidio: <iframe src="https://www.youtube.com/embed/aSKdymWP-pI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
+            vidio: <iframe className="projetos__lista-iframe" src="https://www.youtube.com/embed/aSKdymWP-pI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
             detail: "Jogo desenvolvido em React em que o usuário deve acertar a maior quantidade de cartas diferentes seguidas. O site utiliza WAI-ARIA para adicionar opções de acessibilidade.",
             javascript: "https://github.com/PriscilaSilvaAlves/PriscilaSilvaAlves.github.io/tree/main/memorygame",
             live: "https://priscilasilvaalves.github.io/memorygame/build/",
@@ -59,7 +60,7 @@ function Projetos(){
         {
             id: "6",
             name: "Site de compras",
-            vidio: <iframe src="https://www.youtube.com/embed/txr3SZwH8_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
+            vidio: <iframe className="projetos__lista-iframe" src="https://www.youtube.com/embed/txr3SZwH8_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
             detail: "Site de compras feito em React, testado com Jest, utilizando LocalStorage para armazenar os itens do carrinho e WAI-ARIA para adicionar opções de acessibilidade.",
             javascript: "https://github.com/PriscilaSilvaAlves/PriscilaSilvaAlves.github.io/tree/main/shopping",
             live: "https://priscilasilvaalves.github.io/shopping/build/",
@@ -68,7 +69,7 @@ function Projetos(){
         {
             id: "7",
             name: "Portfólio",
-            vidio: <iframe src="https://www.youtube.com/embed/L3LnX4oT8qg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
+            vidio: <iframe className="projetos__lista-iframe" src="https://www.youtube.com/embed/L3LnX4oT8qg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
             detail: "Projeto Full-Stack feito em React e PHP. No Front-End foram utilizados conceitos de Mobile First, Atomic Designer e BEM. No Back-End foi utilizada uma API para integração com o banco de dados.",
             javascript: "https://github.com/PriscilaSilvaAlves/PriscilaSilvaAlves.github.io/tree/main/portfolio2",
             live: "https://priscilasilvaalves.github.io/portfolio2/build",

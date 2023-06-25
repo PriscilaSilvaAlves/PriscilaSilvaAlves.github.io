@@ -47,6 +47,8 @@ function Contato(){
                     type="text"
                     maxLength="100"
                     minLength="10"
+                    pattern="([a-zA-Z ç]+)"
+                    title="Digite seu nome e sobrenome"
                     required
                     value={nome}
                     onChange={(e) => setNome(e.target.value)} 
@@ -57,6 +59,7 @@ function Contato(){
                     type="text"
                     maxLength="100"
                     minLength="10"
+                    title="Digite o seu e-mail no padrão nome@dominio.com"
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)} 
@@ -67,6 +70,8 @@ function Contato(){
                     type="text"
                     maxLength="100"
                     minLength="4"
+                    pattern="([a-zA-Z ç0-9]+)"
+                    title="Digite o assunto do e-mail, apenas com letras e números"
                     required
                     value={assunto}
                     onChange={(e) => setAssunto(e.target.value)} 
@@ -77,6 +82,8 @@ function Contato(){
                     type="text"
                     maxLength="400"
                     minLength="10"
+                    pattern="([a-zA-Z ç0-9,.-!@]+)"
+                    title="Digite a mensagem apenas com letras e números"
                     required
                     value={mensagem}
                     onChange={(e) => setMensagem(e.target.value)} 

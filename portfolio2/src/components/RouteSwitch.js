@@ -5,13 +5,12 @@ import Admin from "./admin";
 
 function RouteSwitch(){
     return (
-        <HashRouter>
+        <BrowserRouter>
             <Routes>    
                 <Route exac path="/" element={<App />} />
-                <Route exact path="/#quem-e" element={<App />} />
                 <Route exact path="/admin" element={<Admin />} />
             </Routes>
-        </HashRouter>
+        </BrowserRouter>
     );
 }
 

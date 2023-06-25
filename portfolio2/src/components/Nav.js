@@ -5,7 +5,6 @@ import "../styles/nav/nav-a.css";
 import "../styles/nav/nav-imagem.css";
 import "../styles/nav/nav-button.css";
 import Tracos from "../images/tracos.png";
-import { Link } from "react-router-dom";
 
 function Nav(){
     function showMenu(){
@@ -22,11 +21,11 @@ function Nav(){
                 <img className="nav__imagem" src={ Tracos } alt="" />
             </button>
             <ul className="nav__ul">
-                <li className="nav__li"><Link className="nav__a" to="#cabecalho">Início</Link></li>
-                <li className="nav__li"><Link className="nav__a" to="#quem-e">Quem é Priscila?</Link></li>
-                <li className="nav__li"><Link className="nav__a" to="#formacao">Formação</Link></li>
-                <li className="nav__li"><Link className="nav__a" to="#projetos">Projetos</Link></li>
-                <li className="nav__li"><Link className="nav__a" to="#contato">Contato</Link></li>
+                <li className="nav__li"><a className="nav__a" href="#cabecalho">Início</a></li>
+                <li className="nav__li"><a className="nav__a" href="#quem-e">Quem é Priscila?</a></li>
+                <li className="nav__li"><a className="nav__a" href="#formacao">Formação</a></li>
+                <li className="nav__li"><a className="nav__a" href="#projetos">Projetos</a></li>
+                <li className="nav__li"><a className="nav__a" href="#contato">Contato</a></li>
             </ul>
         </nav>
     );
