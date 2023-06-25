@@ -1,0 +1,10 @@
+.nav{
+    width: calc(100% - 40px);
+    padding: 10px 20px;
+    min-height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content: center;
+    border-bottom: 1px solid grey;
+}

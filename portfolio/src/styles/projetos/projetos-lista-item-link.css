@@ -1,0 +1,7 @@
+.projetos__lista-item-link{
+    text-decoration: none;
+    color: white;
+}
+.projetos__lista-item-link:hover{
+    text-decoration:underline;
+}

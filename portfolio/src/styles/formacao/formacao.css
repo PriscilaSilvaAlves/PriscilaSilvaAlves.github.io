@@ -1,0 +1,16 @@
+.formacao{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: calc(100%-80px);
+    padding: 40px;
+    color: white;
+} 
+@media screen and (min-width: 1024px) {
+    .formacao{
+        min-height: calc(100vh - 140px);
+    }
+}

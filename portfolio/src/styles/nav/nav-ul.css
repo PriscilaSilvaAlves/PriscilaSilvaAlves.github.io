@@ -1,0 +1,16 @@
+.nav__ul{
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+@media screen and (min-width: 1024px){
+    .nav__ul{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+}

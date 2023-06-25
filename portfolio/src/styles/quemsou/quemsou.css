@@ -1,0 +1,17 @@
+.quem-sou{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px;
+    height: auto;
+    gap: 20px;
+    width: calc(100% - 80px);
+    color: white;
+}
+@media screen and (min-width: 1024px){
+    .quem-sou{
+        gap: 80px;
+        min-height: calc(100vh - 140px);
+    }
+}

@@ -1,0 +1,14 @@
+.formacao__itens{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .formacao__itens{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}

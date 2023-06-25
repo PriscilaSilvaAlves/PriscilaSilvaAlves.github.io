@@ -1,0 +1,13 @@
+.formacao__item{
+    width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .formacao__item{
+        width: 30%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .formacao__item{
+        width: 18%;
+    }
+}

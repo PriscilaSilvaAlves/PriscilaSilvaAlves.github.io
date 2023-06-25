@@ -1,0 +1,14 @@
+.cabecalho__bloco-imagens{
+    display: flex;
+    min-height: 80px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+@media screen and (min-width: 1024px){
+    .cabecalho__bloco-imagens{
+        justify-content: flex-start;
+    }
+}

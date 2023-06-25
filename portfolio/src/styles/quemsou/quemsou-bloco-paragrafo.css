@@ -1,0 +1,9 @@
+.quem-sou__bloco__paragrafo{
+    text-align: justify;
+    font-size: 1.7rem;
+}
+@media screen and (min-width: 768px){
+    .quem-sou__bloco__paragrafo{
+        font-size: 1.5rem;
+    }
+}

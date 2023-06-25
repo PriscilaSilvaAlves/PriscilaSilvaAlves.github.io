@@ -1,0 +1,14 @@
+.quem-sou__imagem{
+    width: 90%;
+    border-radius: 50% 50%;
+}
+@media screen and (min-width: 768px){
+    .quem-sou__imagem{
+        width: 50%;
+       }
+}
+@media screen and (min-width: 1024px){
+    .quem-sou__imagem{
+        width: 40%;
+    }
+}
