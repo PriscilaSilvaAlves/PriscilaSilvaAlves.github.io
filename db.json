@@ -1,9 +1,0 @@
-var firstRoute  = require('./db__lista-produtos.json');
-var secondRoute = require('./db__caixa-entrada.json');
-
-module.exports = function() {
-  return {
-    firstRoute  : firstRoute,
-    secondRoute : secondRoute,
-  }
-}
