@@ -1,0 +1,84 @@
+.sloganOferta{
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+    width: 210mm;
+    height: 80mm;
+    font-size: 150px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerOferta{
+    width: 210mm;
+    height: 20mm;
+    font-size: 50px;
+    background-color: red;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tituloOferta{
+    padding-top: 10px;
+    width: 210mm;
+    font-size: 70px;
+    background-color: white;
+    color: black;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cifraoOferta{
+    background-color: white;
+    width: 210mm;
+    font-size: 60px;
+    color: #282c34;;
+    display: flex;
+    align-items: left;
+     
+}
+
+.precoOferta{
+    width: 210mm;
+    background-color: white;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    color: red;
+    justify-content: center;
+    font-family: "Story Script", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+.precoOfertaReal{
+    font-size: 350px;
+}
+.precoOfertaCentavos{
+    font-size: 180px;
+}
+.placa-oferta{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    text-align: center;
+}
+.corpoOferta{
+    display: flex;
+    flex-direction: column;
+    height: 197mm;
+    width: 210mm;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
