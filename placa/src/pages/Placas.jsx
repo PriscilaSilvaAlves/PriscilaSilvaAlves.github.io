@@ -5,6 +5,10 @@ import { useReactToPrint } from 'react-to-print';
 import PlacaOfertaDupla from '../components/PlacaOfertaDupla';
 import PlacaAproveiteDupla from '../components/PlacaAproveiteDupla';
 import './Placas.css';
+import { getDocument, GlobalWorkerOptions } from 'pdfjs-dist/legacy/build/pdf';
+
+// ⚠️ Caminho relativo à pasta "public"
+GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
 
 const Placas = () => {
   const componentRef = useRef(); // Ref para o contêiner principal das placas
@@ -26,6 +30,113 @@ const Placas = () => {
   const [tipo, setTipo] = useState('');
   const [submeteu, setSubmeteu] = useState(false); 
   const [segundaPlaca, setSegundaPlaca] = useState(false);
+
+const handleFileChange = async (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+
+  const reader = new FileReader();
+
+  reader.onload = async (event) => {
+    const typedarray = new Uint8Array(event.target.result);
+    const pdf = await getDocument({ data: typedarray }).promise;
+
+    let fullText = '';
+
+    for (let i = 1; i <= pdf.numPages; i++) {
+      const page = await pdf.getPage(i);
+      const content = await page.getTextContent();
+      const strings = content.items.map(item => item.str);
+      fullText += strings.join(' ') + '\n';
+    }
+
+    // Dividir em "linhas" com base no padrão de produtos
+    const linhas = fullText
+      .split(/(?=OfertaDupla|AproveiteDupla|Oferta|Aproveite)/g)
+      .map((linha) => linha.trim())
+      .filter(Boolean);
+
+    console.log('Linhas extraídas do PDF:', linhas);
+
+    const placasFinal = [];
+
+    function formatarData(data) {
+      if (!data) return '';
+      const partes = data.split('-');
+      return `${partes[2]}/${partes[1]}`; // DD/MM
+    }
+
+    for (let i = 0; i < linhas.length; i++) {
+      const linha = linhas[i];
+
+      const regex = /^(OfertaDupla|AproveiteDupla|Oferta|Aproveite)\s+([^\d]+?)\s+(\d{1,3},\d{2})\s+(\d{1,3},\d{2})\s+(\d{4}-\d{2}-\d{2})\s+(\d{4}-\d{2}-\d{2})$/;
+      const match = linha.match(regex);
+
+      if (!match) {
+        console.warn(`Linha ignorada por não casar com regex: ${linha}`);
+        continue;
+      }
+
+      const [_, tipo, titulo, precoInicial, precoPromocional, dataInicial, dataFinal] = match;
+      const precoReal = parseInt(precoPromocional.split(',')[0], 10) || 0;
+      const precoCentavos = parseInt(precoPromocional.split(',')[1], 10) || 0;
+
+      // Se for uma placa dupla, pega a próxima linha também
+      if ((tipo === 'OfertaDupla' || tipo === 'AproveiteDupla') &&
+          i + 1 < linhas.length) {
+
+        const linha2 = linhas[i + 1].match(regex);
+        if (!linha2) {
+          console.warn(`Segunda linha inválida para placa dupla: ${linhas[i + 1]}`);
+          continue;
+        }
+
+        const [, , titulo2, precoInicial2, precoPromocional2, dataInicial2, dataFinal2] = linha2;
+        const precoReal2 = parseInt(precoPromocional2.split(',')[0], 10) || 0;
+        const precoCentavos2 = parseInt(precoPromocional2.split(',')[1], 10) || 0;
+
+        placasFinal.push({
+          tipo,
+          titulo,
+          precoInicial,
+          precoPromocional,
+          precoReal,
+          precoCentavos,
+          dataInicial: formatarData(dataInicial),
+          dataFinal: formatarData(dataFinal),
+          titulo2,
+          precoInicial2,
+          precoPromocional2,
+          precoReal2,
+          precoCentavos2,
+          dataInicial2: formatarData(dataInicial2),
+          dataFinal2: formatarData(dataFinal2),
+        });
+
+        i++; // pula a próxima linha, pois já foi usada
+
+      } else {
+        // Placa simples
+        placasFinal.push({
+          tipo,
+          titulo,
+          precoInicial,
+          precoPromocional,
+          precoReal,
+          precoCentavos,
+          dataInicial: formatarData(dataInicial),
+          dataFinal: formatarData(dataFinal),
+        });
+      }
+    }
+
+    console.log('Placas processadas:', placasFinal);
+    setPlacas(placasFinal);
+  };
+
+  reader.readAsArrayBuffer(file);
+};
+
   
   const formatarData = (data) => {
     const partes = data.split("-");
@@ -123,6 +234,8 @@ const Placas = () => {
             setPlacas(prevPlacas => [
               ...prevPlacas, placa
             ]);
+          } else{
+            alert("Todos os campos precisam ser preenchidos.");
           }
         }
 
@@ -177,7 +290,7 @@ const Placas = () => {
               </div>
             );
           }
-          if (placa.tipo === "OfertaDupla") {
+          if (placa.tipo === "OfertaDupla" || placa.tipo === "Oferta Dupla") {
             return (
               <div className="background" key={index}>
                 <PlacaOfertaDupla
@@ -197,7 +310,7 @@ const Placas = () => {
               </div>
             );
           }
-          if (placa.tipo === "AproveiteDupla") {
+          if (placa.tipo === "AproveiteDupla" || placa.tipo === "Aproveite Dupla") {
             return (
               <div className="background" key={index}>
                 <PlacaAproveiteDupla
@@ -296,6 +409,10 @@ const Placas = () => {
               <option value="AproveiteDupla">Placa de Aproveite Dupla</option>
             </select>
           </label>
+          <label>
+            <span>Enviar Arquivo em .PDF:</span>
+            <input type="file" accept='.pdf' onChange={ handleFileChange } />
+          </label>
           {segundaPlaca && (
             <>
             <span className='alerta'>SEGUNDA PLACA:</span>
@@ -352,10 +469,10 @@ const Placas = () => {
           )}
           {!segundaPlaca && <button className='btnchecked' type="button" onClick={()=>addPlaca()}>Adicionar segunda placa horizontal</button>} 
           {segundaPlaca && <button className='btnchecked' type="button" onClick={()=>delPlaca()}>Remover segunda placa horizontal</button>}
-        <button className='btnchecked' type="submit">Adicionar</button>
+        <button className='btnchecked' type="submit">Adicionar Placa</button>
         </form>
         <div id="buttons">
-          <button className='btnchecked' onClick={ () => handlePrint() }>Gerar PDF</button>
+          <button className='btnchecked' onClick={ () => handlePrint() }>Imprimir Placa</button>
         </div>
         <br></br>
         <Data />

@@ -1,4 +1,4 @@
- .sloganOfertaDupla{
+.sloganOfertaDupla{
     background-color: red;
     color: white;
     font-weight: bolder;
@@ -16,9 +16,9 @@
 .footerOfertaDupla{
     width: 210mm;
     height: 10mm;
-    font-size: 30px;
-    background-color: red;
-    color: white;
+    font-size: 15px;
+    background-color: white;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,11 +26,11 @@
 .tituloOfertaDupla{
     padding-top: 10px;
     width: 210mm;
-    font-size: 50px;
+    font-size: 30px;
     background-color: white;
     color: black;
-    font-style: italic;
     display: flex;
+    font-family: "Archivo Black", sans-serif;
     align-items: center;
     justify-content: center;
 }
@@ -41,7 +41,7 @@
     color: #282c34;;
     display: flex;
     align-items: left;
-     
+     font-family: "Archivo Black", sans-serif;
 }
 
 .precoOfertaDupla{
@@ -53,16 +53,19 @@
     align-items: start;
     color: red;
     justify-content: center;
-    font-family: "Story Script", sans-serif;
-    font-weight: 400;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 900;
     font-style: normal;
     
 }
 .precoOfertaRealDupla{
-    font-size: 200px;
+    font-size: 300px;
+    align-self: flex-start;
+    line-height: 1;
+    margin-top: -40px;
 }
 .precoOfertaCentavosDupla{
-    font-size: 50px;
+    font-size: 60px;
 }
 .placa-ofertaDupla{
     display: flex;

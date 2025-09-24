@@ -11,8 +11,8 @@ const PlacaOferta = forwardRef(({ titulo, precoInicial, precoReal, precoCentavos
             {precoInicial && <span className='cifraoOferta'>&nbsp;<s>De {precoInicial} </s>. Por R$</span>}
             {!precoInicial && <span className='cifraoOferta'>&nbsp; R$</span>}
             <div className='precoOferta'>
-              <span className="precoOfertaReal">{precoReal}, </span>
-              <span className="precoOfertaCentavos">{precoCentavos}</span>
+              <span className="precoOfertaReal">{precoReal} </span>
+              <span className="precoOfertaCentavos">,{precoCentavos}</span>
             </div>    
         </div>
         <span className='footerOferta'>Oferta válida de {dataInicial} até {dataFinal}.</span>
@@ -20,4 +20,4 @@ const PlacaOferta = forwardRef(({ titulo, precoInicial, precoReal, precoCentavos
   );
 });
 
-export default PlacaOferta;
+export default PlacaOferta; 

@@ -3,7 +3,7 @@
     color: white;
     font-weight: bolder;
     width: 210mm;
-    height: 80mm;
+    height: 70mm;
     font-size: 150px;
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
@@ -15,21 +15,21 @@
 
 .footerOferta{
     width: 210mm;
-    height: 20mm;
-    font-size: 50px;
-    background-color: red;
-    color: white;
+    height: 5mm;
+    font-size: 15px;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
 }
 .tituloOferta{
-    padding-top: 10px;
+    padding-top: 5px;
     width: 210mm;
-    font-size: 70px;
+    font-size: 40px;
     background-color: white;
     color: black;
-    font-style: italic;
+    font-family: "Archivo Black", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,11 +37,11 @@
 .cifraoOferta{
     background-color: white;
     width: 210mm;
-    font-size: 60px;
+    font-size: 40px;
     color: #282c34;;
     display: flex;
     align-items: left;
-     
+     font-family: "Archivo Black", sans-serif;
 }
 
 .precoOferta{
@@ -50,19 +50,20 @@
     font-weight: bolder;
     display: flex;
     flex-direction: row;
-    align-items: start;
+    align-items: flex-start;
     color: red;
     justify-content: center;
-    font-family: "Story Script", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    
+    font-family: "Oswald", sans-serif;
+    font-weight: 900;  
 }
 .precoOfertaReal{
-    font-size: 350px;
+    font-size: 600px;
+    align-self: flex-start;
+    line-height: 1;
+    margin-top: -40px;
 }
 .precoOfertaCentavos{
-    font-size: 180px;
+    font-size: 100px;
 }
 .placa-oferta{
     display: flex;
@@ -75,7 +76,7 @@
 .corpoOferta{
     display: flex;
     flex-direction: column;
-    height: 197mm;
+    height: 222mm;
     width: 210mm;
     background-color: white;
     align-items: center;

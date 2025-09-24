@@ -9,8 +9,8 @@ const PlacaAproveite = forwardRef(({ titulo, precoReal, precoCentavos, dataInici
             <span className='tituloAproveite'>{titulo}</span>
             <span className='cifraoAproveite'>&nbsp; R$</span>
             <div className='precoAproveite'>
-              <span className="precoAproveiteReal">{precoReal}, </span>
-              <span className="precoAproveiteCentavos">{precoCentavos}</span>
+              <span className="precoAproveiteReal">{precoReal} </span>
+              <span className="precoAproveiteCentavos">,{precoCentavos}</span>
             </div>    
         </div>
     </div>

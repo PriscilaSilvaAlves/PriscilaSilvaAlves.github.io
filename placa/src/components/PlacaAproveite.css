@@ -1,9 +1,9 @@
 .sloganAproveite{
-    background-color: orange;
+    background-color: red;
     color: white;
     font-weight: bolder;
     width: 210mm;
-    height: 80mm;
+    height: 70mm;
     font-size: 120px;
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
@@ -15,13 +15,13 @@
 .tituloAproveite{
     padding-top: 10px;
     width: 210mm;
-    font-size: 70px;
+    font-size: 40px;
     background-color: white;
     color: black;
-    font-style: italic;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Archivo Black", sans-serif;
 }
 .cifraoAproveite{
     background-color: white;
@@ -30,6 +30,7 @@
     color: black;
     display: flex;
     align-items: left;
+    font-family: "Archivo Black", sans-serif;
 }
 .precoAproveite{
     width: 210mm;
@@ -37,19 +38,22 @@
     font-weight: bolder;
     display: flex;
     flex-direction: row;
-    align-items: start;
-    color: orange;
+    align-items: flex-start;
+    color: red;
     justify-content: center;
-    font-family: "Story Script", sans-serif;
-    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+    font-weight: 900;
     font-style: normal;
     
 }
 .precoAproveiteReal{
-    font-size: 350px;
+    font-size: 600px;
+    align-self: flex-start;
+    line-height: 1;
+    margin-top: -40px;
 }
 .precoAproveiteCentavos{
-    font-size: 180px;
+    font-size: 100px;
 }
 .placa-aproveite{
     display: flex;
@@ -62,7 +66,7 @@
 .corpoAproveite{
     display: flex;
     flex-direction: column;
-    height: 217mm;
+    height: 227mm;
     width: 210mm;
     background-color: white;
     align-items: center;
