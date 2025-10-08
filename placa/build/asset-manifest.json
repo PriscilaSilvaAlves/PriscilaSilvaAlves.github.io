@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/placa/build/static/css/main.aed62fdd.css",
+    "main.js": "/placa/build/static/js/main.6a05e1c6.js",
+    "static/js/453.8fc4525b.chunk.js": "/placa/build/static/js/453.8fc4525b.chunk.js",
+    "index.html": "/placa/build/index.html",
+    "main.aed62fdd.css.map": "/placa/build/static/css/main.aed62fdd.css.map",
+    "main.6a05e1c6.js.map": "/placa/build/static/js/main.6a05e1c6.js.map",
+    "453.8fc4525b.chunk.js.map": "/placa/build/static/js/453.8fc4525b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aed62fdd.css",
+    "static/js/main.6a05e1c6.js"
+  ]
+}
