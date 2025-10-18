@@ -1,0 +1,122 @@
+.sloganDiaD{
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    width: 210mm;
+    height: 70mm;
+    font-size: 190px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerOferta{
+    width: 210mm;
+    height: 10mm;
+    padding-bottom: 5mm; 
+    font-size: 15px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.tituloOferta{
+    padding-top: 5px;
+    padding-left: 5mm;
+    padding-right: 5mm;
+    width: 200mm;
+    font-size: 40px;
+    background-color: white;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cifraoDiaD{
+    background-color: white;
+    width: 200mm;
+    height: 18mm;
+    font-size: 40px;
+    color: black;
+    display: flex;
+    align-items: left;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+.cifraoDiaD b{
+    color: black;
+    font-size: 40px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.precoDiaD{
+    width: 210mm;
+    height: 147mm;
+    background-color: white;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    color: black;
+    justify-content: center;
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100; 
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+.precoOfertaReal{
+
+    align-self: flex-start;
+    line-height: 1;
+    margin-top: -40px;
+}
+.precoOfertaCentavos{
+    font-size: 380px;
+    line-height: 1;
+    margin-top: -5px;
+}
+.placa-oferta{
+    display: flex;
+    height: 297mm;
+    width: 210mm;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    text-align: center;
+}
+.corpoOferta{
+    display: flex;
+    flex-direction: column;
+    height: 217mm;
+    width: 210mm;
+    background-color: white;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+}

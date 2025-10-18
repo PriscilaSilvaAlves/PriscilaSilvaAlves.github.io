@@ -1,0 +1,92 @@
+.sloganAproveiteDupla{
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+    width: 210mm;
+    height: 28.5mm;
+    font-size: 100px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 60px 60px;
+}
+.tituloAproveiteDupla{
+    padding-top: 10px;
+    padding-left: 5mm;
+    padding-right: 5mm;
+    width: 200mm;
+    font-size: 40px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+.cifraoAproveiteDupla{
+    background-color: white;
+    width: 200mm;
+    font-size: 40px;
+    color: black;
+    display: flex;
+    align-items: left;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+.precoAproveiteDupla{
+    width: 210mm;
+    height: 60mm;
+    background-color: white;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    color: red;
+    justify-content: center;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+.precoAproveiteDupla span{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+.placa-aproveiteDupla{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    text-align: center;
+    justify-content: flex-start;
+}
+.corpoAproveiteDupla{
+    display: flex;
+    flex-direction: column;
+    height: 120mm;
+    width: 210mm;
+    background-color: white;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
