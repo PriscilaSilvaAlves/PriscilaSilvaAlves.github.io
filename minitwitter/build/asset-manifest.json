@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/minitwitter/build/static/css/main.56e12bfb.css",
+    "main.js": "/minitwitter/build/static/js/main.b86a4c35.js",
+    "index.html": "/minitwitter/build/index.html",
+    "main.56e12bfb.css.map": "/minitwitter/build/static/css/main.56e12bfb.css.map",
+    "main.b86a4c35.js.map": "/minitwitter/build/static/js/main.b86a4c35.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.56e12bfb.css",
+    "static/js/main.b86a4c35.js"
+  ]
+}
